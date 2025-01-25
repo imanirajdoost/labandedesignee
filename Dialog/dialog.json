@@ -5,7 +5,7 @@
 			"line": "dialog line",
 			"tone": "HARSH",
 		},
-		"replies: [
+		"replies": [
 			{
 				"type": "SOFT",
 				"line": "SOFT dialog line"
