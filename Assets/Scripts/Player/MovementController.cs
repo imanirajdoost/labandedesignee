@@ -101,7 +101,7 @@ public class MovementController : MonoBehaviour
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.deltaTime), rb.linearVelocity.z);
         }
 
-        _animator.SetFloat("Speed", Mathf.Abs(_moveValue.x));
+        _animator.SetInteger("Speed", Mathf.Abs((int)_moveValue.x));
         _animator.SetBool("IsGrounded", isGrounded);
     }
 

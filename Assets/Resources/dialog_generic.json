@@ -71,6 +71,24 @@
 				"line": "Keep that up and not even luck will save you!"
 			}
 		]
+	},
+	{
+		"line": "I wouldn't have done that if I were you.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I'll get it this time."
+			},
+			{
+				"type": "COLD",
+				"line": "And if I were you, I would throw myself off that cliff."
+			},
+			{
+				"type": "AGGR",
+				"line": "Can it before I make you!"
+			}
+		]
 	}
 ]
 }
