@@ -48,18 +48,24 @@ ENTITY: "That's why none of them will even talk to you anymore."
 ENTITY: "At the end of the day, I'm the only who still cares."
 	SOFT: 
 	COLD: "Meanwhile, literally no one cares about you."
-	AGGR: "You wouldn't know care if I smacked you on the head with it."
+	AGGR: "You wouldn't know care if I smacked you on the head with it!"
 	
-ENTITY: "Admit it : it's better that way.
+ENTITY: "Admit it : it's better that way."
 	SOFT:
 	COLD:
 	AGGR:
+
+ENTITY: "If you stayed it would only have become worse for you."
+	SOFT:
+	COLD:
+	AGGR: 
 
 "Why are YOU so interested in my well-being all of a sudden?"
 "You say they all hate me but you don't know shit about them!"
 "You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
 
-"I've had enough of you. I'm going back, I'm going to fix
+"I've had enough of you. I'm going back and I'm going to fix it."
+
 
 
 
@@ -71,7 +77,7 @@ GENERIC:
 ENTITY: "You'll get it. Eventually. Probably not, though."
 	SOFT: "I will."
 	COLD: "And you'll never get anything from anyone, so how's that?"
-	AGGR: "You'll get my hand in your face if you don't quit it."
+	AGGR: "You'll get my hand in your face if you don't quit it!"
 
 ENTITY: "Bet you wish you had listened to me, now."
 	SOFT: "I'm in no rush."
@@ -81,7 +87,7 @@ ENTITY: "Bet you wish you had listened to me, now."
 ENTITY: "That was just pathetic."
 	SOFT: "I can always try again."
 	COLD: "No more pathetic than your entire existence."
-	AGGR: "You'll look worse when I get my hands on you."
+	AGGR: "You'll look worse when I get my hands on you!"
 	
 ENTITY: "You only got that far through luck."
 	SOFT: "No, I did it by myself."
