@@ -1,0 +1,23 @@
+[
+	{
+		"index": 0,
+		"prompt": {
+			"line": "dialog line",
+			"tone": "HARSH",
+		},
+		"replies: [
+			{
+				"type": "SOFT",
+				"line": "SOFT dialog line"
+			},
+			{
+				"type": "COLD",
+				"line": "COLD dialog line"
+			},
+			{
+				"type": "AGGR",
+				"line": "AGGRESSIVE dialog line"
+			}
+		]
+	}
+]

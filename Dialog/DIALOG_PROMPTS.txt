@@ -36,11 +36,31 @@ ENTITY: "
 
 
 
+ENTITY: "You'll screw that up like you screw everything up."
+
+ENTITY: "You're a failure. You know it, I know it, everybody knows it."
+
+ENTITY: "That's why none of them will even talk to you anymore."
+	SOFT: "We'll mend things eventually."
+	COLD: "If only you would do the same."
+	AGGR: "
 
 ENTITY: "At the end of the day, I'm the only who still cares."
-	SOFT: "We'll mend things eventually."
+	SOFT: 
 	COLD: "Meanwhile, literally no one cares about you."
-	AGGR: "You wouldn't know care if I slammed you on the head with it."
+	AGGR: "You wouldn't know care if I smacked you on the head with it."
+	
+ENTITY: "Admit it : it's better that way.
+	SOFT:
+	COLD:
+	AGGR:
+
+"Why are YOU so interested in my well-being all of a sudden?"
+"You say they all hate me but you don't know shit about them!"
+"You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
+
+"I've had enough of you. I'm going back, I'm going to fix
+
 
 
 ---------------------------------------------------
