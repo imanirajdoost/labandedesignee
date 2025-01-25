@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private MovementController _movementController;
+    private MovementController _movementController;
 
     [Header("Slow Motion")]
     [SerializeField] private float _slowMotionTime = 5;

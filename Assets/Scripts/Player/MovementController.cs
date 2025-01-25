@@ -20,6 +20,8 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float _gravityMultiplier = 10;
     private float _originalGravityMultiplier;
 
+    [SerializeField] private Animator _animator;
+
     [Header("Slow motion options")]
     [SerializeField] private float _slowMotionSpeed = 200;
     [SerializeField] private float _slowMotionGravityMultiplier = 0.1f;
@@ -98,6 +100,9 @@ public class MovementController : MonoBehaviour
             // simulate gravity
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.deltaTime), rb.linearVelocity.z);
         }
+
+        _animator.SetFloat("Speed", Mathf.Abs(_moveValue.x));
+        _animator.SetBool("IsGrounded", isGrounded);
     }
 
     private void FixedUpdate()
