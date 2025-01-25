@@ -11,6 +11,13 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_SOUND_TEST_2D = 697467967U;
+        static const AkUniqueID PLAY_SOUND_TEST_2D_LP = 2510895262U;
+        static const AkUniqueID STOP_SOUND_TEST_2D_LP = 871501620U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
