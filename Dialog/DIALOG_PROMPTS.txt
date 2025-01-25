@@ -56,12 +56,12 @@ ENTITY: "Then again, careful never really was your thing, right?"
 ENTITY: "What are you mad at me for? It was your fault."
 	SOFT: "I was only trying to help."
 	>COLD: "Don't start commenting things you know nothing about."
-	AGGR: "You wouldn't recognize fault if I slapped your face with it!"
+	AGGR: "You wouldn't recognize fault if I slapped your head with it!"
 
 ENTITY: "So you run away from your problems rather than confront them. So predictable."
 	SOFT: "It's better not to cause unnecessary conflicts."
 	COLD: "If I wanted to talk about it, I'd go to someone I actually respect."
-	>AGGR: "If you insist, I can confront my hand to your head!"
+	>AGGR: "If you insist, I can confront my hand to your face!"
 	
 
 -------------
@@ -74,10 +74,8 @@ ENTITY: "You're a failure. You know it, I know it, everybody knows it."
 
 ENTITY: "That's why none of them will even talk to you anymore."
 	SOFT: "We'll mend things eventually."
-	COLD: "If only you would do the same."
-	AGGR: "
-
---------------
+	>COLD: "If only you would do the same."
+	AGGR: "You can talk to my knuckles, if you'd prefer."
 	
 ENTITY: "Admit it : it's better that way."
 
@@ -89,12 +87,15 @@ ENTITY: "At the end of the day, I'm the only who still wants you around."
 ENTITY: "Huh?"
 	AGGR: "I didn't ask for this! I didn't ask for you to squat into my head!"
 
-ENTITY: "Wow, where's that coming from? I'm only looking out for you."
+ENTITY: "Wow, where's that coming from? I'm only looking out for you!"
 	AGGR: "And why are YOU so interested in my well-being all of a sudden?"
 	AGGR: "You claim they all hate me but you don't know shit about them!"
 	AGGR: "You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
 
-"I've had enough of you. I'm going back and I'm going to fix it."
+
+SOFT: 
+COLD: "I'm done with you. I'm going back, and I'm going to fix it. Without you."
+AGGR: 
 
 
 
