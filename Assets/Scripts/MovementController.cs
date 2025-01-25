@@ -20,6 +20,8 @@ public class MovementController : MonoBehaviour
 
     private bool _canJump = true;
 
+    [SerializeField] private GameObject _artObject;
+
     private Coroutine _jumpCoroutine;
 
     private void Awake()
@@ -42,12 +44,24 @@ public class MovementController : MonoBehaviour
 
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
 
+        if (moveValue.x > 0)
+            LookRight();
+        else if (moveValue.x < 0)
+            LookLeft();
+
+        bool isWallDetected = IsWallDetected();
+
+        // if the detected wall is on the right side, we should not move to the right
+        if (moveValue.x > 0 && isWallDetected && IsLookingRight())
+            moveValue = new Vector2(0, moveValue.y);
+
+        if(moveValue.x < 0 && isWallDetected && !IsLookingRight())
+            moveValue = new Vector2(0, moveValue.y);
+
         // Go to left or right
         rb.linearVelocity = new Vector3(_speed * moveValue.x * Time.fixedDeltaTime, rb.linearVelocity.y, rb.linearVelocity.z);
 
         bool isGrounded = IsGrounded();
-
-        bool isWallDetected = IsWallDetected();
 
         if (jumpAction.IsPressed() && CanJump() && isGrounded)
         {
@@ -62,8 +76,23 @@ public class MovementController : MonoBehaviour
         if(!isGrounded)
         {
             // simulate gravity
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.fixedDeltaTime), rb.linearVelocity.z);
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.deltaTime), rb.linearVelocity.z);
         }
+    }
+
+    private void LookRight()
+    {
+        _artObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
+
+    private void LookLeft()
+    {
+        _artObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
+
+    private bool IsLookingRight()
+    {
+        return _artObject.transform.rotation.y == 0;
     }
 
     private IEnumerator StopJumpingFor(float delay)
@@ -80,11 +109,24 @@ public class MovementController : MonoBehaviour
 
     private bool IsWallDetected()
     {
-        var cols = Physics.OverlapBox(new Vector3(col.bounds.center.x + 0.25f, 0, 0), col.bounds.extents);
-        foreach (var c in cols)
+        // overlap 0.25f to the right of the player and make it less than the half of the collider size
+        if (IsLookingRight())
         {
-            if (c.gameObject != gameObject)
-                return true;
+            var cols = Physics.OverlapBox(new Vector3(col.bounds.max.x + 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
+            foreach (var c in cols)
+            {
+                if (c.gameObject != gameObject)
+                    return true;
+            }
+        }
+        else
+        {
+            var cols = Physics.OverlapBox(new Vector3(col.bounds.min.x - 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
+            foreach (var c in cols)
+            {
+                if (c.gameObject != gameObject)
+                    return true;
+            }
         }
         return false;
     }
