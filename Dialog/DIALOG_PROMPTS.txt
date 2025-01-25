@@ -1,0 +1,97 @@
+ENTITY: "Hey."
+
+ENTITY: "Hey, idiot."
+
+ENTITY: "Do you even know were you're going?"
+PLAYER: 
+	SOFT: "I'm fine, I'll figure it out."
+
+ENTITY: "Wow, that's careless."
+PLAYER: 
+	SOFT: "I'll be alright."
+
+-------------
+
+ENTITY: "Running ahead aimlessly. Typical."
+
+ENTITY: "You're going to get us lost. Again."
+	COLD: "Nobody asked for your opinion"
+	
+ENTITY: "You don't even know where we are. You'll never make it through the night."
+	SOFT: "Hardly the first time I slept outdoors."
+	COLD: "Or worse, I'll make it through and you'll still be here."
+	
+ENTITY: "You'll end up just another girl disappeared in the clouds."
+	SOFT: "Don't worry, I'll find my way."
+	COLD: "Why don't you disappear in a crack in the ground and never show your face again?"
+	
+ENTITY: "
+	SOFT: "
+	COLD: "
+
+
+
+
+-------------
+
+
+
+
+ENTITY: "At the end of the day, I'm the only who still cares."
+	SOFT: "We'll mend things eventually."
+	COLD: "Meanwhile, literally no one cares about you."
+	AGGR: "You wouldn't know care if I slammed you on the head with it."
+
+
+---------------------------------------------------
+GENERIC: 
+
+
+
+ENTITY: "You'll get it. Eventually. Probably not, though."
+	SOFT: "I will."
+	COLD: "And you'll never get anything from anyone, so how's that?"
+	AGGR: "You'll get my hand in your face if you don't quit it."
+
+ENTITY: "Bet you wish you had listened to me, now."
+	SOFT: "I'm in no rush."
+	COLD: "No one in their right mind would ever listen to you."
+	AGGR: "I wish I could punch your lights out!"
+	
+ENTITY: "That was just pathetic."
+	SOFT: "I can always try again."
+	COLD: "No more pathetic than your entire existence."
+	AGGR: "You'll look worse when I get my hands on you."
+	
+ENTITY: "You only got that far through luck."
+	SOFT: "No, I did it by myself."
+	COLD: "If I was lucky, I'd never have met you."
+	AGGR: "Keep that up and not even luck will save you."
+	
+ENTITY: "I wouldn't have done that if I were you."
+PLAYER: 
+	SOFT: "I'll get it this time."
+	COLD: "If you were me, I'd be you, and if I were you, I'd jump off that cliff."
+	AGGR: "
+	
+ENTITY: "
+	SOFT: "
+	COLD: "
+	AGGR: "
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ENTITY: 
+	SOFT: 
+	COLD: 
+	AGGR: 
