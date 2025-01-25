@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" SchemaVersion="123" RootDocumentID="{D9FCCCE8-77BF-4719-BC32-2EAFBEDAE234}" ParentDocumentID="{D9FCCCE8-77BF-4719-BC32-2EAFBEDAE234}">
+	<Events>
+		<WorkUnit Name="Main" ID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" OwnerID="{D9FCCCE8-77BF-4719-BC32-2EAFBEDAE234}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="MUSIC" ID="{EA298852-2E9B-4AAB-83DB-10BCC6E5AE7C}" ShortID="824734784">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="SFX" ID="{7EE7E0CD-92D7-465B-8A7C-2518114EDA94}" ShortID="724005084">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="UI" ID="{B09ADE66-E475-4312-AF89-A0D9CE909627}" ShortID="1030079538">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="AMB" ID="{BFA8A3B3-8F4D-4C1D-91FF-55C2A1A110C3}" ShortID="832631037">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="Z_Test" ID="{31B2C7F3-EE28-4249-93BC-55D6F0F26D67}" ShortID="889561328">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="27"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Sound_Test_2D" ID="{7BD30089-C169-4277-B06E-38D7ED513309}">
+							<ChildrenList>
+								<Action Name="" ID="{32C1E865-D7C1-4F9C-8208-7E5FF28F4F63}" ShortID="392122499">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Test" ID="{CC521106-0BBE-432E-A9C4-E585A2AFD1CC}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Sound_Test_3D" ID="{BC125F97-D21B-4EB5-B8F5-B03971CA78AB}"/>
+						<Event Name="Play_Sound_Test_2D_LP" ID="{CAAF995E-E4EA-4962-BAD7-365BFC29BD3D}">
+							<ChildrenList>
+								<Action Name="" ID="{0F2EC595-FD25-44DF-9B0F-EB936ABC6E94}" ShortID="99491944">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Test_LP" ID="{223E5A81-3B9F-4D11-8D8B-FEE913699894}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Sound_Test_2D_LP" ID="{9CC883C5-9F44-4251-B1EA-0179708DA1A8}">
+							<ChildrenList>
+								<Action Name="" ID="{D1260042-A33A-4804-AF73-3148A43BB4BB}" ShortID="93801382">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sound_Test_LP" ID="{223E5A81-3B9F-4D11-8D8B-FEE913699894}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

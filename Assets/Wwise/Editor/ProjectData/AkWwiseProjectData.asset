@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 231f20558687fd4bb24fa8306b1169bd
     GuidInternal: 
-    m_lastTime: -8584638009374775808
+    m_lastTime: -8584637935094775808
     List:
     - name: Master
       guid: 7630fb9675e32541a32720f4f67c13f5
@@ -94,8 +94,216 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e8ccfcd9bf771947bc322eafbedae234
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584638005574775808
     List: []
+  - PhysicalPath: Events\Main.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e8ccfcd9bf771947bc322eafbedae234
+    - ElementName: Main
+      ObjectType: 12
+      guid: 94c93832d8ddbe47be6ecd4c4723e929
+    ParentPath: Events\Default Work Unit\Main
+    guid: 94c93832d8ddbe47be6ecd4c4723e929
+    GuidInternal: 
+    m_lastTime: -8584637935634775808
+    List:
+    - name: AMB
+      guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: AMB
+        ObjectType: 4
+        guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
+      Path: Events\Default Work Unit\Main\AMB
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUSIC
+      guid: 528829ea9b2eab4a83db10bcc6e5ae7c
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 528829ea9b2eab4a83db10bcc6e5ae7c
+      Path: Events\Default Work Unit\Main\MUSIC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Sound_Test_2D
+      guid: 8900d37b69c17742b06e38d7ed513309
+      id: 697467967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Z_Test
+        ObjectType: 4
+        guid: f3c7b23128ee494293bc55d6f0f26d67
+      - ElementName: Play_Sound_Test_2D
+        ObjectType: 3
+        guid: 8900d37b69c17742b06e38d7ed513309
+      Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D
+      maxAttenuation: 0
+      maxDuration: 6.8315
+      minDuration: 6.8315
+    - name: Play_Sound_Test_2D_LP
+      guid: 5e99afcaeae46249bad7365bfc29bd3d
+      id: 2510895262
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Z_Test
+        ObjectType: 4
+        guid: f3c7b23128ee494293bc55d6f0f26d67
+      - ElementName: Play_Sound_Test_2D_LP
+        ObjectType: 3
+        guid: 5e99afcaeae46249bad7365bfc29bd3d
+      Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Sound_Test_3D
+      guid: 975f12bc1bd2b54eb8f5b03971ca78ab
+      id: 680690348
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Z_Test
+        ObjectType: 4
+        guid: f3c7b23128ee494293bc55d6f0f26d67
+      - ElementName: Play_Sound_Test_3D
+        ObjectType: 3
+        guid: 975f12bc1bd2b54eb8f5b03971ca78ab
+      Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: cde0e77ed7925b468a7c2518114eda94
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      Path: Events\Default Work Unit\Main\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Sound_Test_2D_LP
+      guid: c583c89c449f5142b1ea0179708da1a8
+      id: 871501620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Z_Test
+        ObjectType: 4
+        guid: f3c7b23128ee494293bc55d6f0f26d67
+      - ElementName: Stop_Sound_Test_2D_LP
+        ObjectType: 3
+        guid: c583c89c449f5142b1ea0179708da1a8
+      Path: Events\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: UI
+      guid: 66de9ab075e41243af89a0d9ce909627
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: UI
+        ObjectType: 4
+        guid: 66de9ab075e41243af89a0d9ce909627
+      Path: Events\Default Work Unit\Main\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Z_Test
+      guid: f3c7b23128ee494293bc55d6f0f26d67
+      id: 2119622156
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Z_Test
+        ObjectType: 4
+        guid: f3c7b23128ee494293bc55d6f0f26d67
+      Path: Events\Default Work Unit\Main\Z_Test
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,7 +361,7 @@ MonoBehaviour:
     m_lastTime: -8584638017034775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

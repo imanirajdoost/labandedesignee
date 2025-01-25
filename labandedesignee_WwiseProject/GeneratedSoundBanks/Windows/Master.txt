@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	697467967	Play_Sound_Test_2D			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D	
+	871501620	Stop_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP	
+	2510895262	Play_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	234873750	Sound_Test_LP	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\08\{080E866E-C19C-54C9-4963-2B2267F698DD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Z_Test\Sound_Test_LP		231356
+	282792354	Sound_Test	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\A5\{A5440E08-8566-D780-5009-956448A7965F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Z_Test\Sound_Test		231356
+
