@@ -1,10 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	564244989	ST_TimeFreeze			\Default Work Unit\Main\ST_TimeFreeze	
+	1642548553	ST_GameFlow			\Default Work Unit\Main\ST_GameFlow	
 
 State	ID	Name	State Group			Notes
 	748895195	None	ST_TimeFreeze			
 	3646474335	ST_TimeFreeze_Off	ST_TimeFreeze			
 	4255932043	ST_TimeFreeze_On	ST_TimeFreeze			
+	36359122	ST_GameFlow_Level_5	ST_GameFlow			
+	36359123	ST_GameFlow_Level_4	ST_GameFlow			
+	36359124	ST_GameFlow_Level_3	ST_GameFlow			
+	36359125	ST_GameFlow_Level_2	ST_GameFlow			
+	36359126	ST_GameFlow_Level_1	ST_GameFlow			
+	748895195	None	ST_GameFlow			
+	4047794154	ST_GameFlow_MainMenu	ST_GameFlow			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

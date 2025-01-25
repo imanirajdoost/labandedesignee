@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{9D508272-F84B-854E-4A40-3E06310ABE85}",
+    "Hash": "{2147F244-7F8F-2C11-E12B-FD90809B2666}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -72,10 +72,68 @@
         "Color": "9"
        }
       ]
+     },
+     {
+      "Id": "1642548553",
+      "Name": "ST_GameFlow",
+      "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow",
+      "GUID": "{00FA42EF-7E35-414C-9232-F0B56572078C}",
+      "Color": "9",
+      "States": [
+       {
+        "Id": "36359122",
+        "Name": "ST_GameFlow_Level_5",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_Level_5",
+        "GUID": "{4E16B770-5589-4FC5-8315-EF4F3CCC17C0}",
+        "Color": "9"
+       },
+       {
+        "Id": "36359123",
+        "Name": "ST_GameFlow_Level_4",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_Level_4",
+        "GUID": "{70C8241A-D53E-402B-BCCD-7C2356A15F65}",
+        "Color": "9"
+       },
+       {
+        "Id": "36359124",
+        "Name": "ST_GameFlow_Level_3",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_Level_3",
+        "GUID": "{B355511A-AD25-416A-9EC5-9C2E03F4E1CF}",
+        "Color": "9"
+       },
+       {
+        "Id": "36359125",
+        "Name": "ST_GameFlow_Level_2",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_Level_2",
+        "GUID": "{93B29A03-8BCC-40DD-93E0-BABB83288E6E}",
+        "Color": "9"
+       },
+       {
+        "Id": "36359126",
+        "Name": "ST_GameFlow_Level_1",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_Level_1",
+        "GUID": "{47E47D1D-D3E2-4365-A678-75CF6D6CFF2B}",
+        "Color": "9"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\None",
+        "GUID": "{449F57C4-A102-47CE-83F0-EBD6E274B5E2}",
+        "Color": "9"
+       },
+       {
+        "Id": "4047794154",
+        "Name": "ST_GameFlow_MainMenu",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_GameFlow\\ST_GameFlow_MainMenu",
+        "GUID": "{27512FEA-0402-466A-8A90-90B679E8F1A2}",
+        "Color": "9"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{26E7DA13-214F-22D7-9E90-F3A7EC89AAAD}"
+  "FileHash": "{045C9B37-27E5-A3DD-F2CA-50A27D6C34DC}"
  }
 }

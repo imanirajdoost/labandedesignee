@@ -8,6 +8,23 @@
 						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{4E025143-84BF-438B-B92F-F673684B5FAC}">
+							<ChildrenList>
+								<Action Name="" ID="{70114B70-D760-4F8A-B126-AC062B100F1F}" ShortID="233359577">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{EEDCFCE8-AFE7-42E7-91C9-131291D370DC}" WorkUnitID="{896B1158-C34B-4A14-9686-7E406822EFB2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{7EE7E0CD-92D7-465B-8A7C-2518114EDA94}" ShortID="724005084">
 					<PropertyList>

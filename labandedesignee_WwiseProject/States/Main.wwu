@@ -14,6 +14,17 @@
 						<State Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="ST_GameFlow" ID="{00FA42EF-7E35-414C-9232-F0B56572078C}">
+					<ChildrenList>
+						<State Name="None" ID="{449F57C4-A102-47CE-83F0-EBD6E274B5E2}"/>
+						<State Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}"/>
+						<State Name="ST_GameFlow_Level_1" ID="{47E47D1D-D3E2-4365-A678-75CF6D6CFF2B}"/>
+						<State Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}"/>
+						<State Name="ST_GameFlow_Level_3" ID="{B355511A-AD25-416A-9EC5-9C2E03F4E1CF}"/>
+						<State Name="ST_GameFlow_Level_4" ID="{70C8241A-D53E-402B-BCCD-7C2356A15F65}"/>
+						<State Name="ST_GameFlow_Level_5" ID="{4E16B770-5589-4FC5-8315-EF4F3CCC17C0}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
