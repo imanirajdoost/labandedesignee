@@ -17,6 +17,8 @@ public class DialogManager : MonoBehaviour
 
     private List<GameObject> _dialogChoices;
 
+    private int _lastShownDialogIndex = -1;
+
     private void Awake()
     {
         if (Instance == null)
@@ -58,7 +60,7 @@ public class DialogManager : MonoBehaviour
 
     private void ShowDialogOptionsIfAvailable(DialogData data)
     {
-        if (data.replyList == null || data.replyList.Count == 0)
+        if (data.replies == null || data.replies.Length == 0)
             return;
 
         if(_dialogChoices == null)
@@ -66,7 +68,7 @@ public class DialogManager : MonoBehaviour
         else
             _dialogChoices.Clear();
 
-        foreach (var reply in data.replyList)
+        foreach (var reply in data.replies)
         {
             var choicObj = Instantiate(_dialogChoiceObject, _dialogChoiceObjectParent.transform);
             _dialogChoices.Add(choicObj);
@@ -83,12 +85,22 @@ public class DialogManager : MonoBehaviour
 
     public void ShowNextDialog()
     {
-        // TODO: Replace with actual dialog data
-        DialogData data = new DialogData();
-        data.line = "Hello, how are you?";
-
+        _lastShownDialogIndex++;
+        var data = DialogDataFactory.Instance.GetDialogData(_lastShownDialogIndex);
 
         OpenDialogPanel();
         ShowDialog(data);
+    }
+
+    public void ShowDialog(int index)
+    {
+        var data = DialogDataFactory.Instance.GetDialogData(index);
+        OpenDialogPanel();
+        ShowDialog(data);
+    }
+
+    public void CloseDialog()
+    {
+        CloseDialogPanel();
     }
 }

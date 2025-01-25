@@ -24,6 +24,8 @@ public class MovementController : MonoBehaviour
 
     private Coroutine _jumpCoroutine;
 
+    private bool _isEnabled = true;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,10 +41,18 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
-        // Read the "Move" action value, which is a 2D vector
-        // and the "Jump" action state, which is a boolean value
+        Vector2 moveValue;
+        if (_isEnabled)
+        {
+            // Read the "Move" action value, which is a 2D vector
+            // and the "Jump" action state, which is a boolean value
 
-        Vector2 moveValue = moveAction.ReadValue<Vector2>();
+            moveValue = moveAction.ReadValue<Vector2>();
+        } else
+        {
+            // If the player is not enabled, we should not move or jump
+            moveValue = Vector2.zero;
+        }
 
         if (moveValue.x > 0)
             LookRight();
@@ -104,7 +114,7 @@ public class MovementController : MonoBehaviour
 
     private bool CanJump()
     {
-        return _canJump;
+        return _canJump && _isEnabled;
     }
 
     private bool IsWallDetected()
@@ -142,5 +152,10 @@ public class MovementController : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void SetEnabled(bool enabled)
+    {
+        _isEnabled = enabled;
     }
 }
