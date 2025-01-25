@@ -1,9 +1,27 @@
 Event	ID	Name			Wwise Object Path	Notes
+	604897336	Play_SFX_Player_Jump			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Jump	
 	697467967	Play_Sound_Test_2D			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D	
 	871501620	Stop_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP	
+	2002635633	Play_SFX_Player_Footsteps			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps	
+	2037741043	Play_SFX_Player_Land			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Land	
 	2510895262	Play_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	99383825	SFX_Player_Land	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\AA\{AA23AEC3-2972-2A07-9396-7F53ABC9BC90}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Land		11233
+	168107640	SFX_Player_Footsteps_10	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\57\{572BC488-48B1-CC18-F18D-96CB2295B46B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_10		3101
+	221817889	SFX_Player_Footsteps_02	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\A6\{A658AC22-001D-D77B-8B77-09031991CB1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_02		2280
 	234873750	Sound_Test_LP	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\08\{080E866E-C19C-54C9-4963-2B2267F698DD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Z_Test\Sound_Test_LP		231356
+	237208807	SFX_Player_Footsteps_03	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\46\{4626A5BE-5F19-C177-05FC-65805178BAE8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_03		2295
+	280478922	SFX_Player_Footsteps_12	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\A5\{A559E1B3-D795-EFAF-A945-CFCB55390F60}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_12		3873
 	282792354	Sound_Test	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\A5\{A5440E08-8566-D780-5009-956448A7965F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Z_Test\Sound_Test		231356
+	304687179	SFX_Player_Footsteps_08	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\2D\{2DC4B501-C038-C433-E79B-AE8D0E6C04D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_08		2403
+	322835440	SFX_Player_Footsteps_05	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\5E\{5EE9FF42-FDDC-6DB0-2B55-49EC0BCA5CDD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_05		2662
+	454360572	SFX_Player_Footsteps_13	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\74\{748C1552-5302-A2AB-B3A0-64B63E576124}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_13		3551
+	544154938	SFX_Player_Footsteps_04	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\AA\{AAD5467E-33E2-4C5D-C119-91A91D824760}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_04		2357
+	600204336	SFX_Player_Footsteps_06	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\73\{734FCA46-08B2-761E-F30F-D281B9EDACAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_06		2318
+	604658556	SFX_Player_Footsteps_01	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\89\{891362F8-7DD4-8134-8CB2-EC9510C2F749}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_01		2385
+	812021386	SFX_Player_Jump	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\32\{32A8CAC1-F7AE-FC0B-8839-DECEBE23945E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Jump		17696
+	933800486	SFX_Player_Footsteps_11	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\17\{173A6047-EEC9-C6E7-B63D-081B8379B433}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_11		3594
+	1009352937	SFX_Player_Footsteps_07	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\F9\{F9762F98-7C87-C7FE-E2A6-02BB28112D81}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_07		2277
+	1053680828	SFX_Player_Footsteps_09	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\6A\{6AA87F1E-948C-888D-77EC-49FC873D5FCF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_09		2385
 

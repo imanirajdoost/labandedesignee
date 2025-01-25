@@ -18,6 +18,8 @@ public class MovementController : MonoBehaviour
 
     [SerializeField] private float _gravityMultiplier = 10;
 
+    private Vector2 _moveValue;
+
     private bool _canJump = true;
 
     [SerializeField] private GameObject _artObject;
@@ -41,41 +43,38 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
-        Vector2 moveValue;
         if (_isEnabled)
         {
             // Read the "Move" action value, which is a 2D vector
             // and the "Jump" action state, which is a boolean value
 
-            moveValue = moveAction.ReadValue<Vector2>();
+            _moveValue = moveAction.ReadValue<Vector2>();
         } else
         {
             // If the player is not enabled, we should not move or jump
-            moveValue = Vector2.zero;
+            _moveValue = Vector2.zero;
         }
 
-        if (moveValue.x > 0)
+        if (_moveValue.x > 0)
             LookRight();
-        else if (moveValue.x < 0)
+        else if (_moveValue.x < 0)
             LookLeft();
 
         bool isWallDetected = IsWallDetected();
 
         // if the detected wall is on the right side, we should not move to the right
-        if (moveValue.x > 0 && isWallDetected && IsLookingRight())
-            moveValue = new Vector2(0, moveValue.y);
+        if (_moveValue.x > 0 && isWallDetected && IsLookingRight())
+            _moveValue = new Vector2(0, _moveValue.y);
 
-        if(moveValue.x < 0 && isWallDetected && !IsLookingRight())
-            moveValue = new Vector2(0, moveValue.y);
+        if(_moveValue.x < 0 && isWallDetected && !IsLookingRight())
+            _moveValue = new Vector2(0, _moveValue.y);
 
-        // Go to left or right
-        rb.linearVelocity = new Vector3(_speed * moveValue.x * Time.fixedDeltaTime, rb.linearVelocity.y, rb.linearVelocity.z);
-
+        
         bool isGrounded = IsGrounded();
 
         if (jumpAction.IsPressed() && CanJump() && isGrounded)
         {
-            rb.AddForce(new Vector3(0, _jumpForce * Time.fixedDeltaTime, 0), ForceMode.Force);
+            rb.AddForce(new Vector3(0, _jumpForce, 0), ForceMode.Impulse);
             //rb.linearVelocity =  new Vector3(rb.linearVelocity.x, _jumpForce * Time.fixedDeltaTime, rb.linearVelocity.z);
 
             if (_jumpCoroutine != null)
@@ -88,6 +87,12 @@ public class MovementController : MonoBehaviour
             // simulate gravity
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.deltaTime), rb.linearVelocity.z);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        // Go to left or right
+        rb.linearVelocity = new Vector3(_speed * _moveValue.x, rb.linearVelocity.y, rb.linearVelocity.z);
     }
 
     private void LookRight()

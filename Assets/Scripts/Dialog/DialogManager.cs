@@ -1,7 +1,9 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] private GameObject _dialogChoiceObject;
     [SerializeField] private GameObject _dialogChoiceObjectParent;
+    [SerializeField] private Button _closeButton;
 
     [SerializeField] private GameObject _dialogPanel;
     private RectTransform _dialogPanelRectTransform;
@@ -18,6 +21,9 @@ public class DialogManager : MonoBehaviour
     private List<GameObject> _dialogChoices;
 
     private int _lastShownDialogIndex = -1;
+
+    public Action<string> OnChoiceSelected;
+    public Action OnDialogPanelClosed;
 
     private void Awake()
     {
@@ -58,10 +64,20 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    private void SetCloseButtonEnabled(bool enabled)
+    {
+        _closeButton.interactable = enabled;
+    }
+
     private void ShowDialogOptionsIfAvailable(DialogData data)
     {
         if (data.replies == null || data.replies.Length == 0)
+        {
+            SetCloseButtonEnabled(true);
             return;
+        }
+
+        SetCloseButtonEnabled(false);
 
         if(_dialogChoices == null)
             _dialogChoices = new List<GameObject>();
@@ -81,6 +97,8 @@ public class DialogManager : MonoBehaviour
     public void ChoiceSelected(string tone)
     {
         Debug.Log("Choice selected: " + tone);
+        OnChoiceSelected?.Invoke(tone);
+        CloseDialogPanel();
     }
 
     public void ShowNextDialog()
@@ -102,5 +120,6 @@ public class DialogManager : MonoBehaviour
     public void CloseDialog()
     {
         CloseDialogPanel();
+        OnDialogPanelClosed?.Invoke();
     }
 }
