@@ -14,6 +14,225 @@
 						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Folder Name="SFX_Entity" ID="{43BB8DE1-0671-4065-A41B-B90C4D3B09C1}" ShortID="1036660890">
+							<ChildrenList>
+								<Event Name="Play_SFX_Entity_Neutral" ID="{EE869A97-095A-4041-9522-0573A6F56CF7}">
+									<ChildrenList>
+										<Action Name="" ID="{5D21E52A-34CD-4E2E-B9DF-2D44C80D9F90}" ShortID="1017492540">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Entity_Neutral" ID="{44CB9385-7E3A-4A56-B3EE-5996DD2D6EB9}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Entity_Agressive" ID="{00505EF0-9C61-4271-A765-8B5C95F6237F}">
+									<ChildrenList>
+										<Action Name="" ID="{E21A6491-E597-4103-94AD-3B0E66DE4C0E}" ShortID="885900359">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Entity_Agressive" ID="{DF4ED6D7-F415-47B7-A4BC-C317E8B0CF71}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Entity_Mocking" ID="{2F53F116-0CA7-4E61-A89B-630FEA3D0EC3}">
+									<ChildrenList>
+										<Action Name="" ID="{A716568D-2432-4D3D-AF2C-B761E38DF7B0}" ShortID="1011134076">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Entity_Mocking" ID="{B7522531-CA73-4D79-9027-E2C8E0C87F02}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Entity_Sad" ID="{17183442-772D-4F00-93D2-ED0CCE90C31E}">
+									<ChildrenList>
+										<Action Name="" ID="{36F91008-0AE2-4B22-AD87-F557399951D5}" ShortID="845308638">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Entity_Sad" ID="{3480F946-08F3-4546-A7C2-E48DC7ED9DBA}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SFX_Bubble" ID="{A9C4718F-06FA-4744-8C2F-A245456C4693}" ShortID="743198062">
+							<ChildrenList>
+								<Event Name="Play_SFX_Bubble_Dream_Spawn" ID="{27D227CB-A01B-48E9-A01F-96A40FF3214B}">
+									<ChildrenList>
+										<Action Name="" ID="{D3D1457C-5289-4BB9-A736-EE0BEC18D6F1}" ShortID="133437849">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Dream_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Bubble_Ice_Spawn" ID="{23137215-F15E-4711-9B6A-0D9C224C5C2D}">
+									<ChildrenList>
+										<Action Name="" ID="{E12C7D7A-2FB8-4B4F-9631-C2DFC7171C1F}" ShortID="802249168">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Ice_Spawn" ID="{FA11852E-1FD5-4887-BEDA-0DD899643370}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Bubble_Dream_Fly_LP" ID="{3C49B8A4-DA13-4423-8057-E89AA1DE59E7}">
+									<ChildrenList>
+										<Action Name="" ID="{D3CC6798-8E83-48FB-A8B0-056F269A2617}" ShortID="636544026">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Dream_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_SFX_Bubble_Dream_Fly_LP" ID="{65AAA660-A32E-45E4-A987-F49B0FA723E3}">
+									<ChildrenList>
+										<Action Name="" ID="{871EF6AD-C8FC-4450-A354-EB4D5383B8DF}" ShortID="103722272">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Dream_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Bubble_Violent_Break" ID="{FBC2C5AC-7E21-411A-8390-BD487C45EE67}">
+									<ChildrenList>
+										<Action Name="" ID="{E405D48F-0D74-4368-B33B-D3C2BCB1DA23}" ShortID="39003981">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Violent_Break" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SFX_TimeFreeze" ID="{9456E457-342A-4A14-B8DA-6BB71BEEF7FC}" ShortID="873528714">
+							<ChildrenList>
+								<Event Name="Play_SFX_TimeFreeze_Stop" ID="{36CB5261-929B-4133-A6E1-AE540424FC72}">
+									<ChildrenList>
+										<Action Name="" ID="{26375832-BB95-4A3E-AE16-398119C0B0BB}" ShortID="287456343">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_TimeFreeze_Stop" ID="{2F71965F-C99C-4D56-A640-4814B3BD7FE2}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_TimeFreeze_Start" ID="{018368A1-A95A-4894-9D34-B2BF3F3EB2B0}">
+									<ChildrenList>
+										<Action Name="" ID="{9A3FF371-AC73-4D31-BFF4-B8375BDDEDCC}" ShortID="1005561702">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_TimeFreeze_Start" ID="{89329AB2-1AA4-4B2B-B2CB-B66C35EAB0BD}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_TimeFreeze_Imminent" ID="{57ACAA26-0246-4FDC-A3BE-B22B46CA0944}">
+									<ChildrenList>
+										<Action Name="" ID="{EE9DA5AA-82AE-4656-9262-AF18ACF532AF}" ShortID="515085493">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_TimeFreeze_Imminent" ID="{F4D58B7E-C17A-45DC-B299-23FB0BA4AB57}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SFX_Player" ID="{7DDA6459-1793-43ED-B327-B22868B6F90D}" ShortID="148158992">
+							<ChildrenList>
+								<Event Name="Play_SFX_Player_Climb" ID="{630E08E9-85B8-4078-A675-143B1B7F2406}">
+									<ChildrenList>
+										<Action Name="" ID="{B28B408A-CE83-4E8E-B8AC-D55AA9F1B56C}" ShortID="1068788008">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Climb" ID="{6EE1FB63-751A-41C7-AAAD-91DC114E8212}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Respawn" ID="{4BA3F9AC-172E-486A-ACD1-FA1388EF0011}">
+									<ChildrenList>
+										<Action Name="" ID="{7327AB3C-920B-4618-9E26-6D613B189EB5}" ShortID="952964476">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Respawn" ID="{4189FFF0-BDCB-48EA-ADD9-9ACFE923A4C4}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Jump" ID="{564A56A0-9C5D-49DC-9B8A-71A00A418EDA}">
+									<ChildrenList>
+										<Action Name="" ID="{A1E52429-BF43-44F6-BDF5-DDCE4F1FC3E6}" ShortID="626922858">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Jump" ID="{010CFDF0-BF3A-4351-9D0E-114C9D59EEE7}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Footsteps" ID="{7F5A3AB9-01FB-4E41-B349-203E0D2D5D7D}">
+									<ChildrenList>
+										<Action Name="" ID="{DCC98DC0-7AF7-4ABA-B6D2-0EC40ACC1FA3}" ShortID="64149554">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Footsteps" ID="{DF6C9DB8-A640-4CC6-8643-9E3B9491B6D2}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Land" ID="{83855DE0-5B31-40FB-AA4A-52036EDFA347}">
+									<ChildrenList>
+										<Action Name="" ID="{130BF287-1A4F-48CA-91DB-2BDCFEE610C5}" ShortID="307957241">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Land" ID="{F6DCCCAF-4231-4B67-AC06-9EA73B544E6C}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Player_Death" ID="{F594FA6C-CC19-4755-B981-31871F8C590D}">
+									<ChildrenList>
+										<Action Name="" ID="{5A38E867-5597-46B3-8F68-CF208E6EDFBE}" ShortID="173493492">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Player_Death" ID="{64284720-52F0-410A-B691-F1A4F9187469}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{B09ADE66-E475-4312-AF89-A0D9CE909627}" ShortID="1030079538">
 					<PropertyList>

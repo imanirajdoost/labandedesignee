@@ -24,6 +24,8 @@ public class MovementController : MonoBehaviour
 
     private Coroutine _jumpCoroutine;
 
+    private bool _isEnabled = true;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,10 +41,18 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
-        // Read the "Move" action value, which is a 2D vector
-        // and the "Jump" action state, which is a boolean value
+        Vector2 moveValue;
+        if (_isEnabled)
+        {
+            // Read the "Move" action value, which is a 2D vector
+            // and the "Jump" action state, which is a boolean value
 
-        Vector2 moveValue = moveAction.ReadValue<Vector2>();
+            moveValue = moveAction.ReadValue<Vector2>();
+        } else
+        {
+            // If the player is not enabled, we should not move or jump
+            moveValue = Vector2.zero;
+        }
 
         if (moveValue.x > 0)
             LookRight();
@@ -104,7 +114,7 @@ public class MovementController : MonoBehaviour
 
     private bool CanJump()
     {
-        return _canJump;
+        return _canJump && _isEnabled;
     }
 
     private bool IsWallDetected()
@@ -115,7 +125,7 @@ public class MovementController : MonoBehaviour
             var cols = Physics.OverlapBox(new Vector3(col.bounds.max.x + 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
-                if (c.gameObject != gameObject)
+                if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                     return true;
             }
         }
@@ -124,7 +134,7 @@ public class MovementController : MonoBehaviour
             var cols = Physics.OverlapBox(new Vector3(col.bounds.min.x - 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
-                if (c.gameObject != gameObject)
+                if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                     return true;
             }
         }
@@ -137,10 +147,15 @@ public class MovementController : MonoBehaviour
 
         foreach (var c in cols)
         {
-            if (c.gameObject != gameObject)
+            if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                 return true;
         }
 
         return false;
+    }
+
+    public void SetEnabled(bool enabled)
+    {
+        _isEnabled = enabled;
     }
 }
