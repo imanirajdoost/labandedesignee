@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}" SchemaVersion="123" RootDocumentID="{C9F66B46-BB04-453F-88A1-025CF0BEB14E}" ParentDocumentID="{C9F66B46-BB04-453F-88A1-025CF0BEB14E}">
+	<States>
+		<WorkUnit Name="Main" ID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}" OwnerID="{C9F66B46-BB04-453F-88A1-025CF0BEB14E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="9"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="ST_TimeFreeze" ID="{D6763E14-CB31-4742-89CD-8FDE7EA797B5}">
+					<ChildrenList>
+						<State Name="None" ID="{0B7828A9-0D06-4FD9-B337-7012344E9AAE}"/>
+						<State Name="ST_TimeFreeze_On" ID="{2E4253E7-F76E-4C7E-B2AA-BD33696CC60C}"/>
+						<State Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

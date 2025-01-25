@@ -11,12 +11,20 @@ public class MovementController : MonoBehaviour
     private CapsuleCollider col;
 
     [SerializeField] private float _speed = 10;
+    private float _originalSpeed;
 
     [SerializeField] private float _jumpForce = 10;
 
     [SerializeField] private float _stopJumpingTime = 0.5f;
 
     [SerializeField] private float _gravityMultiplier = 10;
+    private float _originalGravityMultiplier;
+
+    [SerializeField] private Animator _animator;
+
+    [Header("Slow motion options")]
+    [SerializeField] private float _slowMotionSpeed = 200;
+    [SerializeField] private float _slowMotionGravityMultiplier = 0.1f;
 
     private Vector2 _moveValue;
 
@@ -26,12 +34,17 @@ public class MovementController : MonoBehaviour
 
     private Coroutine _jumpCoroutine;
 
+    private bool _isSlowMotion = false;
+
     private bool _isEnabled = true;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
+
+        _originalSpeed = _speed;
+        _originalGravityMultiplier = _gravityMultiplier;
     }
 
     private void Start()
@@ -87,6 +100,9 @@ public class MovementController : MonoBehaviour
             // simulate gravity
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y - (_gravityMultiplier * Time.deltaTime), rb.linearVelocity.z);
         }
+
+        _animator.SetFloat("Speed", Mathf.Abs(_moveValue.x));
+        _animator.SetBool("IsGrounded", isGrounded);
     }
 
     private void FixedUpdate()
@@ -119,7 +135,7 @@ public class MovementController : MonoBehaviour
 
     private bool CanJump()
     {
-        return _canJump && _isEnabled;
+        return _canJump && _isEnabled && !_isSlowMotion;
     }
 
     private bool IsWallDetected()
@@ -162,5 +178,22 @@ public class MovementController : MonoBehaviour
     public void SetEnabled(bool enabled)
     {
         _isEnabled = enabled;
+    }
+
+    public void SetSlowMotion(bool slowMotion)
+    {
+        _isSlowMotion = slowMotion;
+        if (slowMotion)
+        {
+            if(rb.linearVelocity.y > 0)
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0.2f, rb.linearVelocity.z);
+            _speed = _slowMotionSpeed;
+            _gravityMultiplier = _slowMotionGravityMultiplier;
+        }
+        else
+        {
+            _speed = _originalSpeed;
+            _gravityMultiplier = _originalGravityMultiplier;
+        }
     }
 }
