@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{498BD7FC-7CF9-4CCA-A6CE-AADA5BF14CB1}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{498BD7FC-7CF9-4CCA-A6CE-AADA5BF14CB1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{498BD7FC-7CF9-4CCA-A6CE-AADA5BF14CB1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{4C86513D-8685-486C-BDF1-540B8CC905F3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{4E025143-84BF-438B-B92F-F673684B5FAC}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}"/>
+						<CurrentStateRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

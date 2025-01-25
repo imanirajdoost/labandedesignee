@@ -29,6 +29,22 @@ namespace AK
 
     namespace STATES
     {
+        namespace ST_GAMEFLOW
+        {
+            static const AkUniqueID GROUP = 1642548553U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_GAMEFLOW_LEVEL_1 = 36359126U;
+                static const AkUniqueID ST_GAMEFLOW_LEVEL_2 = 36359125U;
+                static const AkUniqueID ST_GAMEFLOW_LEVEL_3 = 36359124U;
+                static const AkUniqueID ST_GAMEFLOW_LEVEL_4 = 36359123U;
+                static const AkUniqueID ST_GAMEFLOW_LEVEL_5 = 36359122U;
+                static const AkUniqueID ST_GAMEFLOW_MAINMENU = 4047794154U;
+            } // namespace STATE
+        } // namespace ST_GAMEFLOW
+
         namespace ST_TIMEFREEZE
         {
             static const AkUniqueID GROUP = 564244989U;
