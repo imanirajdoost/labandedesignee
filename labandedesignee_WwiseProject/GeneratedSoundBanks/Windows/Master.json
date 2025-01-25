@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{3BAD584B-42CE-3571-4DD2-064772AA6986}",
+    "Hash": "{2905837D-E1F1-72EA-8566-BB5D21ED9EE2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -263,6 +263,69 @@
       ]
      },
      {
+      "Id": "1838668217",
+      "Name": "ST_Init",
+      "ObjectPath": "\\Events\\Default Work Unit\\Main\\Set_State\\ST_Init",
+      "GUID": "{A1954153-F5D3-4988-89A5-40287FF1C963}",
+      "Color": "9",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "564244989",
+        "Id": "3646474335",
+        "Name": "ST_TimeFreeze_Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\ST_TimeFreeze_Off",
+        "GUID": "{2596D5FD-1407-48EB-9794-F2D27480263C}",
+        "Color": "9"
+       }
+      ]
+     },
+     {
+      "Id": "3646474335",
+      "Name": "ST_TimeFreeze_Off",
+      "ObjectPath": "\\Events\\Default Work Unit\\Main\\Set_State\\ST_TimeFreeze_Off",
+      "GUID": "{7A25B7F3-C1D5-4B10-B65E-5D15761D4ECE}",
+      "Color": "9",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "564244989",
+        "Id": "3646474335",
+        "Name": "ST_TimeFreeze_Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\ST_TimeFreeze_Off",
+        "GUID": "{2596D5FD-1407-48EB-9794-F2D27480263C}",
+        "Color": "9"
+       }
+      ]
+     },
+     {
+      "Id": "4255932043",
+      "Name": "ST_TimeFreeze_On",
+      "ObjectPath": "\\Events\\Default Work Unit\\Main\\Set_State\\ST_TimeFreeze_On",
+      "GUID": "{9C647FD9-522C-4C84-9589-6BDC4AEA1901}",
+      "Color": "9",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "564244989",
+        "Id": "4255932043",
+        "Name": "ST_TimeFreeze_On",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\ST_TimeFreeze_On",
+        "GUID": "{2E4253E7-F76E-4C7E-B2AA-BD33696CC60C}",
+        "Color": "9"
+       }
+      ]
+     },
+     {
       "Id": "871501620",
       "Name": "Stop_Sound_Test_2D_LP",
       "ObjectPath": "\\Events\\Default Work Unit\\Main\\Z_Test\\Stop_Sound_Test_2D_LP",
@@ -273,9 +336,41 @@
       "DurationMin": "0",
       "DurationMax": "0"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "564244989",
+      "Name": "ST_TimeFreeze",
+      "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze",
+      "GUID": "{D6763E14-CB31-4742-89CD-8FDE7EA797B5}",
+      "Color": "9",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\None",
+        "GUID": "{0B7828A9-0D06-4FD9-B337-7012344E9AAE}",
+        "Color": "9"
+       },
+       {
+        "Id": "3646474335",
+        "Name": "ST_TimeFreeze_Off",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\ST_TimeFreeze_Off",
+        "GUID": "{2596D5FD-1407-48EB-9794-F2D27480263C}",
+        "Color": "9"
+       },
+       {
+        "Id": "4255932043",
+        "Name": "ST_TimeFreeze_On",
+        "ObjectPath": "\\States\\Default Work Unit\\Main\\ST_TimeFreeze\\ST_TimeFreeze_On",
+        "GUID": "{2E4253E7-F76E-4C7E-B2AA-BD33696CC60C}",
+        "Color": "9"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{A527DEE7-CAE1-BFE6-7FF3-D88F12080493}"
+  "FileHash": "{F5403061-529E-DC35-4E65-A099DE55D556}"
  }
 }

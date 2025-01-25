@@ -2,9 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	604897336	Play_SFX_Player_Jump			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Jump	
 	697467967	Play_Sound_Test_2D			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D	
 	871501620	Stop_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP	
+	1838668217	ST_Init			\Default Work Unit\Main\Set_State\ST_Init	
 	2002635633	Play_SFX_Player_Footsteps			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps	
 	2037741043	Play_SFX_Player_Land			\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Land	
 	2510895262	Play_Sound_Test_2D_LP			\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP	
+	3646474335	ST_TimeFreeze_Off			\Default Work Unit\Main\Set_State\ST_TimeFreeze_Off	
+	4255932043	ST_TimeFreeze_On			\Default Work Unit\Main\Set_State\ST_TimeFreeze_On	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	99383825	SFX_Player_Land	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\AA\{AA23AEC3-2972-2A07-9396-7F53ABC9BC90}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Land		11233

@@ -65,12 +65,12 @@
 						</Folder>
 						<Folder Name="SFX_Bubble" ID="{A9C4718F-06FA-4744-8C2F-A245456C4693}" ShortID="743198062">
 							<ChildrenList>
-								<Event Name="Play_SFX_Bubble_Dream_Spawn" ID="{27D227CB-A01B-48E9-A01F-96A40FF3214B}">
+								<Event Name="Play_SFX_Bubble_Balloon_Spawn" ID="{27D227CB-A01B-48E9-A01F-96A40FF3214B}">
 									<ChildrenList>
 										<Action Name="" ID="{D3D1457C-5289-4BB9-A736-EE0BEC18D6F1}" ShortID="133437849">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Bubble_Dream_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+													<ObjectRef Name="SFX_Bubble_Balloon_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -87,18 +87,18 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_SFX_Bubble_Dream_Fly_LP" ID="{3C49B8A4-DA13-4423-8057-E89AA1DE59E7}">
+								<Event Name="Play_SFX_Bubble_Balloon_Fly_LP" ID="{3C49B8A4-DA13-4423-8057-E89AA1DE59E7}">
 									<ChildrenList>
 										<Action Name="" ID="{D3CC6798-8E83-48FB-A8B0-056F269A2617}" ShortID="636544026">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Bubble_Dream_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+													<ObjectRef Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Stop_SFX_Bubble_Dream_Fly_LP" ID="{65AAA660-A32E-45E4-A987-F49B0FA723E3}">
+								<Event Name="Stop_SFX_Bubble_Balloon_Fly_LP" ID="{65AAA660-A32E-45E4-A987-F49B0FA723E3}">
 									<ChildrenList>
 										<Action Name="" ID="{871EF6AD-C8FC-4450-A354-EB4D5383B8DF}" ShortID="103722272">
 											<PropertyList>
@@ -106,18 +106,29 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Bubble_Dream_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+													<ObjectRef Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_SFX_Bubble_Violent_Break" ID="{FBC2C5AC-7E21-411A-8390-BD487C45EE67}">
+								<Event Name="Play_SFX_Bubble_Explosive_Successful" ID="{FBC2C5AC-7E21-411A-8390-BD487C45EE67}">
 									<ChildrenList>
 										<Action Name="" ID="{E405D48F-0D74-4368-B33B-D3C2BCB1DA23}" ShortID="39003981">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Bubble_Violent_Break" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+													<ObjectRef Name="SFX_Bubble_Explosive_Successful" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Bubble_Explosive_Missed" ID="{68DB5E0B-BCEC-401B-9EA3-7189B2057B7D}">
+									<ChildrenList>
+										<Action Name="" ID="{088FA199-8686-4B3F-8049-C533AAD2A79C}" ShortID="851102957">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Explosive_Missed" ID="{991E88A9-FBD2-41AB-A55B-F6A9379D12CB}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -284,6 +295,56 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Sound_Test_LP" ID="{223E5A81-3B9F-4D11-8D8B-FEE913699894}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Set_State" ID="{4D6CB8B1-68D6-467E-A379-081556FCF232}" ShortID="797462065">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="9"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="ST_TimeFreeze_On" ID="{9C647FD9-522C-4C84-9589-6BDC4AEA1901}">
+							<ChildrenList>
+								<Action Name="" ID="{AC34F0C5-8DD3-4527-9B27-425A3B82F263}" ShortID="369347087">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_TimeFreeze_On" ID="{2E4253E7-F76E-4C7E-B2AA-BD33696CC60C}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ST_TimeFreeze_Off" ID="{7A25B7F3-C1D5-4B10-B65E-5D15761D4ECE}">
+							<ChildrenList>
+								<Action Name="" ID="{D2B4B313-B6AA-460B-9774-87A41ACFDC6C}" ShortID="596239147">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ST_Init" ID="{A1954153-F5D3-4988-89A5-40287FF1C963}">
+							<ChildrenList>
+								<Action Name="" ID="{A7D9D884-4F79-4385-AC0B-6BB1459871BB}" ShortID="723079287">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

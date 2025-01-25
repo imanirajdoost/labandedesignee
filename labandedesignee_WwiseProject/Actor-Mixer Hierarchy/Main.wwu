@@ -512,7 +512,7 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SFX_Bubble_Violent_Break" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" ShortID="674544126">
+								<RandomSequenceContainer Name="SFX_Bubble_Explosive_Successful" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" ShortID="674544126">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -522,7 +522,7 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SFX_Bubble_Dream_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" ShortID="649039676">
+								<RandomSequenceContainer Name="SFX_Bubble_Balloon_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" ShortID="649039676">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -532,7 +532,7 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<Sound Name="SFX_Bubble_Dream_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" ShortID="810625997">
+								<Sound Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" ShortID="810625997">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -542,6 +542,16 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
+								<RandomSequenceContainer Name="SFX_Bubble_Explosive_Missed" ID="{991E88A9-FBD2-41AB-A55B-F6A9379D12CB}" ShortID="729008243">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SFX_Entity" ID="{1B44EB3B-D8F7-42F5-9312-731568B0BE88}" ShortID="236778120">
