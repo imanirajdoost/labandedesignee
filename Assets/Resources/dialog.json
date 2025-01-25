@@ -31,6 +31,196 @@
 				"line": "I'll be alright."
 			}
 		]
+	},
+	{
+		"index": 4,
+		"line": "Running ahead aimlessly. Typical.",
+		"tone": "MOCK"
+	},
+	{
+		"index": 5,
+		"line": "You're going to get us lost. Again.",
+		"tone": "HARSH",
+		"replies": [
+			{
+				"type": "COLD",
+				"line": "Nobody asked for your opinion"
+			}
+		]
+	},
+	{
+		"index": 6,
+		"line": "You don't even know where we are. You'll never make it through the night.",
+		"tone": "HARSH",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "Hardly the first time I slept outdoors."
+			},
+			{
+				"type": "COLD",
+				"line": "Or worse, I'll make it through and you'll still be here."
+			}
+		]
+	},
+	{
+		"index": 7,
+		"line": "You'll end up just another girl disappeared in the clouds.",
+		"tone": "HARSH",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "Don't worry, I'll find my way."
+			},
+			{
+				"type": "COLD",
+				"line": "Why don't you disappear in a crack in the ground and never show your face again?"
+			}
+		]
+	},
+	{
+		"index": 8,
+		"line": "You say these things but you don't mean them.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I'm quite capable of knowing my own mind."
+			},
+			{
+				"type": "COLD",
+				"line": "Oh, I do mean them. Fiercely."
+			}
+		]
+	},
+	{
+		"index": 9,
+		"line": "Well, that's it. No chance you'll make it through that.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "AGGR",
+				"line": "Shut the hell up!"
+			}
+		]
+	}
+,
+	{
+		"index": 10,
+		"line": "Oh, she's pissed now. Bravo. That's soooo constructive.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I have good reasons to feel that way."
+			},
+			{
+				"type": "COLD",
+				"line": "Not fun to reap what you sow, is it?"
+			},
+			{
+				"type": "AGGR",
+				"line": "Keep that up, I'll show you what destructive looks like!"
+			}
+		]
+	},
+	{
+		"index": 11,
+		"line": "Got that out of your system? Little tantrum over?",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I don't need to justify myself."
+			},
+			{
+				"type": "COLD",
+				"line": "Better to throw tantrums than to end up like you."
+			},
+			{
+				"type": "AGGR",
+				"line": "You've seen nothing yet, you little creep!"
+			}
+		]
+	},
+	{
+		"index": 12,
+		"line": "You know, if you had self-control, maybe that little mishap back home wouldn't have happened.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "That's not fair."
+			},
+			{
+				"type": "COLD",
+				"line": "Don't you dare bring that up."
+			},
+			{
+				"type": "AGGR",
+				"line": "I have the self-control not to blacken your eye!"
+			}
+		]
+	},
+	{
+		"index": 13,
+		"line": "Then again, careful never really was your thing, right?",
+		"tone": "HARSH",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "Everyone makes mistakes."
+			},
+			{
+				"type": "COLD",
+				"line": "Not careful enough to avoid meeting you, tragically."
+			},
+			{
+				"type": "AGGR",
+				"line": "You be careful what you say if you want to keep your teeth!"
+			}
+		]
+	},
+	{
+		"index": 14,
+		"line": "What are you mad at me for? It was your fault.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I was only trying to help."
+			},
+			{
+				"type": "COLD",
+				"line": "Don't start commenting things you know nothing about."
+			},
+			{
+				"type": "AGGR",
+				"line": "You wouldn't recognize fault if I slapped your face with it!"
+			}
+		]
+	},
+	{
+		"index": 15,
+		"line": "So you run away from your problems rather than confront them. So predictable.",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "It's better not to cause unnecessary conflicts."
+			},
+			{
+				"type": "COLD",
+				"line": "If I wanted to talk about it, I'd go to someone I actually respect."
+			},
+			{
+				"type": "AGGR",
+				"line": "If you insist, I can confront my hand to your head!"
+			}
+		]
 	}
 ]
 }
+
+
+

@@ -3,11 +3,9 @@ ENTITY: "Hey."
 ENTITY: "Hey, idiot."
 
 ENTITY: "Do you even know were you're going?"
-PLAYER: 
 	>SOFT: "I'm fine, I'll figure it out."
 
 ENTITY: "Wow, that's careless."
-PLAYER: 
 	>SOFT: "I'll be alright."
 
 -------------
@@ -26,7 +24,7 @@ ENTITY: "You'll end up just another girl disappeared in the clouds."
 	>COLD: "Why don't you disappear in a crack in the ground and never show your face again?"
 	
 ENTITY: "You say these things but you don't mean them.
-	>SOFT: "Im quite capable of knowing my own mind."
+	>SOFT: "I'm quite capable of knowing my own mind."
 	COLD: "Oh, I do mean them. Fiercely."
 
 
@@ -38,33 +36,39 @@ ENTITY: "Well, that's it. No chance you'll make it through that."
 ENTITY: "Oh, she's pissed now. Bravo. That's soooo constructive."
 	SOFT: "I have good reasons to feel that way."
 	COLD: "Not fun to reap what you sow, is it?"
-	>AGGR: "Just you wait, I'll show you what destructive looks like!"
+	>AGGR: "Keep that up, I'll show you what destructive looks like!"
 	
 ENTITY: "Got that out of your system? Little tantrum over?"
 	SOFT: "I don't need to justify myself."
-	>COLD: "Better to throw tantrums than to end up hollow like you."
+	>COLD: "Better to throw tantrums than to end up like you."
 	AGGR: "You've seen nothing yet, you little creep!"
 	
-ENTITY: "You know, if you didn't act so hysterical, maybe that little mishap back home wouldn't have happened."
+ENTITY: "You know, if you had self-control, maybe that little mishap back home wouldn't have happened."
 	>SOFT: "That's not fair."
-	COLD: "
-	AGGR: "Another mishap might happen to your skull if you don't can it!"
+	COLD: "Don't you dare bring that up."
+	AGGR: "I have the self-control not to blacken your eye!"
 
-ENTITY:
-	SOFT: 
-	COLD: 
-	>AGGR:
+ENTITY: "Then again, careful never really was your thing, right?"
+	SOFT: "Everyone makes mistakes."
+	COLD: "Not careful enough to avoid meeting you, tragically.
+	>AGGR: "You be careful what you say if you want to keep your teeth!"
 	
 ENTITY: "What are you mad at me for? It was your fault."
-	SOFT:
-	>COLD:
-	AGGR:
+	SOFT: "I was only trying to help."
+	>COLD: "Don't start commenting things you know nothing about."
+	AGGR: "You wouldn't recognize fault if I slapped your face with it!"
+
+ENTITY: "So you run away from your problems rather than confront them. So predictable."
+	SOFT: "It's better not to cause unnecessary conflicts."
+	COLD: "If I wanted to talk about it, I'd go to someone I actually respect."
+	>AGGR: "If you insist, I can confront my hand to your head!"
 	
 
 -------------
 
+ENTITY: "Come to think of it, you're right. Don't talk about it."
 
-ENTITY: "You'll screw that up like you screw everything up."
+ENTITY: "You'd screw that up like you screw everything up."
 
 ENTITY: "You're a failure. You know it, I know it, everybody knows it."
 
@@ -73,20 +77,22 @@ ENTITY: "That's why none of them will even talk to you anymore."
 	COLD: "If only you would do the same."
 	AGGR: "
 
-ENTITY: "At the end of the day, I'm the only who still cares."
-	SOFT: "But I still care about them."
-	COLD: "Meanwhile, literally no one cares about you."
-	AGGR: "You wouldn't know care if I smacked you on the head with it!"
-
 --------------
 	
 ENTITY: "Admit it : it's better that way."
 
-ENTITY: "If you stayed it would only have become worse for you."
+ENTITY: "If you stayed it would only have become worse for you and them."
 
-"Why are YOU so interested in my well-being all of a sudden?"
-"You claim they all hate me but you don't know shit about them!"
-"You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
+ENTITY: "At the end of the day, I'm the only who still wants you around."
+	AGGR: "Enough! What are you even doing here?"
+	
+ENTITY: "Huh?"
+	AGGR: "I didn't ask for this! I didn't ask for you to squat into my head!"
+
+ENTITY: "Wow, where's that coming from? I'm only looking out for you."
+	AGGR: "And why are YOU so interested in my well-being all of a sudden?"
+	AGGR: "You claim they all hate me but you don't know shit about them!"
+	AGGR: "You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
 
 "I've had enough of you. I'm going back and I'm going to fix it."
 
@@ -101,7 +107,7 @@ GENERIC:
 ENTITY: "You'll get it. Eventually. Probably not, though."
 	SOFT: "I will."
 	COLD: "And you'll never get anything from anyone, so how's that?"
-	AGGR: "You'll get my hand in your face if you don't quit it!"
+	AGGR: "You'll get my fist in your face if you don't quit it!"
 
 ENTITY: "Bet you wish you had listened to me, now."
 	SOFT: "I'm in no rush."
@@ -119,29 +125,6 @@ ENTITY: "You only got that far through luck."
 	AGGR: "Keep that up and not even luck will save you!"
 	
 ENTITY: "I wouldn't have done that if I were you."
-PLAYER: 
 	SOFT: "I'll get it this time."
-	COLD: "If you were me, I'd be you, and if I were you, I would throw myself off that cliff."
-	AGGR: "
-	
-ENTITY: "
-	SOFT: "
-	COLD: "
-	AGGR: "
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-ENTITY: 
-	SOFT: 
-	COLD: 
-	AGGR: 
+	COLD: "And if I were you, I would throw myself off that cliff."
+	AGGR: "Can it before I make you!"
