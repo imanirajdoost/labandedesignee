@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     [Header("Slow Motion")]
     [SerializeField] private float _slowMotionTime = 5;
 
+    private Coroutine _slowMotionCoroutine;
+
     private void Awake()
     {
         _movementController = GetComponent<MovementController>();
@@ -41,10 +43,10 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag("Dialog"))
         {
             var dialogTrigger = other.gameObject.GetComponent<DialogTrigger>();
-            if (dialogTrigger.IsAlreadyTriggered)
+            if (dialogTrigger.TriggerCount > 0 && dialogTrigger.ShouldTriggerOnce)
                 return;
 
-            dialogTrigger.SetAlreadyTriggered();
+            dialogTrigger.SetTriggered();
             DialogManager.Instance.ShowDialog(dialogTrigger.Index);
 
 
@@ -53,17 +55,27 @@ public class PlayerManager : MonoBehaviour
 
             if (dialogTrigger.SlowMotion)
             {
-                StartCoroutine(SetSlowMotionFor(_slowMotionTime));
+                if (_slowMotionCoroutine != null)
+                    StopCoroutine(_slowMotionCoroutine);
+
+                _slowMotionCoroutine = StartCoroutine(SetSlowMotionFor(_slowMotionTime));
             }
             
         }
     }
 
+    public void ForceStopSlowMotion()
+    {
+        if(_slowMotionCoroutine != null)
+            StopCoroutine(_slowMotionCoroutine);
+        _movementController.SetSlowMotion(false);
+    }
+
     private IEnumerator SetSlowMotionFor(float t)
     {
-        Time.timeScale = 0.5f;
+        _movementController.SetSlowMotion(true);
         yield return new WaitForSecondsRealtime(t);
-        Time.timeScale = 1;
+        _movementController.SetSlowMotion(false);
     }
 
     private void FreezePlayer(bool freeze)

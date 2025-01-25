@@ -136,3 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogIndex: 0
+  _freezePlayer: 0
+  _slowMotion: 1
+  _shouldTriggerOnce: 0

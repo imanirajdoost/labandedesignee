@@ -135,4 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b2443cf78beb94994b374542c07121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogIndex: 1
+  dialogIndex: 0
+  _freezePlayer: 1
+  _slowMotion: 0
+  _shouldTriggerOnce: 1
