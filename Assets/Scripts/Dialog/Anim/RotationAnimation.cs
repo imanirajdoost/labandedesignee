@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class DialogTriggerAnimator : MonoBehaviour
+public class RotationAnimation : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed = 0.2f;
     private void Start()
