@@ -2,25 +2,33 @@
 	"dialogData": [
 	{
 		"index": 0,
-		"line": "dialog line with no replies",
-		"tone": "MOCK"
+		"line": "Hey.",
+		"tone": "HARSH"
 	},
 	{
 		"index": 1,
-		"line": "dialog line",
-		"tone": "HARSH",
+		"line": "Hey, idiot.",
+		"tone": "HARSH"
+	},
+	{
+		"index": 2,
+		"line": "Do you even know were you're going?",
+		"tone": "MOCK",
 		"replies": [
 			{
 				"type": "SOFT",
-				"line": "SOFT dialog line"
-			},
+				"line": "I'm fine, I'll figure it out."
+			}
+		]
+	},
+	{
+		"index": 3,
+		"line": "Wow, that's careless.",
+		"tone": "MOCK",
+		"replies": [
 			{
-				"type": "COLD",
-				"line": "COLD dialog line"
-			},
-			{
-				"type": "AGGR",
-				"line": "AGGRESSIVE dialog line"
+				"type": "SOFT",
+				"line": "I'll be alright."
 			}
 		]
 	}
