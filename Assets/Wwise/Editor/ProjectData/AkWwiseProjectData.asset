@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 23d0da6a0a81af4d81917a083c32a0a9
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729467427
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 537c4474852a9c44a84104bf85c332ea
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729616797
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 231f20558687fd4bb24fa8306b1169bd
     GuidInternal: 
-    m_lastTime: -8584637935094775808
+    m_lastTime: -8584637790360246047
     List:
     - name: Master
       guid: 7630fb9675e32541a32720f4f67c13f5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e8ccfcd9bf771947bc322eafbedae234
     GuidInternal: 
-    m_lastTime: -8584638005574775808
+    m_lastTime: -8584637838729674458
     List: []
   - PhysicalPath: Events\Main.wwu
     PathAndIcons:
@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584637935634775808
+    m_lastTime: -8584637838729674458
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -152,6 +152,448 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_Bubble_Dream_Fly_LP
+      guid: a4b8493c13da23448057e89aa1de59e7
+      id: 3970260177
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Dream_Fly_LP
+        ObjectType: 3
+        guid: a4b8493c13da23448057e89aa1de59e7
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Dream_Fly_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Bubble_Dream_Spawn
+      guid: cb27d2271ba0e948a01f96a40ff3214b
+      id: 1168453880
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Dream_Spawn
+        ObjectType: 3
+        guid: cb27d2271ba0e948a01f96a40ff3214b
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Dream_Spawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Bubble_Ice_Spawn
+      guid: 157213235ef111479b6a0d9c224c5c2d
+      id: 1920689292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Ice_Spawn
+        ObjectType: 3
+        guid: 157213235ef111479b6a0d9c224c5c2d
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Spawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Bubble_Violent_Break
+      guid: acc5c2fb217e1a418390bd487c45ee67
+      id: 917311644
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Violent_Break
+        ObjectType: 3
+        guid: acc5c2fb217e1a418390bd487c45ee67
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Violent_Break
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Entity_Agressive
+      guid: f05e5000619c7142a7658b5c95f6237f
+      id: 1974143923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      - ElementName: Play_SFX_Entity_Agressive
+        ObjectType: 3
+        guid: f05e5000619c7142a7658b5c95f6237f
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Agressive
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Entity_Mocking
+      guid: 16f1532fa70c614ea89b630fea3d0ec3
+      id: 2765050844
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      - ElementName: Play_SFX_Entity_Mocking
+        ObjectType: 3
+        guid: 16f1532fa70c614ea89b630fea3d0ec3
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Mocking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Entity_Neutral
+      guid: 979a86ee5a09414095220573a6f56cf7
+      id: 4282382247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      - ElementName: Play_SFX_Entity_Neutral
+        ObjectType: 3
+        guid: 979a86ee5a09414095220573a6f56cf7
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Neutral
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Entity_Sad
+      guid: 423418172d77004f93d2ed0cce90c31e
+      id: 856030186
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      - ElementName: Play_SFX_Entity_Sad
+        ObjectType: 3
+        guid: 423418172d77004f93d2ed0cce90c31e
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Sad
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Climb
+      guid: e9080e63b8857840a675143b1b7f2406
+      id: 859306715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Climb
+        ObjectType: 3
+        guid: e9080e63b8857840a675143b1b7f2406
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Climb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Death
+      guid: 6cfa94f519cc5547b98131871f8c590d
+      id: 1591758634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Death
+        ObjectType: 3
+        guid: 6cfa94f519cc5547b98131871f8c590d
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Footsteps
+      guid: b93a5a7ffb01414eb349203e0d2d5d7d
+      id: 2002635633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Footsteps
+        ObjectType: 3
+        guid: b93a5a7ffb01414eb349203e0d2d5d7d
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Jump
+      guid: a0564a565d9cdc499b8a71a00a418eda
+      id: 604897336
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Jump
+        ObjectType: 3
+        guid: a0564a565d9cdc499b8a71a00a418eda
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Land
+      guid: e05d8583315bfb40aa4a52036edfa347
+      id: 2037741043
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Land
+        ObjectType: 3
+        guid: e05d8583315bfb40aa4a52036edfa347
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Land
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Player_Respawn
+      guid: acf9a34b2e176a48acd1fa1388ef0011
+      id: 3740565200
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      - ElementName: Play_SFX_Player_Respawn
+        ObjectType: 3
+        guid: acf9a34b2e176a48acd1fa1388ef0011
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Respawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_TimeFreeze_Imminent
+      guid: 26aaac574602dc4fa3beb22b46ca0944
+      id: 1113540954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_TimeFreeze
+        ObjectType: 4
+        guid: 57e456942a34144ab8da6bb71beef7fc
+      - ElementName: Play_SFX_TimeFreeze_Imminent
+        ObjectType: 3
+        guid: 26aaac574602dc4fa3beb22b46ca0944
+      Path: Events\Default Work Unit\Main\SFX\SFX_TimeFreeze\Play_SFX_TimeFreeze_Imminent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_TimeFreeze_Start
+      guid: a16883015aa994489d34b2bf3f3eb2b0
+      id: 2914343857
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_TimeFreeze
+        ObjectType: 4
+        guid: 57e456942a34144ab8da6bb71beef7fc
+      - ElementName: Play_SFX_TimeFreeze_Start
+        ObjectType: 3
+        guid: a16883015aa994489d34b2bf3f3eb2b0
+      Path: Events\Default Work Unit\Main\SFX\SFX_TimeFreeze\Play_SFX_TimeFreeze_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_TimeFreeze_Stop
+      guid: 6152cb369b923341a6e1ae540424fc72
+      id: 272295723
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_TimeFreeze
+        ObjectType: 4
+        guid: 57e456942a34144ab8da6bb71beef7fc
+      - ElementName: Play_SFX_TimeFreeze_Stop
+        ObjectType: 3
+        guid: 6152cb369b923341a6e1ae540424fc72
+      Path: Events\Default Work Unit\Main\SFX\SFX_TimeFreeze\Play_SFX_TimeFreeze_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Sound_Test_2D
       guid: 8900d37b69c17742b06e38d7ed513309
       id: 697467967
@@ -173,8 +615,8 @@ MonoBehaviour:
         guid: 8900d37b69c17742b06e38d7ed513309
       Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D
       maxAttenuation: 0
-      maxDuration: 6.8315
-      minDuration: 6.8315
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Sound_Test_2D_LP
       guid: 5e99afcaeae46249bad7365bfc29bd3d
       id: 2510895262
@@ -196,8 +638,8 @@ MonoBehaviour:
         guid: 5e99afcaeae46249bad7365bfc29bd3d
       Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Sound_Test_3D
       guid: 975f12bc1bd2b54eb8f5b03971ca78ab
       id: 680690348
@@ -241,6 +683,124 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SFX_Bubble
+      guid: 8f71c4a9fa0644478c2fa245456c4693
+      id: 2983997255
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Entity
+      guid: e18dbb4371066540a41bb90c4d3b09c1
+      id: 2171686936
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Player
+      guid: 5964da7d9317ed43b327b22868b6f90d
+      id: 217780010
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Player
+        ObjectType: 4
+        guid: 5964da7d9317ed43b327b22868b6f90d
+      Path: Events\Default Work Unit\Main\SFX\SFX_Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_TimeFreeze
+      guid: 57e456942a34144ab8da6bb71beef7fc
+      id: 949471271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_TimeFreeze
+        ObjectType: 4
+        guid: 57e456942a34144ab8da6bb71beef7fc
+      Path: Events\Default Work Unit\Main\SFX\SFX_TimeFreeze
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_SFX_Bubble_Dream_Fly_LP
+      guid: 60a6aa652ea3e445a987f49b0fa723e3
+      id: 4223942975
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Stop_SFX_Bubble_Dream_Fly_LP
+        ObjectType: 3
+        guid: 60a6aa652ea3e445a987f49b0fa723e3
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Stop_SFX_Bubble_Dream_Fly_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Sound_Test_2D_LP
       guid: c583c89c449f5142b1ea0179708da1a8
       id: 871501620
@@ -262,8 +822,8 @@ MonoBehaviour:
         guid: c583c89c449f5142b1ea0179708da1a8
       Path: Events\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI
       guid: 66de9ab075e41243af89a0d9ce909627
       id: 1551306167
@@ -316,7 +876,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a5007eb6ec623040952ae938c43321f4
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729664562
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -330,7 +890,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 466bf6c904bb3f4588a1025cf0beb14e
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729477694
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -344,7 +904,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 83629875aea479408b112ca367ec0349
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729477694
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -358,7 +918,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: c9b12a14b3bee4479906194ee7dfb416
     GuidInternal: 
-    m_lastTime: -8584638017034775808
+    m_lastTime: -8584637838729467427
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001a000000
