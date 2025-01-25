@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6aa8950a8e297eb4fac2553cc29542cb
+guid: 0348f317e480f014ba5d9e2e6bca6650
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -36,18 +36,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Jumping
+      name: TPose
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 43
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
