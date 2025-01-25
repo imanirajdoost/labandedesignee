@@ -4,36 +4,64 @@ ENTITY: "Hey, idiot."
 
 ENTITY: "Do you even know were you're going?"
 PLAYER: 
-	SOFT: "I'm fine, I'll figure it out."
+	>SOFT: "I'm fine, I'll figure it out."
 
 ENTITY: "Wow, that's careless."
 PLAYER: 
-	SOFT: "I'll be alright."
+	>SOFT: "I'll be alright."
 
 -------------
 
 ENTITY: "Running ahead aimlessly. Typical."
 
 ENTITY: "You're going to get us lost. Again."
-	COLD: "Nobody asked for your opinion"
+	>COLD: "Nobody asked for your opinion"
 	
 ENTITY: "You don't even know where we are. You'll never make it through the night."
 	SOFT: "Hardly the first time I slept outdoors."
-	COLD: "Or worse, I'll make it through and you'll still be here."
+	>COLD: "Or worse, I'll make it through and you'll still be here."
 	
 ENTITY: "You'll end up just another girl disappeared in the clouds."
 	SOFT: "Don't worry, I'll find my way."
-	COLD: "Why don't you disappear in a crack in the ground and never show your face again?"
+	>COLD: "Why don't you disappear in a crack in the ground and never show your face again?"
 	
-ENTITY: "
-	SOFT: "
-	COLD: "
-
-
+ENTITY: "You say these things but you don't mean them.
+	>SOFT: "Im quite capable of knowing my own mind."
+	COLD: "Oh, I do mean them. Fiercely."
 
 
 -------------
 
+ENTITY: "Well, that's it. No chance you'll make it through that."
+	>AGGR: "Shut the hell up!"
+	
+ENTITY: "Oh, she's pissed now. Bravo. That's soooo constructive."
+	SOFT: "I have good reasons to feel that way."
+	COLD: "Not fun to reap what you sow, is it?"
+	>AGGR: "Just you wait, I'll show you what destructive looks like!"
+	
+ENTITY: "Got that out of your system? Little tantrum over?"
+	SOFT: "I don't need to justify myself."
+	>COLD: "Better to throw tantrums than to end up hollow like you."
+	AGGR: "You've seen nothing yet, you little creep!"
+	
+ENTITY: "You know, if you didn't act so hysterical, maybe that little mishap back home wouldn't have happened."
+	>SOFT: "That's not fair."
+	COLD: "
+	AGGR: "Another mishap might happen to your skull if you don't can it!"
+
+ENTITY:
+	SOFT: 
+	COLD: 
+	>AGGR:
+	
+ENTITY: "What are you mad at me for? It was your fault."
+	SOFT:
+	>COLD:
+	AGGR:
+	
+
+-------------
 
 
 ENTITY: "You'll screw that up like you screw everything up."
@@ -46,22 +74,18 @@ ENTITY: "That's why none of them will even talk to you anymore."
 	AGGR: "
 
 ENTITY: "At the end of the day, I'm the only who still cares."
-	SOFT: 
+	SOFT: "But I still care about them."
 	COLD: "Meanwhile, literally no one cares about you."
 	AGGR: "You wouldn't know care if I smacked you on the head with it!"
+
+--------------
 	
 ENTITY: "Admit it : it's better that way."
-	SOFT:
-	COLD:
-	AGGR:
 
 ENTITY: "If you stayed it would only have become worse for you."
-	SOFT:
-	COLD:
-	AGGR: 
 
 "Why are YOU so interested in my well-being all of a sudden?"
-"You say they all hate me but you don't know shit about them!"
+"You claim they all hate me but you don't know shit about them!"
 "You're just glad they stopped talking to me. So it's just you, me, and your dirty tricks!"
 
 "I've had enough of you. I'm going back and I'm going to fix it."
@@ -92,12 +116,12 @@ ENTITY: "That was just pathetic."
 ENTITY: "You only got that far through luck."
 	SOFT: "No, I did it by myself."
 	COLD: "If I was lucky, I'd never have met you."
-	AGGR: "Keep that up and not even luck will save you."
+	AGGR: "Keep that up and not even luck will save you!"
 	
 ENTITY: "I wouldn't have done that if I were you."
 PLAYER: 
 	SOFT: "I'll get it this time."
-	COLD: "If you were me, I'd be you, and if I were you, I'd jump off that cliff."
+	COLD: "If you were me, I'd be you, and if I were you, I would throw myself off that cliff."
 	AGGR: "
 	
 ENTITY: "
