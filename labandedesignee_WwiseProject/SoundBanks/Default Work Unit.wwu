@@ -8,7 +8,10 @@
 						<ObjectRef Name="Play_SFX_Player_Land" ID="{83855DE0-5B31-40FB-AA4A-52036EDFA347}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Sound_Test_2D_LP" ID="{9CC883C5-9F44-4251-B1EA-0179708DA1A8}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sound_Test_2D" ID="{7BD30089-C169-4277-B06E-38D7ED513309}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Bubble_Balloon_Fly_LP" ID="{3C49B8A4-DA13-4423-8057-E89AA1DE59E7}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SFX_Bubble_Balloon_Fly_LP" ID="{65AAA660-A32E-45E4-A987-F49B0FA723E3}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Set_State" ID="{4D6CB8B1-68D6-467E-A379-081556FCF232}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Bubble_Balloon_Spawn" ID="{27D227CB-A01B-48E9-A01F-96A40FF3214B}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sound_Test_2D_LP" ID="{CAAF995E-E4EA-4962-BAD7-365BFC29BD3D}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Player_Jump" ID="{564A56A0-9C5D-49DC-9B8A-71A00A418EDA}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Player_Footsteps" ID="{7F5A3AB9-01FB-4E41-B349-203E0D2D5D7D}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>

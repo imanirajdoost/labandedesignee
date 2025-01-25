@@ -110,6 +110,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{FF213902-64D8-4CED-A81A-65A5DD075ACF}" ShortID="442047430">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Balloon_Unspawn" ID="{CB19A6EF-92D5-48FE-92C5-AB4C10931346}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Play_SFX_Bubble_Explosive_Successful" ID="{FBC2C5AC-7E21-411A-8390-BD487C45EE67}">
