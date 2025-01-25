@@ -115,7 +115,7 @@ public class MovementController : MonoBehaviour
             var cols = Physics.OverlapBox(new Vector3(col.bounds.max.x + 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
-                if (c.gameObject != gameObject)
+                if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                     return true;
             }
         }
@@ -124,7 +124,7 @@ public class MovementController : MonoBehaviour
             var cols = Physics.OverlapBox(new Vector3(col.bounds.min.x - 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
-                if (c.gameObject != gameObject)
+                if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                     return true;
             }
         }
@@ -137,7 +137,7 @@ public class MovementController : MonoBehaviour
 
         foreach (var c in cols)
         {
-            if (c.gameObject != gameObject)
+            if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
                 return true;
         }
 
