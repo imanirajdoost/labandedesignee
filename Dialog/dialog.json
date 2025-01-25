@@ -1,6 +1,11 @@
 [
 	{
 		"index": 0,
+		"line": "dialog line with no replies",
+		"tone": "MOCK"
+	},
+	{
+		"index": 0,
 		"line": "dialog line",
 		"tone": "HARSH",
 		"replies": [
