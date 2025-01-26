@@ -149,6 +149,9 @@
 											</ModifierList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{EEC574AB-E184-448C-9ABC-DFB3DE896DF2}">
@@ -469,6 +472,13 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="SFX_Player_Jump" ID="{010CFDF0-BF3A-4351-9D0E-114C9D59EEE7}" ShortID="124197783">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>

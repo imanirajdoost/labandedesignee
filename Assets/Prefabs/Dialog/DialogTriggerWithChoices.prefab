@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8159399841905154365}
   - component: {fileID: 7542310249977768212}
   - component: {fileID: 2072283117780631998}
-  - component: {fileID: 8473105871647899630}
+  - component: {fileID: 3230770990180116381}
   m_Layer: 7
   m_Name: DialogTriggerWithChoices
   m_TagString: Dialog
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 0.2
---- !u!114 &8473105871647899630
+--- !u!114 &3230770990180116381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,10 +132,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6558353767392720519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b2443cf78beb94994b374542c07121, type: 3}
+  m_Script: {fileID: 11500000, guid: 377171aeb6de47d48804ba9c3d23d1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogIndex: 0
   _freezePlayer: 0
   _slowMotion: 1
   _shouldTriggerOnce: 0
+  _bubbleSoftFly: {fileID: 5080579557712693713, guid: 2f3033f63caff374d8330c78e53f530d, type: 3}
+  _bubbleAggressiveAttack: {fileID: 5130650725251581068, guid: 1d4c475a3410e28469d32dfcc35b9d48, type: 3}
+  _bubbleColdCreatePlatform: {fileID: 2642594593278969080, guid: dbb597552f7419e4fa07926589a54cde, type: 3}
+  _softTarget: {fileID: 0}
+  _playerManager: {fileID: 0}
