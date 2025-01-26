@@ -33,7 +33,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}"/>
+						<CurrentStateRef Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}"/>
 						<CurrentStateRef Name="None" ID="{0B7828A9-0D06-4FD9-B337-7012344E9AAE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

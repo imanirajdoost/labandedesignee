@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{EEDCFCE8-AFE7-42E7-91C9-131291D370DC}" ShortID="777598168">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
@@ -12,11 +13,7 @@
 								<Value>1</Value>
 							</ValueList>
 						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
