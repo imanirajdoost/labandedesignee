@@ -53,6 +53,10 @@ public class BubbleAggressive : BubbleBase
         {
             if (_targetToDestroy != null)
                 Destroy(_targetToDestroy);
+
+            AkSoundEngine.PostEvent("Play_SFX_Bubble_Aggresive", gameObject);
+
+
         }
 
         DisableObjectAfter(2);
