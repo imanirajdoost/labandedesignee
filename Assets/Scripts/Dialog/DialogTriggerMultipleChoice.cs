@@ -7,7 +7,16 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     [SerializeField] private GameObject _bubbleAggressiveAttack;
     [SerializeField] private GameObject _bubbleColdCreatePlatform;
 
+    [SerializeField] private GameObject _bubbleSoftFlyLong;
+    [SerializeField] private GameObject _bubbleAggressiveAttackLong;
+    [SerializeField] private GameObject _bubbleColdCreatePlatformLong;
+
     [SerializeField] private Transform _softTarget;
+    [SerializeField] private Transform _coldSpawnTarget;
+    [SerializeField] private GameObject _objectToDestroy;
+
+
+    [SerializeField] private bool _spawnLong = false;
 
     [SerializeField] private PlayerManager _playerManager;
 
@@ -44,10 +53,8 @@ public class DialogTriggerMultipleChoice : DialogTrigger
                 CreateSoft();
                 break;
             case "AGGR":
-
                 CreateAggressive();
                 break;
-
                 case "COLD":
                 CreateCold();
                 break;
@@ -58,7 +65,12 @@ public class DialogTriggerMultipleChoice : DialogTrigger
 
     private void CreateSoft()
     {
-        var obj = Instantiate(_bubbleSoftFly, transform.position, Quaternion.identity);
+        GameObject obj = null;
+        if(!_spawnLong)
+            obj = Instantiate(_bubbleSoftFly, transform.position, Quaternion.identity);
+        else
+            obj = Instantiate(_bubbleSoftFlyLong, transform.position, Quaternion.identity);
+
         obj.GetComponent<BubbleSoft>().SetTarget(_softTarget);
         obj.GetComponent<BubbleBase>().DoYourThing();
 
@@ -67,14 +79,27 @@ public class DialogTriggerMultipleChoice : DialogTrigger
 
     private void CreateAggressive()
     {
-        var obj = Instantiate(_bubbleAggressiveAttack, transform.position, Quaternion.identity);
+        GameObject obj = null;
+        if (!_spawnLong)
+            obj = Instantiate(_bubbleAggressiveAttack, transform.position, Quaternion.identity);
+        else
+            obj = Instantiate(_bubbleAggressiveAttackLong, transform.position, Quaternion.identity);
+
         obj.GetComponent<BubbleBase>().DoYourThing();
+
+        Destroy(_objectToDestroy);
+
         // TODO: Set player animation
     }
 
     private void CreateCold()
     {
-        var obj = Instantiate(_bubbleColdCreatePlatform, transform.position, Quaternion.identity);
+        GameObject obj = null;
+        if (!_spawnLong)
+            obj = Instantiate(_bubbleColdCreatePlatform, _coldSpawnTarget.transform.position, Quaternion.identity);
+        else
+            obj = Instantiate(_bubbleColdCreatePlatformLong, _coldSpawnTarget.transform.position, Quaternion.identity);
+
         obj.GetComponent<BubbleBase>().DoYourThing();
     }
 }

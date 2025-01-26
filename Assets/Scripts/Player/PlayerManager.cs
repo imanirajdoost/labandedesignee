@@ -136,4 +136,22 @@ public class PlayerManager : MonoBehaviour
         _animator.SetBool("Fly", false);
         _movementController.SetEnabled(true);
     }
+
+    public void OnCreatedPlatform()
+    {
+        _movementController.SetSlowMotion(false);
+        if (_slowMotionCoroutine != null)
+            StopCoroutine(_slowMotionCoroutine);
+
+        _movementController.SetEnabled(false);
+    }
+
+    public void OnPlatformDestroyed()
+    {
+        _movementController.SetSlowMotion(false);
+        if (_slowMotionCoroutine != null)
+            StopCoroutine(_slowMotionCoroutine);
+
+        _movementController.SetEnabled(false);
+    }
 }
