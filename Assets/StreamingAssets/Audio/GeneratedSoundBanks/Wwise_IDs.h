@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_SFX_BUBBLE_AGGRESIVE = 3667547178U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_FLY_LP = 2368847281U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_SPAWN = 3514202776U;
         static const AkUniqueID PLAY_SFX_BUBBLE_ICE_DESPAWN = 3654473079U;

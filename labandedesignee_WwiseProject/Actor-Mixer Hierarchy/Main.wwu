@@ -755,6 +755,25 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Play_SFX_Bubble_Aggresive" ID="{C226962C-3CFC-4C6E-91D8-E29AB2CEAEBD}" ShortID="674544126">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5252F82C-BC0C-4232-962E-B380FF10B1D7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -763,6 +782,83 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Bubble_Agressive_01" ID="{81BA9C33-2687-434B-9684-4C80AE321669}" ShortID="1043035424">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F8E4A58B-E976-49EB-AA90-4A8866705F9F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Agressive_01" ID="{70ABCA13-EF0C-4536-BAEE-00C7961F65FC}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Agressive_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624044166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Agressive_01" ID="{70ABCA13-EF0C-4536-BAEE-00C7961F65FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Agressive_02" ID="{8E07FA8E-23FA-40C9-86D6-F27695C4219A}" ShortID="351540474">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Agressive_02" ID="{FEB83E17-58FC-4DAA-AE49-A7DC3212BF2E}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Agressive_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="96946058"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Agressive_02" ID="{FEB83E17-58FC-4DAA-AE49-A7DC3212BF2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Agressive_03" ID="{ACF11429-0582-4A8C-826B-9591975C082B}" ShortID="234845253">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Agressive_03" ID="{8B0D1663-C463-4EAF-9E1E-CEB0F4723E6B}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Agressive_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="168619188"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Agressive_03" ID="{8B0D1663-C463-4EAF-9E1E-CEB0F4723E6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_Bubble_Balloon_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" ShortID="649039676">
 									<PropertyList>
