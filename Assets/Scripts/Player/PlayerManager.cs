@@ -142,13 +142,10 @@ public class PlayerManager : MonoBehaviour
         _movementController.SetEnabled(true);
     }
 
-    public void OnCreatedPlatform()
+    public void OnCreatedPlatform(GameObject targetPlatform)
     {
-        _movementController.SetSlowMotion(false);
-        if (_slowMotionCoroutine != null)
-            StopCoroutine(_slowMotionCoroutine);
-
-        _movementController.SetEnabled(false);
+        ForceAttach();
+        _animator.SetTrigger("Climb");
     }
 
     public void OnPlatformDestroyed()
