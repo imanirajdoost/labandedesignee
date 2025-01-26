@@ -143,7 +143,7 @@ public class MovementController : MonoBehaviour
         // overlap 0.25f to the right of the player and make it less than the half of the collider size
         if (IsLookingRight())
         {
-            var cols = Physics.OverlapBox(new Vector3(col.bounds.max.x + 0.15f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.3f, col.bounds.size.z / 2 - 0.3f));
+            var cols = Physics.OverlapBox(new Vector3(col.bounds.max.x + 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
                 if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
@@ -152,7 +152,7 @@ public class MovementController : MonoBehaviour
         }
         else
         {
-            var cols = Physics.OverlapBox(new Vector3(col.bounds.min.x - 0.15f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
+            var cols = Physics.OverlapBox(new Vector3(col.bounds.min.x - 0.25f, col.bounds.center.y, col.bounds.center.z), new Vector3(0.01f, col.bounds.size.y / 2 - 0.1f, col.bounds.size.z / 2 - 0.1f));
             foreach (var c in cols)
             {
                 if (c.gameObject != gameObject && !c.gameObject.tag.Equals("Dialog"))
