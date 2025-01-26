@@ -664,13 +664,12 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-13</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{A45406CB-EDCD-4F1B-AEBE-104AC8E52223}">
 														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Min" Type="Real64" Value="-1"/>
 														</PropertyList>
 													</Modifier>
@@ -766,6 +765,20 @@
 									</ReferenceList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="SFX_Bubble_Balloon_Spawn" ID="{4F8971FE-E3B7-4ADF-BFB2-7D46B8588696}" ShortID="649039676">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A0F6EBC8-A28F-419D-A466-38CD888B88EF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -775,7 +788,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Bubble_Balloon_Spawn" ID="{1EB4A209-095B-4769-9EDF-0360D0F70588}" ShortID="322369473">
+										<Sound Name="SFX_Bubble_Balloon_Spawn_01" ID="{46FA7428-5F2E-451F-8E59-242185A6B81B}" ShortID="552647396">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E30A7A80-20CE-4785-B359-C707F8525E53}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -785,16 +807,60 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Bubble_Balloon_Spawn" ID="{229E8D0A-22F6-4B82-9535-8D172152B89C}">
+												<AudioFileSource Name="SFX_Bubble_Balloon_Spawn_01" ID="{0F9B0DA3-6BDB-4CF5-89F4-273DD163340C}">
 													<Language>SFX</Language>
-													<AudioFile>SFX_Bubble_Balloon_Spawn.wav</AudioFile>
+													<AudioFile>SFX_Bubble_Balloon_Spawn_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="732945048"/>
+														<MediaID ID="801177696"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Bubble_Balloon_Spawn" ID="{229E8D0A-22F6-4B82-9535-8D172152B89C}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Bubble_Balloon_Spawn_01" ID="{0F9B0DA3-6BDB-4CF5-89F4-273DD163340C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Balloon_Spawn_02" ID="{BD746590-F5C2-4B0F-9E3F-1BB04F8376B8}" ShortID="914891388">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Balloon_Spawn_02" ID="{E7048276-6A4A-4838-9E99-6BD4FE465977}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Balloon_Spawn_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="138170114"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Balloon_Spawn_02" ID="{E7048276-6A4A-4838-9E99-6BD4FE465977}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Balloon_Spawn_03" ID="{A92A3E4C-7E98-4753-9D94-ABD9ABFF3059}" ShortID="620249957">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Balloon_Spawn_03" ID="{08665536-914B-4E88-8A13-16B3D78BF9D6}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Balloon_Spawn_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755609911"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Balloon_Spawn_03" ID="{08665536-914B-4E88-8A13-16B3D78BF9D6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -876,6 +942,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>

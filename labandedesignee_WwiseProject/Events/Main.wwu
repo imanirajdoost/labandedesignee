@@ -102,13 +102,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{8E6BC813-9E0C-4827-8C85-73C0F9E3C814}" ShortID="661067458">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Play_SFX_Bubble_Ice_Spawn" ID="{23137215-F15E-4711-9B6A-0D9C224C5C2D}">
@@ -117,6 +110,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Bubble_Ice_Spawn" ID="{FA11852E-1FD5-4887-BEDA-0DD899643370}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{603945BD-7EF4-4682-99E8-23EDB0F7675D}" ShortID="535373050">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Ice_Despawn" ID="{CF30C420-DBE6-4AC1-9306-1171BDE014BC}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -190,9 +194,24 @@
 								<Event Name="Play_SFX_Bubble_Balloon_Despawn" ID="{06FA82F4-AFA6-4550-8A0C-3E23F593BDFE}">
 									<ChildrenList>
 										<Action Name="" ID="{464B5076-B653-4011-B461-BE87672F64AC}" ShortID="350803298">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="5"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Bubble_Balloon_Despawn" ID="{CB19A6EF-92D5-48FE-92C5-AB4C10931346}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{68748B19-DDC7-4BC5-AEF6-D81F0535F769}" ShortID="148603930">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
