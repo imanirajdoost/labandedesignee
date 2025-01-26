@@ -103,8 +103,7 @@
 				"line": "Shut the hell up!"
 			}
 		]
-	}
-,
+	},
 	{
 		"index": 10,
 		"line": "Oh, she's pissed now. Bravo. That's soooo constructive.",
@@ -215,12 +214,106 @@
 			},
 			{
 				"type": "AGGR",
-				"line": "If you insist, I can confront my fist to your face!"
+				"line": "If you insist, I can confront my fist with your face!"
+			}
+		]
+	},
+	{
+		"index": 16,
+		"line": "Come to think of it, you're right. Don't talk about it.",
+		"tone": "HARSH"
+	},
+	{
+		"index": 17,
+		"line": "You'd screw that up like you screw everything up.",
+		"tone": "HARSH"
+	},
+	{
+		"index": 18,
+		"line": "You're a failure. You know it, I know it, everybody knows it.",
+		"tone": "HARSH"
+	},
+	
+	{
+		"index": 19,
+		"line": "That's why none of them will even talk to you anymore.",
+		"tone": "WHINY",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "We'll mend things eventually."
+			},
+			{
+				"type": "COLD",
+				"line": "If only you would do the same."
+			},
+			{
+				"type": "AGGR",
+				"line": "You can talk to my knuckles, if you'd prefer!"
+			}
+		]
+	},
+	{
+		"index": 20,
+		"line": "Admit it : it's better that way.",
+		"tone": "HARSH"
+	},
+	{
+		"index": 21,
+		"line": "If you stayed it would have gone even worse.",
+		"tone": "HARSH"
+	},
+	{
+		"index": 22,
+		"line": "At the end of the day, I'm the only who still wants you around.",
+		"tone": "HARSH",
+		"replies": [
+			{
+				"type": "AGGR",
+				"line": "Enough! What are you even doing here?"
+			}
+		]
+	},
+	{
+		"index": 23,
+		"line": "Huh?",
+		"tone": "WHINY",
+		"replies": [
+			{
+				"type": "AGGR",
+				"line": "I didn't ask for this! I didn't ask for you to squat into my head!"
+			}
+		]
+	},
+	{
+		"index": 24,
+		"line": "Wow, where's that coming from? I'm only looking out for you!",
+		"tone": "MOCK",
+		"replies": [
+			{
+				"type": "AGGR",
+				"line": "You only want to play your dirty tricks on my mind!"
+			}
+		]
+	},
+	{
+		"index": 25,
+		"line": "... You need me.",
+		"tone": "WHINY",
+		"replies": [
+			{
+				"type": "SOFT",
+				"line": "I don't need you. I never needed you."
+			},
+			{
+				"type": "COLD",
+				"line": "You're just a pathetic waste of space."
+			},
+			{
+				"type": "AGGR",
+				"line": "Go back to hell where you belong!"
 			}
 		]
 	}
 ]
 }
-
-
-
