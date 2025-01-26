@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slowMotionTime: 5
-  _bubblePrefabSoft: {fileID: 5080579557712693713, guid: 2f3033f63caff374d8330c78e53f530d, type: 3}
+  _animator: {fileID: 4832509175709307944}
 --- !u!114 &7804108159294861089
 MonoBehaviour:
   m_ObjectHideFlags: 0
