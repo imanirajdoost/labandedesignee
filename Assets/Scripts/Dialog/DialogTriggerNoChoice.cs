@@ -5,7 +5,8 @@ public class DialogTriggerNoChoice : DialogTrigger
     public override void SetTriggered()
     {
         base.SetTriggered();
-        if(_shouldDestroyAfterTriggered)
+        DialogManager.Instance.ShowDialog(Index);
+        if (_shouldDestroyAfterTriggered)
             Destroy(gameObject, 2);
     }
 }
