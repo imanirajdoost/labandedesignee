@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{4FB00050-D2EF-DB16-5D75-2B53884B2EAB}",
+    "Hash": "{E5B46695-CB32-8227-0566-964E032B2418}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Entity_Speak_02.wav",
       "CachePath": "49/{49144712-FBB1-D961-5FD7-70D28EEE3D6C}.wem"
+     },
+     {
+      "Id": "80548659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Despawn_03.wav",
+      "CachePath": "75/{759DAC1F-9357-D744-2AE9-0506F7CB5F58}.wem"
      },
      {
       "Id": "99383825",
@@ -160,6 +168,14 @@
       "CachePath": "BF/{BFD70773-40CA-A173-EA19-441001A19A58}.wem"
      },
      {
+      "Id": "449474657",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Despawn_02.wav",
+      "CachePath": "BA/{BA14246C-DB51-BF5D-14DD-9069E0774128}.wem"
+     },
+     {
       "Id": "454360572",
       "Language": "SFX",
       "Streaming": "false",
@@ -246,6 +262,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Entity_Speak_08.wav",
       "CachePath": "48/{488B887E-287F-5CC3-CD86-55EFD846C2C6}.wem"
+     },
+     {
+      "Id": "797977786",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Despawn_01.wav",
+      "CachePath": "FE/{FECA3784-6600-EF12-4403-AA05B87F90E2}.wem"
      },
      {
       "Id": "807513506",
@@ -410,6 +434,27 @@
       ]
      },
      {
+      "Id": "3654473079",
+      "Name": "Play_SFX_Bubble_Ice_Despawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Main\\SFX\\SFX_Bubble\\Play_SFX_Bubble_Ice_Despawn",
+      "GUID": "{01A6CFA7-71CE-4DE0-9EF4-D05149AC04B0}",
+      "Color": "12",
+      "DurationType": "OneShot",
+      "DurationMin": "2.817625",
+      "DurationMax": "3.5676212",
+      "MediaRefs": [
+       {
+        "Id": "80548659"
+       },
+       {
+        "Id": "449474657"
+       },
+       {
+        "Id": "797977786"
+       }
+      ]
+     },
+     {
       "Id": "1920689292",
       "Name": "Play_SFX_Bubble_Ice_Spawn",
       "ObjectPath": "\\Events\\Default Work Unit\\Main\\SFX\\SFX_Bubble\\Play_SFX_Bubble_Ice_Spawn",
@@ -417,7 +462,7 @@
       "Color": "12",
       "DurationType": "OneShot",
       "DurationMin": "3.2970834",
-      "DurationMax": "3.6739376",
+      "DurationMax": "4.6288714",
       "MediaRefs": [
        {
         "Id": "147265247"
@@ -918,6 +963,6 @@
     ]
    }
   ],
-  "FileHash": "{7980169E-402F-C722-2C71-38D63F84B597}"
+  "FileHash": "{4FB06716-650B-E452-70FE-A0620679C317}"
  }
 }
