@@ -20,9 +20,7 @@ public class DialogDataFactory : MonoBehaviour
 
         _dialogDataList = JsonConvert.DeserializeObject<DialogDataList>(dialogData.text);
 
-        TextAsset dialogGeneric = Resources.Load<TextAsset>("dialog_generic");
-
-        _dialogGeneric = JsonConvert.DeserializeObject<DialogDataList>(dialogGeneric.text);
+        RefreshList();
     }
 
     public DialogData GetDialogData(int index)
@@ -35,8 +33,29 @@ public class DialogDataFactory : MonoBehaviour
         return _dialogDataList;
     }
 
-    public DialogData GetRandomGenericDialogFromList()
+    private void RefreshList()
     {
-        return _dialogGeneric.dialogData[Random.Range(0, _dialogGeneric.dialogData.Length)];
+        TextAsset dialogGeneric = Resources.Load<TextAsset>("dialog_generic");
+
+        _dialogGeneric = JsonConvert.DeserializeObject<DialogDataList>(dialogGeneric.text);
+    }
+
+    public DialogData GetRandomGenericDialogFromList(int level)
+    {
+        RefreshList();
+        // if it's the first level, remove the second and third replies from the 
+
+        var dialog = _dialogGeneric.dialogData[Random.Range(0, _dialogGeneric.dialogData.Length)];
+        // remove the second and third replies
+        if (level == 1)
+        {
+            dialog.replies[2] = null;
+            dialog.replies[1] = null;
+        }
+        else if (level == 2)
+        {
+            dialog.replies[2] = null;
+        }
+        return dialog;
     }
 }

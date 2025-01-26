@@ -7,14 +7,18 @@ public class BubbleSoft : BubbleBase
     [SerializeField]
     private Transform _targetToFlyTo;
 
-    private bool _shouldFlyToTarget;
+    private bool _shouldFlyToTarget = false;
+
+    [SerializeField] private PlayerManager _playerManager;
 
     public void AttachPlayer()
     {
-        var player = FindFirstObjectByType<PlayerManager>();
+        _playerManager = FindFirstObjectByType<PlayerManager>();
 
-        player.transform.SetParent(_playerAttachPoint);
-        player.transform.localPosition = Vector3.zero;
+        _playerManager.ForceAttach();
+
+        _playerManager.transform.SetParent(_playerAttachPoint);
+        _playerManager.transform.localPosition = Vector3.zero;
     }
 
     public override void DoYourThing()
@@ -43,6 +47,18 @@ public class BubbleSoft : BubbleBase
         if (Vector3.Distance(transform.position, _targetToFlyTo.position) < 0.001f)
         {
             _shouldFlyToTarget = false;
+            UnAttachPlayer();
         }
+    }
+
+    private void UnAttachPlayer()
+    {
+        if (_playerManager == null)
+            FindFirstObjectByType<PlayerManager>();
+
+        _playerManager.transform.SetParent(null);
+        _playerManager.ForceDetach();
+
+        Destroy(gameObject, 1);
     }
 }

@@ -150,14 +150,14 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-11</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{EEC574AB-E184-448C-9ABC-DFB3DE896DF2}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -174,6 +174,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="SFX_Player_Footsteps_01" ID="{D708135A-5475-4CE3-84EC-FE3C05818F28}" ShortID="416650236">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2B914E4D-B0B3-4A75-8F0C-8C821B7F6F41}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -196,6 +205,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_02" ID="{B6368A32-E331-420E-A897-A43F992EF76F}" ShortID="123844840">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B780DEF6-38C5-4B2D-89A0-47BF72D14D27}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -218,6 +236,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_03" ID="{96212ABB-0A04-4A95-A564-E19252FD9940}" ShortID="1062748551">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{74CF25F2-8147-4533-B534-3B798A1A8F7D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -240,6 +267,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_04" ID="{C4351C31-CF59-4BF2-9865-1BC4D7B9C56D}" ShortID="122758103">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E8F3998F-3791-41EB-A99A-527ACF65EA71}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -262,6 +298,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_05" ID="{D2DC6CF3-9141-4A2B-BA03-55C2929922E5}" ShortID="998572755">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6FFAEEF2-3A00-45E4-B121-89D6D1E663E1}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -284,6 +329,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_06" ID="{E39743C8-ED6E-4C7B-986B-08F5A2A30E1D}" ShortID="742105928">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{54EC6999-4CE7-414C-9B93-3754AE4556DB}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -306,6 +360,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_07" ID="{13BC72DD-17A2-4C7D-854D-FD5ABA422FD3}" ShortID="485604684">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8EB022E0-B4A7-46CB-8051-C39F9103BEBB}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -328,6 +391,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_08" ID="{9F6F311E-E30B-4220-99CD-075D9B508502}" ShortID="814350884">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5893FF10-206D-4899-8B32-EAF13932FB6B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -350,6 +422,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_09" ID="{4486C74D-6B49-49C2-9CB5-645356CDC607}" ShortID="109636003">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A30A7CF9-23D9-4B58-8B86-59063005918F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -372,6 +453,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_10" ID="{90FEC7C1-5711-417F-A55C-4E00BE581BF1}" ShortID="668021710">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6443CC1C-9888-4EC6-BECF-98A28801F206}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -394,6 +484,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_11" ID="{7BF37897-FE11-4744-960E-7C9DBE34F0CE}" ShortID="156555769">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EB8DAE5A-F880-4CC6-997C-2DDC9568C154}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -416,6 +515,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_12" ID="{DC23E7BF-CFC2-4B62-BE19-B1CC3F2CAD7B}" ShortID="270489324">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CE9501A4-2783-40BF-A91F-C5210A78DAB3}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -438,6 +546,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_Player_Footsteps_13" ID="{1B9943A3-AEEF-4B0E-8A5F-BB01C361176B}" ShortID="153563306">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0D7BFCF3-9CFC-4457-93D8-3B10563FEAA7}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -472,13 +589,6 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="SFX_Player_Jump" ID="{010CFDF0-BF3A-4351-9D0E-114C9D59EEE7}" ShortID="124197783">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-15</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
