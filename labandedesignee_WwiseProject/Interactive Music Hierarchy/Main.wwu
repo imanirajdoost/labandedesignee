@@ -4,6 +4,20 @@
 		<WorkUnit Name="Main" ID="{896B1158-C34B-4A14-9686-7E406822EFB2}" OwnerID="{12F5E29E-B927-42A0-9997-3DB3E9EADBF3}" PersistMode="Nested">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{EEDCFCE8-AFE7-42E7-91C9-131291D370DC}" ShortID="777598168">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
