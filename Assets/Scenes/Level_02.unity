@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 5768421694495313540, guid: dcdcfc2cb5e217f4c9b188da22f8e098, type: 3}
+      propertyPath: dialogIndex
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -241,17 +245,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.81
+      value: 58.8
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.43
+      value: -24.54
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.z
@@ -518,6 +526,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+--- !u!1001 &212571562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680334060541779797, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348889269409760751, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
+      propertyPath: m_Name
+      value: SM_Module_2x2 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de1d0b5f5d1731c43840491c55928aa4, type: 3}
 --- !u!1001 &242887185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,6 +648,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (1)
@@ -838,17 +907,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.72
+      value: 20.35
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1396,63 +1469,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d92ed7082af96b4ca4307f9b6b0d7c7, type: 3}
---- !u!1001 &934866376
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7314526620251459061, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_Name
-      value: VFX_Antagoniste
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 28.664
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.434
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.079903126
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461846582903198423, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccf28ea29cf499744ac31bab90073aba, type: 3}
 --- !u!1001 &942497068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2308,6 +2324,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (3)
@@ -3866,4 +3886,4 @@ SceneRoots:
   - {fileID: 971915070}
   - {fileID: 1132463113}
   - {fileID: 1027760438}
-  - {fileID: 934866376}
+  - {fileID: 212571562}

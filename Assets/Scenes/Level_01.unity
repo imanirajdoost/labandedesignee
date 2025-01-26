@@ -1704,6 +1704,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (1)
@@ -2610,6 +2614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogTrigger (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768421694495313540, guid: dcdcfc2cb5e217f4c9b188da22f8e098, type: 3}
+      propertyPath: dialogIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3428,6 +3436,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: dialogIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices
