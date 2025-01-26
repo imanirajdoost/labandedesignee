@@ -4851,7 +4851,7 @@ GameObject:
   - component: {fileID: 3017419920473739830}
   - component: {fileID: 2423806116100273067}
   m_Layer: 0
-  m_Name: vfx_Projectile_01
+  m_Name: VFX_Pulse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
