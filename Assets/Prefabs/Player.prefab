@@ -164,8 +164,8 @@ MonoBehaviour:
   _stopJumpingTime: 0.5
   _gravityMultiplier: 40
   _animator: {fileID: 4832509175709307944}
-  _slowMotionSpeed: 1
-  _slowMotionGravityMultiplier: 0.4
+  _slowMotionSpeed: 0
+  _slowMotionGravityMultiplier: 0
   _artObject: {fileID: 6116743671166044707}
 --- !u!114 &3910479059215282255
 MonoBehaviour:

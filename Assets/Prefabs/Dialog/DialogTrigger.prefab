@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6477170435053806460}
   - component: {fileID: 8583374716696700357}
   - component: {fileID: 4311938072025133920}
-  - component: {fileID: 5392039972358282937}
+  - component: {fileID: 5768421694495313540}
   m_Layer: 7
   m_Name: DialogTrigger
   m_TagString: Dialog
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 2
---- !u!114 &5392039972358282937
+--- !u!114 &5768421694495313540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3204542839660816551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b2443cf78beb94994b374542c07121, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ea7f4778256b2643917cd9ddbef3524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogIndex: 0
