@@ -161,15 +161,17 @@ MonoBehaviour:
   _freezePlayer: 0
   _slowMotion: 1
   _shouldTriggerOnce: 0
+  _shouldDestroyAfterTriggered: 0
   _bubbleSoftFly: {fileID: 5080579557712693713, guid: 2f3033f63caff374d8330c78e53f530d, type: 3}
   _bubbleAggressiveAttack: {fileID: 5130650725251581068, guid: 1d4c475a3410e28469d32dfcc35b9d48, type: 3}
   _bubbleColdCreatePlatform: {fileID: 2642594593278969080, guid: dbb597552f7419e4fa07926589a54cde, type: 3}
-  _bubbleSoftFlyLong: {fileID: 0}
-  _bubbleAggressiveAttackLong: {fileID: 0}
+  _bubbleSoftFlyLong: {fileID: 1279985017520277690, guid: e8567da0c5f903548ab93e0c89da5cf2, type: 3}
+  _bubbleAggressiveAttackLong: {fileID: 6217647974379727322, guid: f5dfc58a6b3eaa34aa5f002a4be8dd7b, type: 3}
   _bubbleColdCreatePlatformLong: {fileID: 1759363899116518872, guid: ee72ceb02d92d2a4eafbc48d380f6006, type: 3}
   _softTarget: {fileID: 4824159944559812719}
   _coldSpawnTarget: {fileID: 5784499517122602488}
   _objectToDestroy: {fileID: 0}
+  _disableTime: 5
   _spawnLong: 0
   _playerManager: {fileID: 0}
 --- !u!114 &424857740908755983
