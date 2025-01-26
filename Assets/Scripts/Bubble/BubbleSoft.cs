@@ -63,4 +63,9 @@ public class BubbleSoft : BubbleBase
 
         DisableObjectAfter(1f);
     }
+
+    protected override void Despawn()
+    {
+        // Despawn Audio
+    }
 }

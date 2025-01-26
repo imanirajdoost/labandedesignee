@@ -13,4 +13,9 @@ public class BubbleAggressive : BubbleBase
 
         DisableObjectAfter(5);
     }
+
+    protected override void Despawn()
+    {
+        // Despawn Audio
+    }
 }
