@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 231f20558687fd4bb24fa8306b1169bd
     GuidInternal: 
-    m_lastTime: -8584637603894775808
+    m_lastTime: -8584637501074775808
     List:
     - name: Master
       guid: 7630fb9675e32541a32720f4f67c13f5
@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584637587854775808
+    m_lastTime: -8584637491154775808
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -173,8 +173,8 @@ MonoBehaviour:
         guid: 4351024ebf848b43b92ff673684b5fac
       Path: Events\Default Work Unit\Main\MUSIC\Play_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_SFX_Bubble_Balloon_Fly_LP
       guid: a4b8493c13da23448057e89aa1de59e7
       id: 2368847281
@@ -303,8 +303,8 @@ MonoBehaviour:
         guid: 157213235ef111479b6a0d9c224c5c2d
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Spawn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.6739376
+      minDuration: 3.2970834
     - name: Play_SFX_Entity_Agressive
       guid: f05e5000619c7142a7658b5c95f6237f
       id: 1974143923
@@ -409,6 +409,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_Entity_Speak
+      guid: 8f9aaecae395dd4b95c148fd2a348b91
+      id: 4110830156
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Entity
+        ObjectType: 4
+        guid: e18dbb4371066540a41bb90c4d3b09c1
+      - ElementName: Play_SFX_Entity_Speak
+        ObjectType: 3
+        guid: 8f9aaecae395dd4b95c148fd2a348b91
+      Path: Events\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Speak
+      maxAttenuation: 0
+      maxDuration: 5.153801
+      minDuration: 3.191875
     - name: Play_SFX_Player_Climb
       guid: e9080e63b8857840a675143b1b7f2406
       id: 859306715
@@ -485,7 +511,7 @@ MonoBehaviour:
         guid: b93a5a7ffb01414eb349203e0d2d5d7d
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.33939582
+      maxDuration: 0.3809589
       minDuration: 0.22933333
     - name: Play_SFX_Player_Jump
       guid: a0564a565d9cdc499b8a71a00a418eda
@@ -844,6 +870,185 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: ST_GameFlow
+      guid: 5e878aac94251e4aa4c81b66c1a3de48
+      id: 1642548553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ST_GameFlow_Level_1
+      guid: da43aa08c805f0429901f5987a3f6cab
+      id: 36359126
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_Level_1
+        ObjectType: 3
+        guid: da43aa08c805f0429901f5987a3f6cab
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_Level_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_GameFlow_Level_2
+      guid: 06d4fe97ab949a4d81270b174b7f50b9
+      id: 36359125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_Level_2
+        ObjectType: 3
+        guid: 06d4fe97ab949a4d81270b174b7f50b9
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_Level_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_GameFlow_Level_3
+      guid: ac323c35ab5e054ea1eae9d6c3eb2c72
+      id: 36359124
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_Level_3
+        ObjectType: 3
+        guid: ac323c35ab5e054ea1eae9d6c3eb2c72
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_Level_3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_GameFlow_Level_4
+      guid: 3aad64d0fc8ca648a6993df08b9e5914
+      id: 36359123
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_Level_4
+        ObjectType: 3
+        guid: 3aad64d0fc8ca648a6993df08b9e5914
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_Level_4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_GameFlow_Level_5
+      guid: bb9fde3667b61745b4e81d94a68b9bcb
+      id: 36359122
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_Level_5
+        ObjectType: 3
+        guid: bb9fde3667b61745b4e81d94a68b9bcb
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_Level_5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_GameFlow_MainMenu
+      guid: d1f75cff7bdc1f4eb2ad8b61f2dff963
+      id: 4047794154
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_GameFlow
+        ObjectType: 4
+        guid: 5e878aac94251e4aa4c81b66c1a3de48
+      - ElementName: ST_GameFlow_MainMenu
+        ObjectType: 3
+        guid: d1f75cff7bdc1f4eb2ad8b61f2dff963
+      Path: Events\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_MainMenu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: ST_Init
       guid: 534195a1d3f5884989a540287ff1c963
       id: 1838668217
@@ -1014,8 +1219,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a5007eb6ec623040952ae938c43321f4
     GuidInternal: 
-    m_lastTime: -8584637838729664562
-    List: []
+    m_lastTime: -8584637487974775808
+    List:
+    - name: GP_TimeFreeze
+      guid: 818a3e65a8942141b98672f4b94c9165
+      id: 312429685
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a5007eb6ec623040952ae938c43321f4
+      - ElementName: GP_TimeFreeze
+        ObjectType: 13
+        guid: 818a3e65a8942141b98672f4b94c9165
+      Path: Game Parameters\Default Work Unit\GP_TimeFreeze
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
