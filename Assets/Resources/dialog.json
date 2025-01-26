@@ -237,7 +237,7 @@
 	{
 		"index": 19,
 		"line": "That's why none of them will even talk to you anymore.",
-		"tone": "WHINY",
+		"tone": "HARSH",
 		"replies": [
 			{
 				"type": "SOFT",
@@ -288,7 +288,7 @@
 	{
 		"index": 24,
 		"line": "Wow, where's that coming from? I'm only looking out for you!",
-		"tone": "MOCK",
+		"tone": "WHINY",
 		"replies": [
 			{
 				"type": "AGGR",
