@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -22,6 +23,12 @@ public class PlayerManager : MonoBehaviour
     [Header("End Game")]
     [SerializeField] private GameObject _entity;
     [SerializeField] private GameObject _bubbleAggressiveAttack;
+    [SerializeField] private GameObject _bubbleCold;
+    [SerializeField] private GameObject _bubbleSoft;
+
+    [SerializeField] private Transform _bubbleSoftFinalTarget;
+
+    [SerializeField] private Image _fadeImage;
 
     private int _currentStep = 0;
 
@@ -131,6 +138,7 @@ public class PlayerManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         _currentStep = 2;
+        _entity.transform.SetParent(null);
         DialogManager.Instance.ShowDialogWithoutUnfreezing(23);
     }
 
@@ -150,9 +158,15 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator ContinueDialog4()
     {
-        yield return new WaitForSeconds(1f);
-        _currentStep = 4;
-        DialogManager.Instance.ShowDialogWithoutUnfreezing(25);
+        _entity.transform.DOMoveY(-56f, 1f).SetEase(Ease.Linear);
+        yield return new WaitForSeconds(3f);
+        // Fade to black
+        _fadeImage.gameObject.SetActive(true);
+        _fadeImage.DOColor(Color.black, 2f).OnComplete(() =>
+        {
+            // Go to final Scene
+            SceneManager.LoadScene(5);
+        });
     }
 
     private void OnChoiceSelected(string tone)
@@ -175,20 +189,40 @@ public class PlayerManager : MonoBehaviour
                 if (tone == "AGGR")
                 {
                     CreateAggressive(true, true);
-                    StartCoroutine(ContinueDialog4());
+                    
                 } 
                 else if(tone == "SOFT")
                 {
-
+                    CreateSoft();
                 }
                 else if(tone == "COLD")
                 {
-
+                    CreateCold();
                 }
+                StartCoroutine(ContinueDialog4());
                 break;
+
                 default:
                 break;
         }
+    }
+
+    private void CreateSoft()
+    {
+        GameObject obj = Instantiate(_bubbleSoft, transform.position, Quaternion.identity);
+
+        obj.GetComponent<BubbleSoft>().SetTarget(_bubbleSoftFinalTarget);
+        obj.GetComponent<BubbleBase>().DoYourThing();
+
+        SetAnimation("SOFT");
+    }
+
+    private void CreateCold()
+    {
+        GameObject obj = Instantiate(_bubbleCold, _entity.transform.position, Quaternion.identity);
+
+        obj.GetComponent<BubbleCold>().ForceAttach(false);
+        obj.GetComponent<BubbleBase>().DoYourThing();
     }
 
     private void CreateAggressive(bool overrideTime = false, bool shoulDestroy = false)

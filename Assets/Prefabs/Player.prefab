@@ -217,6 +217,10 @@ MonoBehaviour:
   _animator: {fileID: 4832509175709307944}
   _entity: {fileID: 4391623524676818875}
   _bubbleAggressiveAttack: {fileID: 5130650725251581068, guid: 1d4c475a3410e28469d32dfcc35b9d48, type: 3}
+  _bubbleCold: {fileID: 2642594593278969080, guid: dbb597552f7419e4fa07926589a54cde, type: 3}
+  _bubbleSoft: {fileID: 5080579557712693713, guid: 2f3033f63caff374d8330c78e53f530d, type: 3}
+  _bubbleSoftFinalTarget: {fileID: 0}
+  _fadeImage: {fileID: 0}
 --- !u!114 &7804108159294861089
 MonoBehaviour:
   m_ObjectHideFlags: 0

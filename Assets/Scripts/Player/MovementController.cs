@@ -58,6 +58,9 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
+        if (!EnableCompletely)
+            return;
+
         if (_isEnabled)
         {
             // Read the "Move" action value, which is a 2D vector
