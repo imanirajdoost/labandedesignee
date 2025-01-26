@@ -843,7 +843,6 @@ PlayerSettings:
     XboxOne: DOTWEEN
     iPhone: DOTWEEN
     tvOS: DOTWEEN
-    Standalone: WWISE_ADDRESSABLES_23_1_OR_LATER;WWISE_ADDRESSABLES_24_1_OR_LATER;WWISE_2024_OR_LATER
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
