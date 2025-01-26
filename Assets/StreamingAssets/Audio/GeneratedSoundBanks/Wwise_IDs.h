@@ -13,14 +13,22 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_FLY_LP = 2368847281U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_SPAWN = 3514202776U;
         static const AkUniqueID PLAY_SFX_BUBBLE_ICE_SPAWN = 1920689292U;
+        static const AkUniqueID PLAY_SFX_ENTITY_SPEAK = 4110830156U;
         static const AkUniqueID PLAY_SFX_PLAYER_FOOTSTEPS = 2002635633U;
         static const AkUniqueID PLAY_SFX_PLAYER_JUMP = 604897336U;
         static const AkUniqueID PLAY_SFX_PLAYER_LAND = 2037741043U;
         static const AkUniqueID PLAY_SOUND_TEST_2D = 697467967U;
         static const AkUniqueID PLAY_SOUND_TEST_2D_LP = 2510895262U;
+        static const AkUniqueID ST_GAMEFLOW_LEVEL_1 = 36359126U;
+        static const AkUniqueID ST_GAMEFLOW_LEVEL_2 = 36359125U;
+        static const AkUniqueID ST_GAMEFLOW_LEVEL_3 = 36359124U;
+        static const AkUniqueID ST_GAMEFLOW_LEVEL_4 = 36359123U;
+        static const AkUniqueID ST_GAMEFLOW_LEVEL_5 = 36359122U;
+        static const AkUniqueID ST_GAMEFLOW_MAINMENU = 4047794154U;
         static const AkUniqueID ST_INIT = 1838668217U;
         static const AkUniqueID ST_TIMEFREEZE_OFF = 3646474335U;
         static const AkUniqueID ST_TIMEFREEZE_ON = 4255932043U;
@@ -59,6 +67,11 @@ namespace AK
         } // namespace ST_TIMEFREEZE
 
     } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID GP_TIMEFREEZE = 312429685U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D48C4FF1-ED14-407A-847B-2D7C6A917319}" SchemaVersion="123">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{D48C4FF1-ED14-407A-847B-2D7C6A917319}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D48C4FF1-ED14-407A-847B-2D7C6A917319}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Parametric_EQ" ID="{4A4DC9DC-E63A-455B-9EAE-2BD9828BD33B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="20000"/>
+					</PropertyList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="GainBand1"/>
+						</StatePropertyList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{8E60E620-EBFD-4C2B-922C-02507ABFA351}" ShortID="78941774">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FrequencyBand1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}" WorkUnitID="{B67E00A5-62EC-4030-952A-E938C43321F4}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{DF6BD710-C55E-4951-A1DB-60E1CDFE44E8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>20000</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>5462.27718</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{4329993E-F51B-445C-8C2C-ACB1EE57A85D}" ShortID="478857662">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="OnOffBand2"/>
+										</PropertyList>
+										<ReferenceList/>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
