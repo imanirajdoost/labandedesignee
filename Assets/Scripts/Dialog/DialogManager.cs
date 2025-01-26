@@ -61,6 +61,13 @@ public class DialogManager : MonoBehaviour
         ShowDialogOptionsIfAvailable(data);
     }
 
+    public void ShowDialogWithoutUnfreezing(int index)
+    {
+        var data = DialogDataFactory.Instance.GetDialogData(index);
+        OpenDialogPanel();
+        ShowDialog(data);
+    }
+
     public void ShowDialogByData(DialogData data)
     {
         OpenDialogPanel();

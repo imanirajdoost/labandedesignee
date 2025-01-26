@@ -38,6 +38,8 @@ public class MovementController : MonoBehaviour
 
     private bool _isEnabled = true;
 
+    public bool EnableCompletely = true;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -107,16 +109,19 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!EnableCompletely)
+            return;
+
         // Go to left or right
         rb.linearVelocity = new Vector3(_speed * _moveValue.x, rb.linearVelocity.y, rb.linearVelocity.z);
     }
 
-    private void LookRight()
+    public void LookRight()
     {
         _artObject.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
-    private void LookLeft()
+    public void LookLeft()
     {
         _artObject.transform.rotation = Quaternion.Euler(0, 180, 0);
     }

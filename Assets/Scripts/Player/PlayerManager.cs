@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -18,6 +19,9 @@ public class PlayerManager : MonoBehaviour
 
     private Coroutine _slowMotionCoroutine;
 
+    [Header("End Game")]
+    [SerializeField] private GameObject _entity;
+
     private void Awake()
     {
         _movementController = GetComponent<MovementController>();
@@ -28,7 +32,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
+        
         DialogManager.Instance.OnDialogPanelClosed += OnDialogPanelClosed;
     }
 
@@ -41,19 +45,6 @@ public class PlayerManager : MonoBehaviour
     {
         DialogManager.Instance.OnChoiceSelected -= OnChoiceSelected;
         DialogManager.Instance.OnDialogPanelClosed -= OnDialogPanelClosed;
-    }
-
-    private void OnChoiceSelected(string tone)
-    {
-        //FreezePlayer(false);
-        switch(tone)
-        {
-            case "SOFT":
-                //Fly();
-                break;
-            default:
-                break;
-        }
     }
 
     public void SetAnimation(string animation)
@@ -100,8 +91,41 @@ public class PlayerManager : MonoBehaviour
         {
             // Go To Next Level
             int currentIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentIndex + 1);
+            if(currentIndex != 4)
+                SceneManager.LoadScene(currentIndex + 1);
+            else
+            {
+                StartCoroutine(StartEndGameCinematic());
+            }
         }
+    }
+
+    private IEnumerator StartEndGameCinematic()
+    {
+        Debug.Log("End Game Cinematic");
+        _movementController.SetEnabled(false);
+        _movementController.EnableCompletely = false;
+
+        _movementController.LookRight();
+
+        yield return new WaitForSeconds(1.5f);
+
+        // entity moves away
+
+        _entity.transform.DOLocalMoveX(5f, 2f).SetEase(Ease.Linear);
+
+        // Show 1st dialog
+        DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
+
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(22);
+
+        yield return new WaitForSeconds(0.5f);
+
+    }
+
+    private void OnChoiceSelected(string obj)
+    {
+        // TODO
     }
 
     public void ForceStopSlowMotion()
