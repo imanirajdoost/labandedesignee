@@ -52,20 +52,20 @@ public class DialogManager : MonoBehaviour
         _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -250), 0.5f).SetEase(Ease.InBack);
     }
 
-    private void ShowDialog(DialogData data)
+    private void ShowDialog(DialogData data, bool forceHideTimer = false)
     {
         RemoveAllRepliesIfExist();
 
         _dialogText.text = data.line;
 
-        ShowDialogOptionsIfAvailable(data);
+        ShowDialogOptionsIfAvailable(data, forceHideTimer);
     }
 
     public void ShowDialogWithoutUnfreezing(int index)
     {
         var data = DialogDataFactory.Instance.GetDialogData(index);
         OpenDialogPanel();
-        ShowDialog(data);
+        ShowDialog(data, true);
     }
 
     public void ShowDialogByData(DialogData data)
@@ -102,7 +102,7 @@ public class DialogManager : MonoBehaviour
         _closeButton.interactable = enabled;
     }
 
-    private void ShowDialogOptionsIfAvailable(DialogData data)
+    private void ShowDialogOptionsIfAvailable(DialogData data, bool forceHideTimer = false)
     {
         if (data.replies == null || data.replies.Length == 0)
         {
@@ -117,7 +117,10 @@ public class DialogManager : MonoBehaviour
         _dialogTimeSlider.maxValue = _dialogReponseTime;
         _dialogTimeSlider.value = _dialogReponseTime;
 
-        _dialogTimeSlider.gameObject.SetActive(true);
+        if(!forceHideTimer)
+            _dialogTimeSlider.gameObject.SetActive(true);
+        else
+            _dialogTimeSlider.gameObject.SetActive(false);
 
 
         if (_dialogChoices == null)
