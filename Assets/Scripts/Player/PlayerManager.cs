@@ -122,7 +122,10 @@ public class PlayerManager : MonoBehaviour
 
         // entity moves away
 
-        _entity.transform.DOLocalMoveX(5f, 2f).SetEase(Ease.Linear);
+        _entity.transform.DOLocalMoveX(5f, 2f).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            _entity.transform.SetParent(null);
+        });
 
         // Show 1st dialog
         DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
@@ -138,7 +141,6 @@ public class PlayerManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         _currentStep = 2;
-        _entity.transform.SetParent(null);
         DialogManager.Instance.ShowDialogWithoutUnfreezing(23);
     }
 
