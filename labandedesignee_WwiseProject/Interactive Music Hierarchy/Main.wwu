@@ -371,6 +371,24 @@
 									</MultiSwitchEntry>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{24476A8E-5F11-45AA-92B3-5522A314ED5F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="MUSIC_Level_1" ID="{E9D574D8-274A-4B36-897B-AC931DF48877}" WorkUnitID="{896B1158-C34B-4A14-9686-7E406822EFB2}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
 						</ObjectList>
 						<ObjectList Name="RTPC">
 							<Reference>
