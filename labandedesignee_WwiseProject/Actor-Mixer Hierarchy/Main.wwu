@@ -649,6 +649,35 @@
 						<Folder Name="SFX_Bubble" ID="{09FA1FD0-088F-49BA-B658-36E27FEA1335}" ShortID="385070552">
 							<ChildrenList>
 								<RandomSequenceContainer Name="SFX_Bubble_Ice_Spawn" ID="{FA11852E-1FD5-4887-BEDA-0DD899643370}" ShortID="887936580">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{538F8F93-3585-4682-AC22-1869F84C5DD0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A45406CB-EDCD-4F1B-AEBE-104AC8E52223}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
@@ -773,6 +802,13 @@
 								<Sound Name="SFX_Bubble_Balloon_Fly_LP" ID="{B3FF19CC-2E52-4011-8F90-C0347507CF51}" ShortID="810625997">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{056BEB93-E5F2-4394-A5C6-1E6B9667ECE4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -827,6 +863,107 @@
 										<ActiveSource Name="SFX_Bubble_Balloon_Unspawn" ID="{B89175A7-790C-4120-9262-7BB73650F0D3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="SFX_Bubble_Ice_Despawn" ID="{CF30C420-DBE6-4AC1-9306-1171BDE014BC}" ShortID="972291933">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0DA32BEB-1075-4CE6-9A1D-492E73007C9A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Bubble_Ice_Despawn_01" ID="{A3E105E3-35AA-4F46-A951-2A3AAAB89383}" ShortID="847660803">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Ice_Despawn_01" ID="{1721F7E8-FA5E-4CD4-9BCD-369780504E71}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Ice_Despawn_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="797977786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Ice_Despawn_01" ID="{1721F7E8-FA5E-4CD4-9BCD-369780504E71}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Ice_Despawn_02" ID="{B7C613A1-C666-44F5-8766-470B90ADAB8D}" ShortID="474516962">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DC0F3129-A70C-42FC-A164-DE34A6617E4C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Ice_Despawn_02" ID="{B0A56BA5-9935-4B32-8E4F-FE504D7A4162}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Ice_Despawn_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449474657"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Ice_Despawn_02" ID="{B0A56BA5-9935-4B32-8E4F-FE504D7A4162}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Bubble_Ice_Despawn_03" ID="{AF6C07A1-AB72-4C45-81DF-F42B5C121186}" ShortID="780521845">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E217158-4962-4BC6-96C6-41CBD9787EE9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{74447C53-2A85-449C-A841-04BF85C332EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Bubble_Ice_Despawn_03" ID="{28E2521E-65D6-494D-8E99-B48E19D90430}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Bubble_Ice_Despawn_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="80548659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Bubble_Ice_Despawn_03" ID="{28E2521E-65D6-494D-8E99-B48E19D90430}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SFX_Entity" ID="{1B44EB3B-D8F7-42F5-9312-731568B0BE88}" ShortID="236778120">

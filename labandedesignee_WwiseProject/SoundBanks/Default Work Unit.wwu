@@ -17,6 +17,7 @@
 						<ObjectRef Name="Play_Sound_Test_2D_LP" ID="{CAAF995E-E4EA-4962-BAD7-365BFC29BD3D}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Player_Jump" ID="{564A56A0-9C5D-49DC-9B8A-71A00A418EDA}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Entity_Speak" ID="{CAAE9A8F-95E3-4BDD-95C1-48FD2A348B91}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Bubble_Ice_Despawn" ID="{01A6CFA7-71CE-4DE0-9EF4-D05149AC04B0}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Player_Footsteps" ID="{7F5A3AB9-01FB-4E41-B349-203E0D2D5D7D}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

@@ -915,8 +915,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: _slowMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: dialogIndex
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230770990180116381, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: _freezePlayer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4824159944559812719, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4378,11 +4386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4672147521007193987, guid: 4fda36c9d231cbb4c8890722d60a4949, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.19
+      value: -1.46
       objectReference: {fileID: 0}
     - target: {fileID: 4672147521007193987, guid: 4fda36c9d231cbb4c8890722d60a4949, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.67
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 4672147521007193987, guid: 4fda36c9d231cbb4c8890722d60a4949, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1068,12 +1068,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.7
+      value: -11.2
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
       value: 19.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices
@@ -1614,16 +1618,20 @@ PrefabInstance:
       objectReference: {fileID: 18979651}
     - target: {fileID: 4824159944559812719, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.91
+      value: 34.8
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.94
+      value: 8.71
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 5.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (4)
@@ -1638,7 +1646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.95
+      value: 31.14
       objectReference: {fileID: 0}
     - target: {fileID: 8834170337100898982, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2487,6 +2495,10 @@ PrefabInstance:
       value: 13.7
       objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (1)
       objectReference: {fileID: 0}
@@ -3199,16 +3211,20 @@ PrefabInstance:
       objectReference: {fileID: 356045883}
     - target: {fileID: 4824159944559812719, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.63
+      value: 70.4
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.04
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 6.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (6)
@@ -3351,6 +3367,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 10.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (3)
@@ -4447,6 +4467,10 @@ PrefabInstance:
       value: 8.6
       objectReference: {fileID: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (2)
       objectReference: {fileID: 0}
@@ -4561,12 +4585,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4824159944559812719, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.46
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.11
+      value: 11.3
       objectReference: {fileID: 0}
+    - target: {fileID: 5784499517122602488, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 6558353767392720519, guid: d0fd2bb5f876ffe40bb0e814cde73043, type: 3}
       propertyPath: m_Name
       value: DialogTriggerWithChoices (5)

@@ -169,6 +169,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_SFX_Bubble_Ice_Despawn" ID="{01A6CFA7-71CE-4DE0-9EF4-D05149AC04B0}">
+									<ChildrenList>
+										<Action Name="" ID="{30840552-F6E4-4D11-97CC-CC65F66C40D7}" ShortID="697980413">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Bubble_Ice_Despawn" ID="{CF30C420-DBE6-4AC1-9306-1171BDE014BC}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SFX_TimeFreeze" ID="{9456E457-342A-4A14-B8DA-6BB71BEEF7FC}" ShortID="873528714">

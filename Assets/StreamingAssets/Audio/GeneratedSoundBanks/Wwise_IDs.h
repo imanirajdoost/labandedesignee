@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_FLY_LP = 2368847281U;
         static const AkUniqueID PLAY_SFX_BUBBLE_BALLOON_SPAWN = 3514202776U;
+        static const AkUniqueID PLAY_SFX_BUBBLE_ICE_DESPAWN = 3654473079U;
         static const AkUniqueID PLAY_SFX_BUBBLE_ICE_SPAWN = 1920689292U;
         static const AkUniqueID PLAY_SFX_ENTITY_SPEAK = 4110830156U;
         static const AkUniqueID PLAY_SFX_PLAYER_FOOTSTEPS = 2002635633U;

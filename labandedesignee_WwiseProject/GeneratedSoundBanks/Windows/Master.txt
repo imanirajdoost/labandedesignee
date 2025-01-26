@@ -17,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3458233571	Stop_SFX_Bubble_Balloon_Fly_LP			\Default Work Unit\Main\SFX\SFX_Bubble\Stop_SFX_Bubble_Balloon_Fly_LP	
 	3514202776	Play_SFX_Bubble_Balloon_Spawn			\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Spawn	
 	3646474335	ST_TimeFreeze_Off			\Default Work Unit\Main\Set_State\ST_TimeFreeze_Off	
+	3654473079	Play_SFX_Bubble_Ice_Despawn			\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Despawn	
 	4047794154	ST_GameFlow_MainMenu			\Default Work Unit\Main\Set_State\ST_GameFlow\ST_GameFlow_MainMenu	
 	4110830156	Play_SFX_Entity_Speak			\Default Work Unit\Main\SFX\SFX_Entity\Play_SFX_Entity_Speak	
 	4255932043	ST_TimeFreeze_On			\Default Work Unit\Main\Set_State\ST_TimeFreeze_On	
@@ -39,6 +40,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	22708807	SFX_Entity_Speak_01	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\D7\{D74D9F8D-AEAC-3843-EC6B-384D8ACBD4A3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_01		91873
 	46281276	SFX_Entity_Speak_02	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\49\{49144712-FBB1-D961-5FD7-70D28EEE3D6C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_02		95771
+	80548659	SFX_Bubble_Ice_Despawn_03	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\75\{759DAC1F-9357-D744-2AE9-0506F7CB5F58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Ice_Despawn\SFX_Bubble_Ice_Despawn_03		72707
 	99383825	SFX_Player_Land	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\AA\{AA23AEC3-2972-2A07-9396-7F53ABC9BC90}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Land		11233
 	124690407	MUSIC_Level_1	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\12\{123A822D-BD69-AD7E-7EB9-CEC12C97E8D5}.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Music\MUSIC_Level_1\MUSIC_Level_1\MUSIC_Level_1		3509237
 	147265247	SFX_Bubble_Ice_Spawn_03	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\72\{726A593F-E607-1306-EE31-994AE88684FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Ice_Spawn\SFX_Bubble_Ice_Spawn_03		105681
@@ -55,6 +57,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	322835440	SFX_Player_Footsteps_05	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\75\{75ADE93A-C28E-2B93-88FF-8AB67FE43113}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_05		53376
 	424236609	MUSIC_Level_2	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\D7\{D7D3895E-3306-EB2E-0D67-F88E5B04002D}.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Music\MUSIC_Level_2\MUSIC_Level_2\MUSIC_Level_2		3448929
 	448022363	SFX_Entity_Speak_12	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\BF\{BFD70773-40CA-A173-EA19-441001A19A58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_12		83370
+	449474657	SFX_Bubble_Ice_Despawn_02	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\BA\{BA14246C-DB51-BF5D-14DD-9069E0774128}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Ice_Despawn\SFX_Bubble_Ice_Despawn_02		73674
 	454360572	SFX_Player_Footsteps_13	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\EF\{EF0785E4-40F2-C41A-974A-1B6F8016FDA7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_13		54373
 	544154938	SFX_Player_Footsteps_04	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\D6\{D68C2F09-6F19-82E1-361F-CEF90C45B4DE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_04		52549
 	574060611	SFX_Entity_Speak_13	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\BD\{BDE9E5D4-E006-553A-8E1B-CAE06C120C58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_13		77598
@@ -66,6 +69,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	732945048	SFX_Bubble_Balloon_Spawn	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\BA\{BA1CC30C-BF5D-058B-1B4C-2672F585082A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Balloon_Spawn\SFX_Bubble_Balloon_Spawn		82285
 	761971618	SFX_Bubble_Balloon_Fly_LP	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\4A\{4A06F718-BE06-5A2D-656B-2794139CB7EF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Balloon_Fly_LP		82805
 	783332013	SFX_Entity_Speak_08	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\48\{488B887E-287F-5CC3-CD86-55EFD846C2C6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_08		92040
+	797977786	SFX_Bubble_Ice_Despawn_01	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\FE\{FECA3784-6600-EF12-4403-AA05B87F90E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Bubble\SFX_Bubble_Ice_Despawn\SFX_Bubble_Ice_Despawn_01		81234
 	807513506	SFX_Entity_Speak_04	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\A2\{A25839D5-E4A2-92DC-FEBE-00CEC1F7C634}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Entity\SFX_Entity_Speak\SFX_Entity_Speak_04		78483
 	812021386	SFX_Player_Jump	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\2F\{2FF48485-C1A8-4BF9-993B-15DDBD68E081}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Jump		23783
 	933800486	SFX_Player_Footsteps_11	F:\GGJ 2025\GitHub\labandedesignee\labandedesignee_WwiseProject\.cache\06\{062404D9-0483-A600-6809-647186A29408}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\SFX\SFX_Player\SFX_Player_Footsteps\SFX_Player_Footsteps_11		54197
