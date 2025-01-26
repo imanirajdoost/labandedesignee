@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{A0062FE9-B805-6B65-90BE-9DAA4BC48D3D}",
+    "Hash": "{075942A7-62F8-B879-34F3-108130C0E953}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MUSIC_Level_3.wav",
-      "CachePath": "2D/{2D63267D-26A7-04ED-6E12-A811556564B7}.wem"
+      "CachePath": "C4/{C4F6D199-9833-1454-6EC6-1FD9384AA0D8}.wem"
      },
      {
       "Id": "80548659",
@@ -446,12 +446,13 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Main\\SFX\\SFX_Bubble\\Play_SFX_Bubble_Balloon_Spawn",
       "GUID": "{27D227CB-A01B-48E9-A01F-96A40FF3214B}",
       "Color": "12",
-      "DurationType": "OneShot",
-      "DurationMin": "4.5",
-      "DurationMax": "4.5",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "732945048"
+       },
+       {
+        "Id": "761971618"
        }
       ]
      },
@@ -483,14 +484,23 @@
       "GUID": "{23137215-F15E-4711-9B6A-0D9C224C5C2D}",
       "Color": "12",
       "DurationType": "OneShot",
-      "DurationMin": "3.2970834",
-      "DurationMax": "4.6288714",
+      "DurationMin": "5.817625",
+      "DurationMax": "6.567621",
       "MediaRefs": [
+       {
+        "Id": "80548659"
+       },
        {
         "Id": "147265247"
        },
        {
+        "Id": "449474657"
+       },
+       {
         "Id": "700612054"
+       },
+       {
+        "Id": "797977786"
        },
        {
         "Id": "1013134519"
@@ -985,6 +995,6 @@
     ]
    }
   ],
-  "FileHash": "{8355A43B-881B-1001-05A1-69A38E10906D}"
+  "FileHash": "{E895326F-B451-3BE6-47D2-F92F5C57A739}"
  }
 }

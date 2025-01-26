@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584637022394775808
+    m_lastTime: -8584636998514775808
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -277,8 +277,8 @@ MonoBehaviour:
         guid: cb27d2271ba0e948a01f96a40ff3214b
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Spawn
       maxAttenuation: 0
-      maxDuration: 4.5
-      minDuration: 4.5
+      maxDuration: 0
+      minDuration: 0
     - name: Play_SFX_Bubble_Explosion
       guid: 0b5edb68ecbc1b409ea37189b2057b7d
       id: 1654008228
@@ -355,8 +355,8 @@ MonoBehaviour:
         guid: 157213235ef111479b6a0d9c224c5c2d
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Spawn
       maxAttenuation: 0
-      maxDuration: 4.6288714
-      minDuration: 3.2970834
+      maxDuration: 6.567621
+      minDuration: 5.817625
     - name: Play_SFX_Entity_Agressive
       guid: f05e5000619c7142a7658b5c95f6237f
       id: 1974143923
@@ -1578,7 +1578,7 @@ MonoBehaviour:
     m_lastTime: -8584637838729467427
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001a0000001b0000001c0000002e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c000000190000001a0000001b0000001c0000002e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

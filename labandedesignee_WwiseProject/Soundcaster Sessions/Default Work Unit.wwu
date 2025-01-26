@@ -17,6 +17,14 @@
 							<ObjectRef Name="Play_Music" ID="{4E025143-84BF-438B-B92F-F673684B5FAC}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Bubble_Balloon_Spawn" ID="{27D227CB-A01B-48E9-A01F-96A40FF3214B}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Bubble_Balloon_Despawn" ID="{06FA82F4-AFA6-4550-8A0C-3E23F593BDFE}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
+							<Position X="2" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

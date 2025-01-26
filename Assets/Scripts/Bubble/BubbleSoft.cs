@@ -29,6 +29,8 @@ public class BubbleSoft : BubbleBase
         AttachPlayer();
 
         _shouldFlyToTarget = true;
+
+        AkSoundEngine.PostEvent("Play_SFX_Bubble_Balloon_Spawn", gameObject);
     }
 
     public void SetTarget(Transform target)
@@ -67,5 +69,7 @@ public class BubbleSoft : BubbleBase
     protected override void Despawn()
     {
         // Despawn Audio
+
+        // AkSoundEngine.PostEvent("Play_SFX_Bubble_Balloon_Despawn", gameObject);
     }
 }
