@@ -6,6 +6,14 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{4C86513D-8685-486C-BDF1-540B8CC905F3}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="Play_SFX_Player_Jump" ID="{564A56A0-9C5D-49DC-9B8A-71A00A418EDA}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Player_Footsteps" ID="{7F5A3AB9-01FB-4E41-B349-203E0D2D5D7D}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Music" ID="{4E025143-84BF-438B-B92F-F673684B5FAC}" WorkUnitID="{3238C994-DDD8-47BE-BE6E-CD4C4723E929}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -17,7 +25,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}"/>
+						<CurrentStateRef Name="ST_GameFlow_Level_1" ID="{47E47D1D-D3E2-4365-A678-75CF6D6CFF2B}"/>
 						<CurrentStateRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
