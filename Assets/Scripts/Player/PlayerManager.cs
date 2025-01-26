@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -95,6 +96,11 @@ public class PlayerManager : MonoBehaviour
                 _slowMotionCoroutine = StartCoroutine(SetSlowMotionFor(_slowMotionTime));
             }
             
+        } else if(other.CompareTag("EndLevel"))
+        {
+            // Go To Next Level
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentIndex + 1);
         }
     }
 
