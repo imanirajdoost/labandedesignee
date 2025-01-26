@@ -6,6 +6,7 @@ public class DialogDataFactory : MonoBehaviour
     public static DialogDataFactory Instance;
 
     private DialogDataList _dialogDataList;
+    private DialogDataList _dialogGeneric;
 
     private void Awake()
     {
@@ -18,6 +19,10 @@ public class DialogDataFactory : MonoBehaviour
         TextAsset dialogData = Resources.Load<TextAsset>("dialog");
 
         _dialogDataList = JsonConvert.DeserializeObject<DialogDataList>(dialogData.text);
+
+        TextAsset dialogGeneric = Resources.Load<TextAsset>("dialog_generic");
+
+        _dialogGeneric = JsonConvert.DeserializeObject<DialogDataList>(dialogGeneric.text);
     }
 
     public DialogData GetDialogData(int index)
@@ -28,5 +33,10 @@ public class DialogDataFactory : MonoBehaviour
     public DialogDataList GetDialogDataList()
     {
         return _dialogDataList;
+    }
+
+    public DialogData GetRandomGenericDialogFromList()
+    {
+        return _dialogGeneric.dialogData[Random.Range(0, _dialogGeneric.dialogData.Length)];
     }
 }

@@ -24,6 +24,12 @@ public class DialogManager : MonoBehaviour
 
     public Action<string> OnChoiceSelected;
     public Action OnDialogPanelClosed;
+    public Action OnTimeUp;
+
+    [SerializeField] private float _dialogReponseTime = 5f;
+    [SerializeField] private Slider _dialogTimeSlider;
+
+    private float _currentDialogTime;
 
     private void Awake()
     {
@@ -43,7 +49,7 @@ public class DialogManager : MonoBehaviour
 
     public void CloseDialogPanel()
     {
-        _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -100), 0.5f).SetEase(Ease.InBack);
+        _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -150), 0.5f).SetEase(Ease.InBack);
     }
 
     public void ShowDialog(DialogData data)
@@ -64,6 +70,20 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (_dialogTimeSlider.gameObject.activeSelf)
+        {
+            _currentDialogTime -= Time.deltaTime;
+            _dialogTimeSlider.value = _currentDialogTime;
+            if (_currentDialogTime <= 0)
+            {
+                CloseDialog();
+                OnTimeUp?.Invoke();
+            }
+        }
+    }
+
     private void SetCloseButtonEnabled(bool enabled)
     {
         _closeButton.interactable = enabled;
@@ -74,12 +94,20 @@ public class DialogManager : MonoBehaviour
         if (data.replies == null || data.replies.Length == 0)
         {
             SetCloseButtonEnabled(true);
+            _dialogTimeSlider.gameObject.SetActive(false);
             return;
         }
 
         SetCloseButtonEnabled(false);
 
-        if(_dialogChoices == null)
+        _currentDialogTime = _dialogReponseTime;
+        _dialogTimeSlider.maxValue = _dialogReponseTime;
+        _dialogTimeSlider.value = _dialogReponseTime;
+
+        _dialogTimeSlider.gameObject.SetActive(true);
+
+
+        if (_dialogChoices == null)
             _dialogChoices = new List<GameObject>();
         else
             _dialogChoices.Clear();
@@ -98,7 +126,7 @@ public class DialogManager : MonoBehaviour
     {
         Debug.Log("Choice selected: " + tone);
         OnChoiceSelected?.Invoke(tone);
-        CloseDialogPanel();
+        CloseDialog();
     }
 
     public void ShowNextDialog()
@@ -120,6 +148,7 @@ public class DialogManager : MonoBehaviour
     public void CloseDialog()
     {
         CloseDialogPanel();
+        _dialogTimeSlider.gameObject.SetActive(false);
         OnDialogPanelClosed?.Invoke();
     }
 }

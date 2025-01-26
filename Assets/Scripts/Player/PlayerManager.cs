@@ -9,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     [Header("Slow Motion")]
     [SerializeField] private float _slowMotionTime = 5;
 
+    [Header("Bubbles")]
+    [SerializeField] private GameObject _bubblePrefabSoft;
+
     private Coroutine _slowMotionCoroutine;
 
     private void Awake()
@@ -33,9 +36,23 @@ public class PlayerManager : MonoBehaviour
         DialogManager.Instance.OnDialogPanelClosed -= OnDialogPanelClosed;
     }
 
-    private void OnChoiceSelected(string obj)
+    private void OnChoiceSelected(string tone)
     {
-        FreezePlayer(false);
+        //FreezePlayer(false);
+        switch(tone)
+        {
+            case "SOFT":
+                Fly();
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void Fly()
+    {
+        var softObj = Instantiate(_bubblePrefabSoft, transform.position, Quaternion.identity);
+        softObj.GetComponent<BubbleBase>().DoYourThing();
     }
 
     private void OnTriggerEnter(Collider other)
