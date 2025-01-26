@@ -158,8 +158,8 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator ContinueDialog4()
     {
-        _entity.transform.DOMoveY(-56f, 1f).SetEase(Ease.Linear);
-        yield return new WaitForSeconds(3f);
+        _entity.transform.DOMove(new Vector3(_entity.transform.position.x, _entity.transform.position.y - 1), 1f).SetEase(Ease.Linear);
+        yield return new WaitForSeconds(5f);
         // Fade to black
         _fadeImage.gameObject.SetActive(true);
         _fadeImage.DOColor(Color.black, 2f).OnComplete(() =>
@@ -231,7 +231,7 @@ public class PlayerManager : MonoBehaviour
                 new Vector3(transform.position.x, transform.position.y + 1, transform.position.z),
                 Quaternion.identity);
         if(overrideTime)
-            obj.GetComponent<BubbleAggressive>().OverrideTime(4);
+            obj.GetComponent<BubbleAggressive>().OverrideTime(3);
 
         obj.GetComponent<BubbleAggressive>().SetDestroyObject(shoulDestroy);
         obj.GetComponent<BubbleAggressive>().SetTarget(_entity);

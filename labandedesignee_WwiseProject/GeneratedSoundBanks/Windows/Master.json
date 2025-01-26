@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{AC806FE2-61E6-94F7-3BD8-5260487891BF}",
+    "Hash": "{AD3518AA-ADD7-CB23-BAD4-338A03CA10C0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -352,6 +352,14 @@
       "CachePath": "2F/{2FF48485-C1A8-4BF9-993B-15DDBD68E081}.wem"
      },
      {
+      "Id": "855971036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUSIC_Level_4.wav",
+      "CachePath": "D5/{D5875BCC-3624-86BF-EC1A-37D92776C590}.wem"
+     },
+     {
       "Id": "933800486",
       "Language": "SFX",
       "Streaming": "false",
@@ -491,7 +499,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "57472082"
+          "Id": "855971036"
          }
         ]
        },
@@ -1105,6 +1113,6 @@
     ]
    }
   ],
-  "FileHash": "{6D165C08-9B95-32E9-77E3-973093207279}"
+  "FileHash": "{32A075C9-79EB-0180-F5FE-8850ACBDBCC5}"
  }
 }
