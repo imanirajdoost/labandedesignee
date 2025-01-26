@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogTriggerMultipleChoice : DialogTrigger
 {
@@ -29,6 +30,47 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     private void OnDestroy()
     {
         DialogManager.Instance.OnChoiceSelected -= OnChoiceSelected;
+    }
+
+    public override void SetTriggered()
+    {
+        base.SetTriggered();
+        if(_triggerCount <= 1)
+            DialogManager.Instance.ShowDialog(Index);
+        else
+        {
+            int levelIndex = GetLevelIndex();
+            // Get a random tone from the factory
+            DialogData dialogData = DialogDataFactory.Instance.GetRandomGenericDialogFromList(levelIndex);
+            DialogManager.Instance.ShowDialog(dialogData);
+        }
+    }
+
+    private int GetLevelIndex()
+    {
+        var sceneName = SceneManager.GetActiveScene().name;
+
+        switch(sceneName)
+        {
+            case "Level_01":
+                return 1;
+                break;
+            case "Level_02":
+                return 2;
+                break;
+            case "Level_03":
+                return 3;
+                break;
+            case "Level_04":
+                return 4;
+                break;
+            case "Level_05":
+                return 5;
+                break;
+            default:
+                break;
+        }
+        return 0;
     }
 
     private void OnChoiceSelected(string tone)
@@ -67,9 +109,9 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     {
         GameObject obj = null;
         if(!_spawnLong)
-            obj = Instantiate(_bubbleSoftFly, transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleSoftFly, transform.position, _softTarget.rotation);
         else
-            obj = Instantiate(_bubbleSoftFlyLong, transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleSoftFlyLong, transform.position, _softTarget.rotation);
 
         obj.GetComponent<BubbleSoft>().SetTarget(_softTarget);
         obj.GetComponent<BubbleBase>().DoYourThing();
@@ -89,16 +131,16 @@ public class DialogTriggerMultipleChoice : DialogTrigger
 
         Destroy(_objectToDestroy);
 
-        // TODO: Set player animation
+        _playerManager.SetAnimation("AGGR");
     }
 
     private void CreateCold()
     {
         GameObject obj = null;
         if (!_spawnLong)
-            obj = Instantiate(_bubbleColdCreatePlatform, _coldSpawnTarget.transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleColdCreatePlatform, _coldSpawnTarget.transform.position, _coldSpawnTarget.rotation);
         else
-            obj = Instantiate(_bubbleColdCreatePlatformLong, _coldSpawnTarget.transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleColdCreatePlatformLong, _coldSpawnTarget.transform.position, _coldSpawnTarget.rotation);
 
         obj.GetComponent<BubbleBase>().DoYourThing();
     }

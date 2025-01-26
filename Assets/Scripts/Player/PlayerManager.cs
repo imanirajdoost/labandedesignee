@@ -62,6 +62,9 @@ public class PlayerManager : MonoBehaviour
             case "SOFT":
                 _animator.SetBool("Fly", true);
                 break;
+            case "AGGR":
+                _animator.SetTrigger("Aggressive");
+                break;
             default:
                 break;
         }
@@ -76,8 +79,6 @@ public class PlayerManager : MonoBehaviour
                 return;
 
             dialogTrigger.SetTriggered();
-            DialogManager.Instance.ShowDialog(dialogTrigger.Index);
-
 
             if (dialogTrigger.FreezePlayer)
                 FreezePlayer(true);

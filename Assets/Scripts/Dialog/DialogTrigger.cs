@@ -5,15 +5,16 @@ public class DialogTrigger : MonoBehaviour
     [SerializeField] private int dialogIndex;
     [SerializeField] private bool _freezePlayer;
     [SerializeField] private bool _slowMotion;
-    private int _triggerCount = 0;
+    protected int _triggerCount = 0;
     [SerializeField] private bool _shouldTriggerOnce;
+    [SerializeField] protected bool _shouldDestroyAfterTriggered;
 
     public int GetTriggerCount()
     {
         return _triggerCount;
     }
 
-    public void SetTriggered()
+    public virtual void SetTriggered()
     {
         _triggerCount++;
     }
