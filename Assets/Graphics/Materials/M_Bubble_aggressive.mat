@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Bubble_aggressive
-  m_Shader: {fileID: -6465566751694194690, guid: 6e5d345c48dcf21418b052c20d58408f, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 36303d4db0d69d14a8876f7d25a3342b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -65,7 +65,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _BlendMode: 0
+    - _BlendMode: 4
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -79,6 +79,8 @@ Material:
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
     - _Fresnel: 0.32
+    - _Fresnel_contrast: 32.71
+    - _Fresnel_value: 2.07
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _RenderQueueType: 4
@@ -107,6 +109,6 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Fresnel_color: {r: 1, g: 0.9120868, b: 0, a: 0}
-    - _Main_color: {r: 1, g: 0, b: 0, a: 0}
+    - _Main_color: {r: 0.97749645, g: 1, b: 0.028301895, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

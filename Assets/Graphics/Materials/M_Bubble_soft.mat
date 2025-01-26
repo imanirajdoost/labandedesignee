@@ -78,7 +78,9 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _Fresnel: 0.32
+    - _Fresnel: 0.96
+    - _Fresnel_contrast: 1
+    - _Fresnel_value: 1.58
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _RenderQueueType: 4
@@ -107,6 +109,6 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Fresnel_color: {r: 1, g: 0.9120868, b: 0, a: 0}
-    - _Main_color: {r: 1, g: 0, b: 0, a: 0}
+    - _Main_color: {r: 0.3075472, g: 0.98412275, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
