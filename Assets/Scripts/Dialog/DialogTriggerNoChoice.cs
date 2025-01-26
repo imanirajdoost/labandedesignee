@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DialogTriggerNoChoice : DialogTrigger
@@ -7,6 +8,12 @@ public class DialogTriggerNoChoice : DialogTrigger
         base.SetTriggered();
         DialogManager.Instance.ShowDialog(Index);
         if (_shouldDestroyAfterTriggered)
-            Destroy(gameObject, 2);
+            StartCoroutine(DisableAfter(2));
+    }
+
+    private IEnumerator DisableAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+        gameObject.SetActive(false);
     }
 }
