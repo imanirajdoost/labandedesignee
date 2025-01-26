@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 231f20558687fd4bb24fa8306b1169bd
     GuidInternal: 
-    m_lastTime: -8584637501074775808
+    m_lastTime: -8584637105994775808
     List:
     - name: Master
       guid: 7630fb9675e32541a32720f4f67c13f5
@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584637491154775808
+    m_lastTime: -8584636998514775808
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -175,6 +175,58 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_SFX_Bubble_Aggresive
+      guid: acc5c2fb217e1a418390bd487c45ee67
+      id: 3667547178
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Aggresive
+        ObjectType: 3
+        guid: acc5c2fb217e1a418390bd487c45ee67
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Aggresive
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Bubble_Balloon_Despawn
+      guid: f482fa06a6af50458a0c3e23f593bdfe
+      id: 3462324803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Balloon_Despawn
+        ObjectType: 3
+        guid: f482fa06a6af50458a0c3e23f593bdfe
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Despawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Bubble_Balloon_Fly_LP
       guid: a4b8493c13da23448057e89aa1de59e7
       id: 2368847281
@@ -225,11 +277,11 @@ MonoBehaviour:
         guid: cb27d2271ba0e948a01f96a40ff3214b
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Spawn
       maxAttenuation: 0
-      maxDuration: 4.5
-      minDuration: 4.5
-    - name: Play_SFX_Bubble_Explosive_Missed
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_SFX_Bubble_Explosion
       guid: 0b5edb68ecbc1b409ea37189b2057b7d
-      id: 1872044216
+      id: 1654008228
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -246,16 +298,16 @@ MonoBehaviour:
       - ElementName: SFX_Bubble
         ObjectType: 4
         guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Play_SFX_Bubble_Explosive_Missed
+      - ElementName: Play_SFX_Bubble_Explosion
         ObjectType: 3
         guid: 0b5edb68ecbc1b409ea37189b2057b7d
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Explosive_Missed
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Explosion
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX_Bubble_Explosive_Successful
-      guid: acc5c2fb217e1a418390bd487c45ee67
-      id: 1043404145
+    - name: Play_SFX_Bubble_Ice_Despawn
+      guid: a7cfa601ce71e04d9ef4d05149ac04b0
+      id: 3654473079
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -272,13 +324,13 @@ MonoBehaviour:
       - ElementName: SFX_Bubble
         ObjectType: 4
         guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Play_SFX_Bubble_Explosive_Successful
+      - ElementName: Play_SFX_Bubble_Ice_Despawn
         ObjectType: 3
-        guid: acc5c2fb217e1a418390bd487c45ee67
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Explosive_Successful
+        guid: a7cfa601ce71e04d9ef4d05149ac04b0
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Despawn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.5676212
+      minDuration: 2.817625
     - name: Play_SFX_Bubble_Ice_Spawn
       guid: 157213235ef111479b6a0d9c224c5c2d
       id: 1920689292
@@ -303,8 +355,8 @@ MonoBehaviour:
         guid: 157213235ef111479b6a0d9c224c5c2d
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Spawn
       maxAttenuation: 0
-      maxDuration: 3.6739376
-      minDuration: 3.2970834
+      maxDuration: 6.567621
+      minDuration: 5.817625
     - name: Play_SFX_Entity_Agressive
       guid: f05e5000619c7142a7658b5c95f6237f
       id: 1974143923
@@ -1526,7 +1578,7 @@ MonoBehaviour:
     m_lastTime: -8584637838729467427
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001a000000260000002e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c000000190000001a0000001b0000001c0000002e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

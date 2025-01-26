@@ -8,5 +8,14 @@ public class BubbleAggressive : BubbleBase
 
         PlayerManager playerManager = FindFirstObjectByType<PlayerManager>();
         playerManager.OnPlatformDestroyed();
+
+        GameManager.Instance.SpawnImpactVFX(transform.position);
+
+        DisableObjectAfter(2);
+    }
+
+    protected override void Despawn()
+    {
+        // Despawn Audio
     }
 }

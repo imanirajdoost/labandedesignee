@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -95,6 +96,11 @@ public class PlayerManager : MonoBehaviour
                 _slowMotionCoroutine = StartCoroutine(SetSlowMotionFor(_slowMotionTime));
             }
             
+        } else if(other.CompareTag("EndLevel"))
+        {
+            // Go To Next Level
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentIndex + 1);
         }
     }
 
@@ -145,7 +151,20 @@ public class PlayerManager : MonoBehaviour
     public void OnCreatedPlatform(GameObject targetPlatform)
     {
         ForceAttach();
+        // move the player to the platform
+        transform.position = targetPlatform.transform.position;
+        // set the player to climb
         _animator.SetTrigger("Climb");
+
+        StartCoroutine(WaitForClimbAnim(targetPlatform));
+    }
+
+    private IEnumerator WaitForClimbAnim(GameObject targetPlatform)
+    {
+        yield return new WaitForSeconds(2.167f);
+        // put player up the platform
+        transform.position = new Vector3(targetPlatform.transform.position.x, targetPlatform.transform.position.y + 1f, targetPlatform.transform.position.z);
+        ForceDetach();
     }
 
     public void OnPlatformDestroyed()

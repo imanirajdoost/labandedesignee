@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{E5B46695-CB32-8227-0566-964E032B2418}",
+    "Hash": "{F19CA06F-FC8B-1E44-0C64-56F124ADBEBC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Entity_Speak_02.wav",
       "CachePath": "49/{49144712-FBB1-D961-5FD7-70D28EEE3D6C}.wem"
+     },
+     {
+      "Id": "57472082",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUSIC_Level_3.wav",
+      "CachePath": "C4/{C4F6D199-9833-1454-6EC6-1FD9384AA0D8}.wem"
      },
      {
       "Id": "80548659",
@@ -54,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "MUSIC_Level_1.wav",
       "CachePath": "12/{123A822D-BD69-AD7E-7EB9-CEC12C97E8D5}.wem"
+     },
+     {
+      "Id": "138170114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Balloon_Spawn_02.wav",
+      "CachePath": "C2/{C2A1254B-394D-5663-C6D7-B4D9FD73F773}.wem"
      },
      {
       "Id": "147265247",
@@ -240,12 +256,12 @@
       "CachePath": "2A/{2AE0A7AD-4282-4F51-E74E-8003536DD3AE}.wem"
      },
      {
-      "Id": "732945048",
+      "Id": "755609911",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "SFX_Bubble_Balloon_Spawn.wav",
-      "CachePath": "BA/{BA1CC30C-BF5D-058B-1B4C-2672F585082A}.wem"
+      "ShortName": "SFX_Bubble_Balloon_Spawn_03.wav",
+      "CachePath": "B3/{B395CC02-D40B-E0DD-AED3-15015AFAD0ED}.wem"
      },
      {
       "Id": "761971618",
@@ -270,6 +286,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Bubble_Ice_Despawn_01.wav",
       "CachePath": "FE/{FECA3784-6600-EF12-4403-AA05B87F90E2}.wem"
+     },
+     {
+      "Id": "801177696",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Balloon_Spawn_01.wav",
+      "CachePath": "E6/{E60859AB-8267-0306-67C3-DFF57E7AA20C}.wem"
      },
      {
       "Id": "807513506",
@@ -402,6 +426,20 @@
           "Id": "124690407"
          }
         ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1642548553",
+         "Id": "36359124",
+         "GUID": "{B355511A-AD25-416A-9EC5-9C2E03F4E1CF}",
+         "Color": "9"
+        },
+        "MediaRefs": [
+         {
+          "Id": "57472082"
+         }
+        ]
        }
       ]
      },
@@ -425,11 +463,17 @@
       "GUID": "{27D227CB-A01B-48E9-A01F-96A40FF3214B}",
       "Color": "12",
       "DurationType": "OneShot",
-      "DurationMin": "4.5",
-      "DurationMax": "4.5",
+      "DurationMin": "5.960708",
+      "DurationMax": "5.960708",
       "MediaRefs": [
        {
-        "Id": "732945048"
+        "Id": "138170114"
+       },
+       {
+        "Id": "755609911"
+       },
+       {
+        "Id": "801177696"
        }
       ]
      },
@@ -461,14 +505,23 @@
       "GUID": "{23137215-F15E-4711-9B6A-0D9C224C5C2D}",
       "Color": "12",
       "DurationType": "OneShot",
-      "DurationMin": "3.2970834",
-      "DurationMax": "4.6288714",
+      "DurationMin": "5.817625",
+      "DurationMax": "6.567621",
       "MediaRefs": [
+       {
+        "Id": "80548659"
+       },
        {
         "Id": "147265247"
        },
        {
+        "Id": "449474657"
+       },
+       {
         "Id": "700612054"
+       },
+       {
+        "Id": "797977786"
        },
        {
         "Id": "1013134519"
@@ -963,6 +1016,6 @@
     ]
    }
   ],
-  "FileHash": "{4FB06716-650B-E452-70FE-A0620679C317}"
+  "FileHash": "{F881ACCF-B8F4-C765-9E0C-1CB33E47F925}"
  }
 }
