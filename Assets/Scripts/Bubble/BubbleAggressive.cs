@@ -18,6 +18,12 @@ public class BubbleAggressive : BubbleBase
         PlayerManager playerManager = FindFirstObjectByType<PlayerManager>();
         playerManager.OnPlatformDestroyed();
 
+        if(_targetToDestroy == null)
+        {
+            DisableObjectAfter(2);
+            return;
+        }
+
         StartCoroutine(MoveTowardsThePlatformToDestroy());
     }
 
