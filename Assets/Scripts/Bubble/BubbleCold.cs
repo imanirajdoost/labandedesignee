@@ -9,6 +9,6 @@ public class BubbleCold : BubbleBase
         PlayerManager playerManager = FindFirstObjectByType<PlayerManager>();
         playerManager.OnCreatedPlatform(transform.gameObject);
 
-        Destroy(gameObject, 5);
+        DisableObjectAfter(5);
     }
 }

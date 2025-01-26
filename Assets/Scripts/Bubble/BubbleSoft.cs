@@ -1,3 +1,5 @@
+using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 public class BubbleSoft : BubbleBase
@@ -59,6 +61,6 @@ public class BubbleSoft : BubbleBase
         _playerManager.transform.SetParent(null);
         _playerManager.ForceDetach();
 
-        Destroy(gameObject, 1);
+        DisableObjectAfter(1f);
     }
 }

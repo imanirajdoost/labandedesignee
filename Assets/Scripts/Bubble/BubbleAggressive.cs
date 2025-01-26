@@ -11,6 +11,6 @@ public class BubbleAggressive : BubbleBase
 
         GameManager.Instance.SpawnImpactVFX(transform.position);
 
-        Destroy(gameObject, 5);
+        DisableObjectAfter(5);
     }
 }

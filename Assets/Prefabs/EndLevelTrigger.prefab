@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9036980402946887216}
   - component: {fileID: 7204854740542823566}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EndLevelTrigger
   m_TagString: EndLevel
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 8871163632840113107}
   - component: {fileID: 7818561433210070221}
   - component: {fileID: 8047546167900785759}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,9 +149,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8871163632840113107}
     m_Modifications:
+    - target: {fileID: 852947831494304669, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696204563373084951, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1943286446490004412, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
       propertyPath: m_Name
       value: VFX_Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943286446490004412, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5674383046283250234, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +204,14 @@ PrefabInstance:
     - target: {fileID: 5674383046283250234, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6153189848992024842, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687076216537280699, guid: e953460ff16e0a6459684f9b77202b5c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
