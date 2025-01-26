@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 231f20558687fd4bb24fa8306b1169bd
     GuidInternal: 
-    m_lastTime: -8584637790360246047
+    m_lastTime: -8584637603894775808
     List:
     - name: Master
       guid: 7630fb9675e32541a32720f4f67c13f5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e8ccfcd9bf771947bc322eafbedae234
     GuidInternal: 
-    m_lastTime: -8584637838729674458
+    m_lastTime: -8584637595674775808
     List: []
   - PhysicalPath: Events\Main.wwu
     PathAndIcons:
@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584637838729674458
+    m_lastTime: -8584637587854775808
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -152,9 +152,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX_Bubble_Dream_Fly_LP
-      guid: a4b8493c13da23448057e89aa1de59e7
-      id: 3970260177
+    - name: Play_Music
+      guid: 4351024ebf848b43b92ff673684b5fac
+      id: 2932040671
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -165,22 +165,19 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 12
         guid: 94c93832d8ddbe47be6ecd4c4723e929
-      - ElementName: SFX
+      - ElementName: MUSIC
         ObjectType: 4
-        guid: cde0e77ed7925b468a7c2518114eda94
-      - ElementName: SFX_Bubble
-        ObjectType: 4
-        guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Play_SFX_Bubble_Dream_Fly_LP
+        guid: 528829ea9b2eab4a83db10bcc6e5ae7c
+      - ElementName: Play_Music
         ObjectType: 3
-        guid: a4b8493c13da23448057e89aa1de59e7
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Dream_Fly_LP
+        guid: 4351024ebf848b43b92ff673684b5fac
+      Path: Events\Default Work Unit\Main\MUSIC\Play_Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX_Bubble_Dream_Spawn
-      guid: cb27d2271ba0e948a01f96a40ff3214b
-      id: 1168453880
+    - name: Play_SFX_Bubble_Balloon_Fly_LP
+      guid: a4b8493c13da23448057e89aa1de59e7
+      id: 2368847281
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -197,10 +194,88 @@ MonoBehaviour:
       - ElementName: SFX_Bubble
         ObjectType: 4
         guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Play_SFX_Bubble_Dream_Spawn
+      - ElementName: Play_SFX_Bubble_Balloon_Fly_LP
+        ObjectType: 3
+        guid: a4b8493c13da23448057e89aa1de59e7
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Fly_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_SFX_Bubble_Balloon_Spawn
+      guid: cb27d2271ba0e948a01f96a40ff3214b
+      id: 3514202776
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Balloon_Spawn
         ObjectType: 3
         guid: cb27d2271ba0e948a01f96a40ff3214b
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Dream_Spawn
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Spawn
+      maxAttenuation: 0
+      maxDuration: 4.5
+      minDuration: 4.5
+    - name: Play_SFX_Bubble_Explosive_Missed
+      guid: 0b5edb68ecbc1b409ea37189b2057b7d
+      id: 1872044216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Explosive_Missed
+        ObjectType: 3
+        guid: 0b5edb68ecbc1b409ea37189b2057b7d
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Explosive_Missed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Bubble_Explosive_Successful
+      guid: acc5c2fb217e1a418390bd487c45ee67
+      id: 1043404145
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: SFX
+        ObjectType: 4
+        guid: cde0e77ed7925b468a7c2518114eda94
+      - ElementName: SFX_Bubble
+        ObjectType: 4
+        guid: 8f71c4a9fa0644478c2fa245456c4693
+      - ElementName: Play_SFX_Bubble_Explosive_Successful
+        ObjectType: 3
+        guid: acc5c2fb217e1a418390bd487c45ee67
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Explosive_Successful
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -227,32 +302,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 157213235ef111479b6a0d9c224c5c2d
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Ice_Spawn
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_SFX_Bubble_Violent_Break
-      guid: acc5c2fb217e1a418390bd487c45ee67
-      id: 917311644
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e8ccfcd9bf771947bc322eafbedae234
-      - ElementName: Main
-        ObjectType: 12
-        guid: 94c93832d8ddbe47be6ecd4c4723e929
-      - ElementName: SFX
-        ObjectType: 4
-        guid: cde0e77ed7925b468a7c2518114eda94
-      - ElementName: SFX_Bubble
-        ObjectType: 4
-        guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Play_SFX_Bubble_Violent_Break
-        ObjectType: 3
-        guid: acc5c2fb217e1a418390bd487c45ee67
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Violent_Break
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -436,8 +485,8 @@ MonoBehaviour:
         guid: b93a5a7ffb01414eb349203e0d2d5d7d
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.33939582
+      minDuration: 0.22933333
     - name: Play_SFX_Player_Jump
       guid: a0564a565d9cdc499b8a71a00a418eda
       id: 604897336
@@ -462,8 +511,8 @@ MonoBehaviour:
         guid: a0564a565d9cdc499b8a71a00a418eda
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.6
+      minDuration: 1.6
     - name: Play_SFX_Player_Land
       guid: e05d8583315bfb40aa4a52036edfa347
       id: 2037741043
@@ -488,8 +537,8 @@ MonoBehaviour:
         guid: e05d8583315bfb40aa4a52036edfa347
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.82720834
+      minDuration: 0.82720834
     - name: Play_SFX_Player_Respawn
       guid: acf9a34b2e176a48acd1fa1388ef0011
       id: 3740565200
@@ -615,8 +664,8 @@ MonoBehaviour:
         guid: 8900d37b69c17742b06e38d7ed513309
       Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 6.8315
+      minDuration: 6.8315
     - name: Play_Sound_Test_2D_LP
       guid: 5e99afcaeae46249bad7365bfc29bd3d
       id: 2510895262
@@ -638,8 +687,8 @@ MonoBehaviour:
         guid: 5e99afcaeae46249bad7365bfc29bd3d
       Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_2D_LP
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Sound_Test_3D
       guid: 975f12bc1bd2b54eb8f5b03971ca78ab
       id: 680690348
@@ -660,6 +709,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 975f12bc1bd2b54eb8f5b03971ca78ab
       Path: Events\Default Work Unit\Main\Z_Test\Play_Sound_Test_3D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Set_State
+      guid: b1b86c4dd6687e46a379081556fcf232
+      id: 2596512161
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      Path: Events\Default Work Unit\Main\Set_State
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -775,9 +844,78 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Stop_SFX_Bubble_Dream_Fly_LP
+    - name: ST_Init
+      guid: 534195a1d3f5884989a540287ff1c963
+      id: 1838668217
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_Init
+        ObjectType: 3
+        guid: 534195a1d3f5884989a540287ff1c963
+      Path: Events\Default Work Unit\Main\Set_State\ST_Init
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_TimeFreeze_Off
+      guid: f3b7257ad5c1104bb65e5d15761d4ece
+      id: 3646474335
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_TimeFreeze_Off
+        ObjectType: 3
+        guid: f3b7257ad5c1104bb65e5d15761d4ece
+      Path: Events\Default Work Unit\Main\Set_State\ST_TimeFreeze_Off
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ST_TimeFreeze_On
+      guid: d97f649c2c52844c95896bdc4aea1901
+      id: 4255932043
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8ccfcd9bf771947bc322eafbedae234
+      - ElementName: Main
+        ObjectType: 12
+        guid: 94c93832d8ddbe47be6ecd4c4723e929
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: b1b86c4dd6687e46a379081556fcf232
+      - ElementName: ST_TimeFreeze_On
+        ObjectType: 3
+        guid: d97f649c2c52844c95896bdc4aea1901
+      Path: Events\Default Work Unit\Main\Set_State\ST_TimeFreeze_On
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_SFX_Bubble_Balloon_Fly_LP
       guid: 60a6aa652ea3e445a987f49b0fa723e3
-      id: 4223942975
+      id: 3458233571
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -794,13 +932,13 @@ MonoBehaviour:
       - ElementName: SFX_Bubble
         ObjectType: 4
         guid: 8f71c4a9fa0644478c2fa245456c4693
-      - ElementName: Stop_SFX_Bubble_Dream_Fly_LP
+      - ElementName: Stop_SFX_Bubble_Balloon_Fly_LP
         ObjectType: 3
         guid: 60a6aa652ea3e445a987f49b0fa723e3
-      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Stop_SFX_Bubble_Dream_Fly_LP
+      Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Stop_SFX_Bubble_Balloon_Fly_LP
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.5
+      minDuration: 2.5
     - name: Stop_Sound_Test_2D_LP
       guid: c583c89c449f5142b1ea0179708da1a8
       id: 871501620
@@ -822,8 +960,8 @@ MonoBehaviour:
         guid: c583c89c449f5142b1ea0179708da1a8
       Path: Events\Default Work Unit\Main\Z_Test\Stop_Sound_Test_2D_LP
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI
       guid: 66de9ab075e41243af89a0d9ce909627
       id: 1551306167
@@ -890,8 +1028,256 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 466bf6c904bb3f4588a1025cf0beb14e
     GuidInternal: 
-    m_lastTime: -8584637838729477694
+    m_lastTime: -8584637791974775808
     List: []
+  - PhysicalPath: States\Main.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 466bf6c904bb3f4588a1025cf0beb14e
+    - ElementName: Main
+      ObjectType: 12
+      guid: 01ded8f76875e24ba431c51792edd856
+    ParentPath: States\Default Work Unit\Main
+    guid: 01ded8f76875e24ba431c51792edd856
+    GuidInternal: 
+    m_lastTime: -8584637614534775808
+    List:
+    - name: ST_GameFlow
+      guid: ef42fa00357e4c419232f0b56572078c
+      id: 1642548553
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 466bf6c904bb3f4588a1025cf0beb14e
+      - ElementName: Main
+        ObjectType: 12
+        guid: 01ded8f76875e24ba431c51792edd856
+      - ElementName: ST_GameFlow
+        ObjectType: 9
+        guid: ef42fa00357e4c419232f0b56572078c
+      Path: States\Default Work Unit\Main\ST_GameFlow
+      values:
+      - name: None
+        guid: c4579f4402a1ce4783f0ebd6e274b5e2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: None
+          ObjectType: 8
+          guid: c4579f4402a1ce4783f0ebd6e274b5e2
+      - name: ST_GameFlow_Level_1
+        guid: 1d7de447e2d36543a67875cf6d6cff2b
+        id: 36359126
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_Level_1
+          ObjectType: 8
+          guid: 1d7de447e2d36543a67875cf6d6cff2b
+      - name: ST_GameFlow_Level_2
+        guid: 039ab293cc8bdd4093e0babb83288e6e
+        id: 36359125
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_Level_2
+          ObjectType: 8
+          guid: 039ab293cc8bdd4093e0babb83288e6e
+      - name: ST_GameFlow_Level_3
+        guid: 1a5155b325ad6a419ec59c2e03f4e1cf
+        id: 36359124
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_Level_3
+          ObjectType: 8
+          guid: 1a5155b325ad6a419ec59c2e03f4e1cf
+      - name: ST_GameFlow_Level_4
+        guid: 1a24c8703ed52b40bccd7c2356a15f65
+        id: 36359123
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_Level_4
+          ObjectType: 8
+          guid: 1a24c8703ed52b40bccd7c2356a15f65
+      - name: ST_GameFlow_Level_5
+        guid: 70b7164e8955c54f8315ef4f3ccc17c0
+        id: 36359122
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_Level_5
+          ObjectType: 8
+          guid: 70b7164e8955c54f8315ef4f3ccc17c0
+      - name: ST_GameFlow_MainMenu
+        guid: ea2f512702046a468a9090b679e8f1a2
+        id: 4047794154
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_GameFlow
+          ObjectType: 9
+          guid: ef42fa00357e4c419232f0b56572078c
+        - ElementName: ST_GameFlow_MainMenu
+          ObjectType: 8
+          guid: ea2f512702046a468a9090b679e8f1a2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: ST_TimeFreeze
+      guid: 143e76d631cb424789cd8fde7ea797b5
+      id: 564244989
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 466bf6c904bb3f4588a1025cf0beb14e
+      - ElementName: Main
+        ObjectType: 12
+        guid: 01ded8f76875e24ba431c51792edd856
+      - ElementName: ST_TimeFreeze
+        ObjectType: 9
+        guid: 143e76d631cb424789cd8fde7ea797b5
+      Path: States\Default Work Unit\Main\ST_TimeFreeze
+      values:
+      - name: None
+        guid: a928780b060dd94fb3377012344e9aae
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_TimeFreeze
+          ObjectType: 9
+          guid: 143e76d631cb424789cd8fde7ea797b5
+        - ElementName: None
+          ObjectType: 8
+          guid: a928780b060dd94fb3377012344e9aae
+      - name: ST_TimeFreeze_Off
+        guid: fdd596250714eb489794f2d27480263c
+        id: 3646474335
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_TimeFreeze
+          ObjectType: 9
+          guid: 143e76d631cb424789cd8fde7ea797b5
+        - ElementName: ST_TimeFreeze_Off
+          ObjectType: 8
+          guid: fdd596250714eb489794f2d27480263c
+      - name: ST_TimeFreeze_On
+        guid: e753422e6ef77e4cb2aabd33696cc60c
+        id: 4255932043
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 466bf6c904bb3f4588a1025cf0beb14e
+        - ElementName: Main
+          ObjectType: 12
+          guid: 01ded8f76875e24ba431c51792edd856
+        - ElementName: ST_TimeFreeze
+          ObjectType: 9
+          guid: 143e76d631cb424789cd8fde7ea797b5
+        - ElementName: ST_TimeFreeze_On
+          ObjectType: 8
+          guid: e753422e6ef77e4cb2aabd33696cc60c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -904,7 +1290,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 83629875aea479408b112ca367ec0349
     GuidInternal: 
-    m_lastTime: -8584637838729477694
+    m_lastTime: -8584637614614775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

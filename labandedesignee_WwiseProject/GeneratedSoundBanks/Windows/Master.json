@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{95F7FF00-18FA-7762-C2E9-E50C09C607FA}",
+    "Hash": "{919562EA-DE1F-26D7-7F8F-77E7F48B9E98}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_Land.wav",
       "CachePath": "AA/{AA23AEC3-2972-2A07-9396-7F53ABC9BC90}.wem"
+     },
+     {
+      "Id": "147265247",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Spawn_03.wav",
+      "CachePath": "72/{726A593F-E607-1306-EE31-994AE88684FD}.wem"
      },
      {
       "Id": "168107640",
@@ -120,6 +128,14 @@
       "CachePath": "89/{891362F8-7DD4-8134-8CB2-EC9510C2F749}.wem"
      },
      {
+      "Id": "700612054",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Spawn_01.wav",
+      "CachePath": "2A/{2AE0A7AD-4282-4F51-E74E-8003536DD3AE}.wem"
+     },
+     {
       "Id": "732945048",
       "Language": "SFX",
       "Streaming": "false",
@@ -168,6 +184,14 @@
       "CachePath": "F9/{F9762F98-7C87-C7FE-E2A6-02BB28112D81}.wem"
      },
      {
+      "Id": "1013134519",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubble_Ice_Spawn_02.wav",
+      "CachePath": "18/{18ED2365-4F69-2F4C-EB9B-D87FE5664DCB}.wem"
+     },
+     {
       "Id": "1053680828",
       "Language": "SFX",
       "Streaming": "false",
@@ -202,6 +226,27 @@
       "MediaRefs": [
        {
         "Id": "732945048"
+       }
+      ]
+     },
+     {
+      "Id": "1920689292",
+      "Name": "Play_SFX_Bubble_Ice_Spawn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Main\\SFX\\SFX_Bubble\\Play_SFX_Bubble_Ice_Spawn",
+      "GUID": "{23137215-F15E-4711-9B6A-0D9C224C5C2D}",
+      "Color": "12",
+      "DurationType": "OneShot",
+      "DurationMin": "3.2970834",
+      "DurationMax": "3.6739376",
+      "MediaRefs": [
+       {
+        "Id": "147265247"
+       },
+       {
+        "Id": "700612054"
+       },
+       {
+        "Id": "1013134519"
        }
       ]
      },
@@ -438,6 +483,6 @@
     ]
    }
   ],
-  "FileHash": "{1FFA8268-8E4B-9E9F-5168-A1CDBFE2A96A}"
+  "FileHash": "{693D3A66-8988-0E3C-7266-889579AC63C5}"
  }
 }
