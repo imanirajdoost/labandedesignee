@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{A35EA026-63EA-54D5-8CC3-A099E72B6BC3}",
+    "Hash": "{D5AE9EC0-7556-08E2-590B-390E369116C0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -362,6 +362,20 @@
         "MediaRefs": [
          {
           "Id": "424236609"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1642548553",
+         "Id": "4047794154",
+         "GUID": "{27512FEA-0402-466A-8A90-90B679E8F1A2}",
+         "Color": "9"
+        },
+        "MediaRefs": [
+         {
+          "Id": "124690407"
          }
         ]
        }
@@ -904,6 +918,6 @@
     ]
    }
   ],
-  "FileHash": "{491FEC82-3984-5E96-B8A0-CD337460ABD3}"
+  "FileHash": "{0ED87F11-F6F8-1960-A484-98B433079BA4}"
  }
 }
