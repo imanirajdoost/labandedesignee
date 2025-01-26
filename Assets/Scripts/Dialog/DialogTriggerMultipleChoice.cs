@@ -144,9 +144,13 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     {
         GameObject obj = null;
         if (!_spawnLong)
-            obj = Instantiate(_bubbleAggressiveAttack, transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleAggressiveAttack, 
+                new Vector3(_playerManager.transform.position.x, _playerManager.transform.position.y + 1, _playerManager.transform.position.z),
+                Quaternion.identity);
         else
-            obj = Instantiate(_bubbleAggressiveAttackLong, transform.position, Quaternion.identity);
+            obj = Instantiate(_bubbleAggressiveAttackLong, 
+                new Vector3(_playerManager.transform.position.x, _playerManager.transform.position.y + 1, _playerManager.transform.position.z),
+                Quaternion.identity);
 
         obj.GetComponent<BubbleBase>().DoYourThing();
 

@@ -161,9 +161,9 @@ public class PlayerManager : MonoBehaviour
 
     private IEnumerator WaitForClimbAnim(GameObject targetPlatform)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.167f);
         // put player up the platform
-        transform.position = new Vector3(targetPlatform.transform.position.x, targetPlatform.transform.position.y + 1, targetPlatform.transform.position.z);
+        transform.position = new Vector3(targetPlatform.transform.position.x, targetPlatform.transform.position.y + 1f, targetPlatform.transform.position.z);
         ForceDetach();
     }
 

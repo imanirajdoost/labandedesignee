@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BubbleType: SOFT
   _playerAttachPoint: {fileID: 5485936749653463323}
+  _targetToFlyTo: {fileID: 0}
+  _playerManager: {fileID: 0}
 --- !u!1001 &3414666228584485583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,11 +91,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8d692ff176e5f724b9bbe422e340dd33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.463
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d692ff176e5f724b9bbe422e340dd33, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d692ff176e5f724b9bbe422e340dd33, type: 3}
       propertyPath: m_LocalPosition.z

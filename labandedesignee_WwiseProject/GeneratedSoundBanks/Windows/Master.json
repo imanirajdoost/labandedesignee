@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{E5B46695-CB32-8227-0566-964E032B2418}",
+    "Hash": "{A0062FE9-B805-6B65-90BE-9DAA4BC48D3D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Entity_Speak_02.wav",
       "CachePath": "49/{49144712-FBB1-D961-5FD7-70D28EEE3D6C}.wem"
+     },
+     {
+      "Id": "57472082",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUSIC_Level_3.wav",
+      "CachePath": "2D/{2D63267D-26A7-04ED-6E12-A811556564B7}.wem"
      },
      {
       "Id": "80548659",
@@ -400,6 +408,20 @@
         "MediaRefs": [
          {
           "Id": "124690407"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1642548553",
+         "Id": "36359124",
+         "GUID": "{B355511A-AD25-416A-9EC5-9C2E03F4E1CF}",
+         "Color": "9"
+        },
+        "MediaRefs": [
+         {
+          "Id": "57472082"
          }
         ]
        }
@@ -963,6 +985,6 @@
     ]
    }
   ],
-  "FileHash": "{4FB06716-650B-E452-70FE-A0620679C317}"
+  "FileHash": "{8355A43B-881B-1001-05A1-69A38E10906D}"
  }
 }
