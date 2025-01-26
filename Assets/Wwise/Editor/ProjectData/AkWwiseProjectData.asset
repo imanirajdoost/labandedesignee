@@ -511,8 +511,8 @@ MonoBehaviour:
         guid: b93a5a7ffb01414eb349203e0d2d5d7d
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.3809589
-      minDuration: 0.22933333
+      maxDuration: 4.983053
+      minDuration: 4.3293333
     - name: Play_SFX_Player_Jump
       guid: a0564a565d9cdc499b8a71a00a418eda
       id: 604897336
@@ -537,8 +537,8 @@ MonoBehaviour:
         guid: a0564a565d9cdc499b8a71a00a418eda
       Path: Events\Default Work Unit\Main\SFX\SFX_Player\Play_SFX_Player_Jump
       maxAttenuation: 0
-      maxDuration: 1.6
-      minDuration: 1.6
+      maxDuration: 2.17825
+      minDuration: 2.17825
     - name: Play_SFX_Player_Land
       guid: e05d8583315bfb40aa4a52036edfa347
       id: 2037741043
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_lastTime: -8584637838729467427
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000b0000001a0000001b0000001d0000001e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
