@@ -110,7 +110,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Main
     guid: 94c93832d8ddbe47be6ecd4c4723e929
     GuidInternal: 
-    m_lastTime: -8584636998514775808
+    m_lastTime: -8584636990834775808
     List:
     - name: AMB
       guid: b3a3a8bf4d8f1d4c91ff55c2a1a110c3
@@ -277,8 +277,8 @@ MonoBehaviour:
         guid: cb27d2271ba0e948a01f96a40ff3214b
       Path: Events\Default Work Unit\Main\SFX\SFX_Bubble\Play_SFX_Bubble_Balloon_Spawn
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 5.960708
+      minDuration: 5.960708
     - name: Play_SFX_Bubble_Explosion
       guid: 0b5edb68ecbc1b409ea37189b2057b7d
       id: 1654008228
