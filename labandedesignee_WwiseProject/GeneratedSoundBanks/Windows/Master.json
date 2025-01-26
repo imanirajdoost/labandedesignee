@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{96FB3076-E375-4125-A327-20F4F67C13F5}",
     "Language": "SFX",
-    "Hash": "{AE315D13-DF88-002D-0BF3-A2FCF2722A00}",
+    "Hash": "{E6724962-CB52-F2FC-19EC-C52C0F557732}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -216,6 +216,14 @@
       "CachePath": "BD/{BDE9E5D4-E006-553A-8E1B-CAE06C120C58}.wem"
      },
      {
+      "Id": "580370827",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUSIC_Level_5.wav",
+      "CachePath": "2C/{2C4FFC72-43A7-EDFA-20FE-ECD304A9027A}.wem"
+     },
+     {
       "Id": "600204336",
       "Language": "SFX",
       "Streaming": "false",
@@ -238,6 +246,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Entity_Speak_07.wav",
       "CachePath": "AA/{AAF2BC08-03D3-5A58-1A83-40E691409629}.wem"
+     },
+     {
+      "Id": "671753964",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MUSIC_Level_0.wav",
+      "CachePath": "62/{6222F4F3-F3E5-5171-8806-A8B6FC3CB032}.wem"
      },
      {
       "Id": "676514244",
@@ -423,7 +439,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "124690407"
+          "Id": "671753964"
          }
         ]
        },
@@ -438,6 +454,34 @@
         "MediaRefs": [
          {
           "Id": "57472082"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1642548553",
+         "Id": "36359123",
+         "GUID": "{70C8241A-D53E-402B-BCCD-7C2356A15F65}",
+         "Color": "9"
+        },
+        "MediaRefs": [
+         {
+          "Id": "57472082"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1642548553",
+         "Id": "36359122",
+         "GUID": "{4E16B770-5589-4FC5-8315-EF4F3CCC17C0}",
+         "Color": "9"
+        },
+        "MediaRefs": [
+         {
+          "Id": "580370827"
          }
         ]
        }
@@ -1016,6 +1060,6 @@
     ]
    }
   ],
-  "FileHash": "{1AAF82A1-EA0D-3C9F-7F77-8DF45D086CEA}"
+  "FileHash": "{AB683281-1448-E176-E29D-F2B0428060DB}"
  }
 }
