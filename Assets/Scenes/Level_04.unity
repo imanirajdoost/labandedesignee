@@ -4656,6 +4656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndLevelTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 2300384326940653528, guid: 6b5d0972f4489e64fba3a232271a135f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7204854740542823566, guid: 6b5d0972f4489e64fba3a232271a135f, type: 3}
       propertyPath: m_Size.x
       value: 8.12
