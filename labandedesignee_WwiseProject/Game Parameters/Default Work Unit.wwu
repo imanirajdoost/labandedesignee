@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B67E00A5-62EC-4030-952A-E938C43321F4}" SchemaVersion="123">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{B67E00A5-62EC-4030-952A-E938C43321F4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B67E00A5-62EC-4030-952A-E938C43321F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="6"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

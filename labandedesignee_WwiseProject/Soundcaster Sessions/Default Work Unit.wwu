@@ -10,7 +10,12 @@
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}"/>
 						<CurrentStateRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>

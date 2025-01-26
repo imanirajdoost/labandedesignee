@@ -78,6 +78,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_SFX_Entity_Speak" ID="{CAAE9A8F-95E3-4BDD-95C1-48FD2A348B91}">
+									<ChildrenList>
+										<Action Name="" ID="{CCAA70C4-F7BC-462A-8D97-8E10FF4B9A77}" ShortID="671989543">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Entity_Speak" ID="{80CEE73A-FC1E-4C35-B947-6713BF9B223C}" WorkUnitID="{35072F5F-260C-4A2D-8B07-CA9458E0EE41}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SFX_Bubble" ID="{A9C4718F-06FA-4744-8C2F-A245456C4693}" ShortID="743198062">
@@ -344,6 +355,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{406C0C3F-CB81-4DE3-96CB-29D58E5383BD}" ShortID="537165824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}" WorkUnitID="{B67E00A5-62EC-4030-952A-E938C43321F4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="ST_TimeFreeze_Off" ID="{7A25B7F3-C1D5-4B10-B65E-5D15761D4ECE}">
@@ -355,6 +377,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A0DEA659-0851-441E-BE5C-0D570111D40A}" ShortID="1787238">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}" WorkUnitID="{B67E00A5-62EC-4030-952A-E938C43321F4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -372,8 +404,116 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{B91D9F98-B66E-47FA-9324-D32CCF4E2FC5}" ShortID="212376323">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D0AAA6BF-7486-451F-A69E-2BCD41D2FBB9}" ShortID="1050096037">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GP_TimeFreeze" ID="{653E8A81-94A8-4121-B986-72F4B94C9165}" WorkUnitID="{B67E00A5-62EC-4030-952A-E938C43321F4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="ST_GameFlow" ID="{AC8A875E-2594-4A1E-A4C8-1B66C1A3DE48}" ShortID="488895710">
+							<ChildrenList>
+								<Event Name="ST_GameFlow_Level_1" ID="{08AA43DA-05C8-42F0-9901-F5987A3F6CAB}">
+									<ChildrenList>
+										<Action Name="" ID="{475CEA94-7215-43CB-96D6-8F3DDAD695D2}" ShortID="281134704">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_Level_1" ID="{47E47D1D-D3E2-4365-A678-75CF6D6CFF2B}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ST_GameFlow_MainMenu" ID="{FF5CF7D1-DC7B-4E1F-B2AD-8B61F2DFF963}">
+									<ChildrenList>
+										<Action Name="" ID="{CB4EC09A-2C25-4F4F-8E80-E683080BD971}" ShortID="88796902">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ST_GameFlow_Level_2" ID="{97FED406-94AB-4D9A-8127-0B174B7F50B9}">
+									<ChildrenList>
+										<Action Name="" ID="{BCDB733B-2339-46AA-8AB0-3E870C1310A4}" ShortID="565081712">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_Level_2" ID="{93B29A03-8BCC-40DD-93E0-BABB83288E6E}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ST_GameFlow_Level_3" ID="{353C32AC-5EAB-4E05-A1EA-E9D6C3EB2C72}">
+									<ChildrenList>
+										<Action Name="" ID="{FA244B33-258A-4199-A01E-C1480D16DCA3}" ShortID="13566506">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_Level_3" ID="{B355511A-AD25-416A-9EC5-9C2E03F4E1CF}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ST_GameFlow_Level_4" ID="{D064AD3A-8CFC-48A6-A699-3DF08B9E5914}">
+									<ChildrenList>
+										<Action Name="" ID="{2E632FB9-DB2C-4F8A-9876-CBAE00487D4A}" ShortID="66364516">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_Level_4" ID="{70C8241A-D53E-402B-BCCD-7C2356A15F65}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ST_GameFlow_Level_5" ID="{36DE9FBB-B667-4517-B4E8-1D94A68B9BCB}">
+									<ChildrenList>
+										<Action Name="" ID="{9DCBB1E5-06F4-4217-965C-BC21F7601410}" ShortID="251426506">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ST_GameFlow_Level_5" ID="{4E16B770-5589-4FC5-8315-EF4F3CCC17C0}" WorkUnitID="{F7D8DE01-7568-4BE2-A431-C51792EDD856}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
