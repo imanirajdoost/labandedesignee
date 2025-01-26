@@ -171,7 +171,7 @@ MonoBehaviour:
   _softTarget: {fileID: 4824159944559812719}
   _coldSpawnTarget: {fileID: 5784499517122602488}
   _objectToDestroy: {fileID: 0}
-  _disableTime: 5
+  _disableTime: 10
   _spawnLong: 0
   _playerManager: {fileID: 0}
 --- !u!114 &424857740908755983

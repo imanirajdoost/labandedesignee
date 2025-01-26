@@ -11,6 +11,8 @@ public class DialogTrigger : MonoBehaviour
     [SerializeField] private bool _shouldTriggerOnce;
     [SerializeField] protected bool _shouldDestroyAfterTriggered;
 
+    public bool IsEnabled => _isEnabled;
+
     public int GetTriggerCount()
     {
         return _triggerCount;

@@ -40,7 +40,7 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     private IEnumerator DisableFor()
     {
         _isEnabled = false;
-        yield return new WaitForSecondsRealtime(_disableTime);
+        yield return new WaitForSeconds(_disableTime);
         _isEnabled = true;
     }
 
@@ -48,7 +48,10 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     {
         base.SetTriggered();
 
-        if(_disableCoroutine != null)
+        if(_isEnabled == false)
+            return;
+
+        if (_disableCoroutine != null)
             StopCoroutine(_disableCoroutine);
         _disableCoroutine = StartCoroutine(DisableFor());
 

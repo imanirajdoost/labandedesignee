@@ -185,13 +185,13 @@ public class MovementController : MonoBehaviour
         _isSlowMotion = slowMotion;
         if (slowMotion)
         {
-            if(rb.linearVelocity.y > 0)
-                rb.linearVelocity = Vector3.zero;
+            rb.isKinematic = true;
             _speed = _slowMotionSpeed;
             _gravityMultiplier = _slowMotionGravityMultiplier;
         }
         else
         {
+            rb.isKinematic = false;
             _speed = _originalSpeed;
             _gravityMultiplier = _originalGravityMultiplier;
         }

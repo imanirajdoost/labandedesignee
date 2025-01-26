@@ -75,6 +75,10 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag("Dialog"))
         {
             var dialogTrigger = other.gameObject.GetComponent<DialogTrigger>();
+
+            if (!dialogTrigger.IsEnabled)
+                return;
+
             if (dialogTrigger.TriggerCount > 0 && dialogTrigger.ShouldTriggerOnce)
                 return;
 
