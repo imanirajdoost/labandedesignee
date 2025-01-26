@@ -186,7 +186,7 @@ public class MovementController : MonoBehaviour
         if (slowMotion)
         {
             if(rb.linearVelocity.y > 0)
-                rb.linearVelocity = new Vector3(0, 0, rb.linearVelocity.z);
+                rb.linearVelocity = Vector3.zero;
             _speed = _slowMotionSpeed;
             _gravityMultiplier = _slowMotionGravityMultiplier;
         }
