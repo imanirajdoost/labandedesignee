@@ -52,13 +52,19 @@ public class DialogManager : MonoBehaviour
         _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -150), 0.5f).SetEase(Ease.InBack);
     }
 
-    public void ShowDialog(DialogData data)
+    private void ShowDialog(DialogData data)
     {
         RemoveAllRepliesIfExist();
 
         _dialogText.text = data.line;
 
         ShowDialogOptionsIfAvailable(data);
+    }
+
+    public void ShowDialogByData(DialogData data)
+    {
+        OpenDialogPanel();
+        ShowDialog(data);
     }
 
     private void RemoveAllRepliesIfExist()

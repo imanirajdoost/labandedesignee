@@ -58,5 +58,7 @@ public class BubbleSoft : BubbleBase
 
         _playerManager.transform.SetParent(null);
         _playerManager.ForceDetach();
+
+        Destroy(gameObject, 1);
     }
 }

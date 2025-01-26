@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,10 +17,14 @@ public class DialogTriggerMultipleChoice : DialogTrigger
     [SerializeField] private Transform _coldSpawnTarget;
     [SerializeField] private GameObject _objectToDestroy;
 
+    [SerializeField] private float _disableTime = 5f;
+
 
     [SerializeField] private bool _spawnLong = false;
 
     [SerializeField] private PlayerManager _playerManager;
+
+    private Coroutine _disableCoroutine;
 
 
     private void Start()
@@ -32,17 +37,30 @@ public class DialogTriggerMultipleChoice : DialogTrigger
         DialogManager.Instance.OnChoiceSelected -= OnChoiceSelected;
     }
 
+    private IEnumerator DisableFor()
+    {
+        _isEnabled = false;
+        yield return new WaitForSecondsRealtime(_disableTime);
+        _isEnabled = true;
+    }
+
     public override void SetTriggered()
     {
         base.SetTriggered();
-        if(_triggerCount <= 1)
+
+        if(_disableCoroutine != null)
+            StopCoroutine(_disableCoroutine);
+        _disableCoroutine = StartCoroutine(DisableFor());
+
+
+        if (_triggerCount <= 1)
             DialogManager.Instance.ShowDialog(Index);
         else
         {
             int levelIndex = GetLevelIndex();
             // Get a random tone from the factory
             DialogData dialogData = DialogDataFactory.Instance.GetRandomGenericDialogFromList(levelIndex);
-            DialogManager.Instance.ShowDialog(dialogData);
+            DialogManager.Instance.ShowDialogByData(dialogData);
         }
     }
 

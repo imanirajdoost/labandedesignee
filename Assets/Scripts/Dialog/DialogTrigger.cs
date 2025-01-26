@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DialogTrigger : MonoBehaviour
 {
+    protected bool _isEnabled = true;
+
     [SerializeField] private int dialogIndex;
     [SerializeField] private bool _freezePlayer;
     [SerializeField] private bool _slowMotion;
@@ -16,6 +18,8 @@ public class DialogTrigger : MonoBehaviour
 
     public virtual void SetTriggered()
     {
+        if (!_isEnabled)
+            return;
         _triggerCount++;
     }
 
