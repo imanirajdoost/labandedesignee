@@ -79,7 +79,7 @@ ENTITY: "That's why none of them will even talk to you anymore."
 	
 ENTITY: "Admit it : it's better that way."
 
-ENTITY: "If you stayed it would only have become worse for you and them."
+ENTITY: "If you stayed it would have gone even worse."
 
 ENTITY: "At the end of the day, I'm the only who still wants you around."
 	AGGR: "Enough! What are you even doing here?"
