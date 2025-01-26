@@ -114,6 +114,8 @@ public class DialogManager : MonoBehaviour
 
         foreach (var reply in data.replies)
         {
+            if(reply == null)
+                continue;
             var choicObj = Instantiate(_dialogChoiceObject, _dialogChoiceObjectParent.transform);
             _dialogChoices.Add(choicObj);
             var choiceController = choicObj.GetComponent<DialogChoiceController>();

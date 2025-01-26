@@ -142,6 +142,7 @@ MonoBehaviour:
   _freezePlayer: 1
   _slowMotion: 0
   _shouldTriggerOnce: 1
+  _shouldDestroyAfterTriggered: 1
 --- !u!114 &8982341882347903515
 MonoBehaviour:
   m_ObjectHideFlags: 0
