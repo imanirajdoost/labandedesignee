@@ -9690,7 +9690,7 @@ GameObject:
   - component: {fileID: 5752574520509168920}
   - component: {fileID: 6666297718565226294}
   m_Layer: 0
-  m_Name: vfx_Portal_01
+  m_Name: VFX_Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
