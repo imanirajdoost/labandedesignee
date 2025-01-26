@@ -152,10 +152,8 @@ public class DialogTriggerMultipleChoice : DialogTrigger
                 new Vector3(_playerManager.transform.position.x, _playerManager.transform.position.y + 1, _playerManager.transform.position.z),
                 Quaternion.identity);
 
+        obj.GetComponent<BubbleAggressive>().SetTarget(_objectToDestroy);
         obj.GetComponent<BubbleBase>().DoYourThing();
-
-        if(_objectToDestroy != null)
-            Destroy(_objectToDestroy);
 
         _playerManager.SetAnimation("AGGR");
     }

@@ -69,12 +69,12 @@
 		"tone": "HARSH",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "Don't worry, I'll find my way."
-			},
-			{
 				"type": "COLD",
 				"line": "Why don't you disappear in a crack in the ground and never show your face again?"
+			},
+			{
+				"type": "SOFT",
+				"line": "Don't worry, I'll find my way."
 			}
 		]
 	},
@@ -110,16 +110,16 @@
 		"tone": "MOCK",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "I have good reasons to feel that way."
+				"type": "AGGR",
+				"line": "Keep that up, I'll show you what destructive looks like!"
 			},
 			{
 				"type": "COLD",
 				"line": "Not fun to reap what you sow, is it?"
 			},
 			{
-				"type": "AGGR",
-				"line": "Keep that up, I'll show you what destructive looks like!"
+				"type": "SOFT",
+				"line": "I have good reasons to feel that way."
 			}
 		]
 	},
@@ -133,12 +133,12 @@
 				"line": "I don't need to justify myself."
 			},
 			{
-				"type": "COLD",
-				"line": "Better to throw tantrums than to end up like you."
-			},
-			{
 				"type": "AGGR",
 				"line": "You've seen nothing yet, you little creep!"
+			},
+			{
+				"type": "COLD",
+				"line": "Better to throw tantrums than to end up like you."
 			}
 		]
 	},
@@ -148,12 +148,12 @@
 		"tone": "MOCK",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "That's not fair."
-			},
-			{
 				"type": "COLD",
 				"line": "Don't you dare bring that up."
+			},
+			{
+				"type": "SOFT",
+				"line": "That's not fair."
 			},
 			{
 				"type": "AGGR",
@@ -167,16 +167,16 @@
 		"tone": "HARSH",
 		"replies": [
 			{
+				"type": "AGGR",
+				"line": "You be careful what you say if you want to keep your teeth!"
+			},
+			{
 				"type": "SOFT",
 				"line": "Everyone makes mistakes."
 			},
 			{
 				"type": "COLD",
 				"line": "Not careful enough to avoid meeting you, tragically."
-			},
-			{
-				"type": "AGGR",
-				"line": "You be careful what you say if you want to keep your teeth!"
 			}
 		]
 	},
@@ -186,12 +186,12 @@
 		"tone": "MOCK",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "I was only trying to help."
-			},
-			{
 				"type": "COLD",
 				"line": "Don't start commenting things you know nothing about."
+			},
+			{
+				"type": "SOFT",
+				"line": "I was only trying to help."
 			},
 			{
 				"type": "AGGR",
@@ -209,12 +209,12 @@
 				"line": "It's better not to cause unnecessary conflicts."
 			},
 			{
-				"type": "COLD",
-				"line": "If I wanted to talk about it, I'd go to someone I actually respect."
-			},
-			{
 				"type": "AGGR",
 				"line": "If you insist, I can confront my fist with your face!"
+			},
+			{
+				"type": "COLD",
+				"line": "If I wanted to talk about it, I'd go to someone I actually respect."
 			}
 		]
 	},
@@ -240,16 +240,16 @@
 		"tone": "HARSH",
 		"replies": [
 			{
+				"type": "AGGR",
+				"line": "You can talk to my knuckles, if you'd prefer!"
+			},
+			{
 				"type": "SOFT",
 				"line": "We'll mend things eventually."
 			},
 			{
 				"type": "COLD",
 				"line": "If only you would do the same."
-			},
-			{
-				"type": "AGGR",
-				"line": "You can talk to my knuckles, if you'd prefer!"
 			}
 		]
 	},

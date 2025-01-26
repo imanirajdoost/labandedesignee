@@ -9,12 +9,12 @@
 				"line": "I will."
 			},
 			{
-				"type": "COLD",
-				"line": "And you'll never get anything from anyone, so how's that?"
-			},
-			{
 				"type": "AGGR",
 				"line": "You'll get my hand in your face if you don't quit it!"
+			},
+			{
+				"type": "COLD",
+				"line": "And you'll never get anything from anyone, so how's that?"
 			}
 		]
 	},
@@ -23,12 +23,12 @@
 		"tone": "MOCK",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "I'm in no rush."
-			},
-			{
 				"type": "COLD",
 				"line": "No one in their right mind would ever listen to you."
+			},
+			{
+				"type": "SOFT",
+				"line": "I'm in no rush."
 			},
 			{
 				"type": "AGGR",
@@ -41,16 +41,16 @@
 		"tone": "MOCK",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "I can always try again."
+				"type": "AGGR",
+				"line": "You'll look worse when I get my hands on you!"
 			},
 			{
 				"type": "COLD",
 				"line": "No more pathetic than your entire existence."
 			},
 			{
-				"type": "AGGR",
-				"line": "You'll look worse when I get my hands on you!"
+				"type": "SOFT",
+				"line": "I can always try again."
 			}
 		]
 	},
@@ -59,16 +59,16 @@
 		"tone": "HARSH",
 		"replies": [
 			{
-				"type": "SOFT",
-				"line": "No, I did it by myself."
-			},
-			{
 				"type": "COLD",
 				"line": "If I was lucky, I'd never have met you."
 			},
 			{
 				"type": "AGGR",
 				"line": "Keep that up and not even luck will save you!"
+			},
+			{
+				"type": "SOFT",
+				"line": "No, I did it by myself."
 			}
 		]
 	},

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -18,6 +19,12 @@ public class PlayerManager : MonoBehaviour
 
     private Coroutine _slowMotionCoroutine;
 
+    [Header("End Game")]
+    [SerializeField] private GameObject _entity;
+    [SerializeField] private GameObject _bubbleAggressiveAttack;
+
+    private int _currentStep = 0;
+
     private void Awake()
     {
         _movementController = GetComponent<MovementController>();
@@ -28,7 +35,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
+        
         DialogManager.Instance.OnDialogPanelClosed += OnDialogPanelClosed;
     }
 
@@ -41,19 +48,6 @@ public class PlayerManager : MonoBehaviour
     {
         DialogManager.Instance.OnChoiceSelected -= OnChoiceSelected;
         DialogManager.Instance.OnDialogPanelClosed -= OnDialogPanelClosed;
-    }
-
-    private void OnChoiceSelected(string tone)
-    {
-        //FreezePlayer(false);
-        switch(tone)
-        {
-            case "SOFT":
-                //Fly();
-                break;
-            default:
-                break;
-        }
     }
 
     public void SetAnimation(string animation)
@@ -100,8 +94,116 @@ public class PlayerManager : MonoBehaviour
         {
             // Go To Next Level
             int currentIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentIndex + 1);
+            if(currentIndex != 4)
+                SceneManager.LoadScene(currentIndex + 1);
+            else
+            {
+                StartCoroutine(StartEndGameCinematic());
+            }
         }
+    }
+
+    private IEnumerator StartEndGameCinematic()
+    {
+        Debug.Log("End Game Cinematic");
+        _movementController.SetEnabled(false);
+        _movementController.EnableCompletely = false;
+
+        _movementController.LookRight();
+
+        yield return new WaitForSeconds(1.5f);
+
+        // entity moves away
+
+        _entity.transform.DOLocalMoveX(5f, 2f).SetEase(Ease.Linear);
+
+        // Show 1st dialog
+        DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
+
+        _currentStep = 1;
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(22);
+
+        yield return new WaitForSeconds(0.5f);
+
+    }
+
+    private IEnumerator ContinueDialog1()
+    {
+        yield return new WaitForSeconds(1f);
+        _currentStep = 2;
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(23);
+    }
+
+    private IEnumerator ContinueDialog2()
+    {
+        yield return new WaitForSeconds(1f);
+        _currentStep = 3;
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(24);
+    }
+
+    private IEnumerator ContinueDialog3()
+    {
+        yield return new WaitForSeconds(1f);
+        _currentStep = 4;
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(25);
+    }
+
+    private IEnumerator ContinueDialog4()
+    {
+        yield return new WaitForSeconds(1f);
+        _currentStep = 4;
+        DialogManager.Instance.ShowDialogWithoutUnfreezing(25);
+    }
+
+    private void OnChoiceSelected(string tone)
+    {
+        switch(_currentStep)
+        {
+            case 1:
+                CreateAggressive();
+                StartCoroutine(ContinueDialog1());
+                break;
+            case 2:
+                CreateAggressive();
+                StartCoroutine(ContinueDialog2());
+                break;
+            case 3:
+                CreateAggressive();
+                StartCoroutine(ContinueDialog3());
+                break;
+            case 4:
+                if (tone == "AGGR")
+                {
+                    CreateAggressive(true, true);
+                    StartCoroutine(ContinueDialog4());
+                } 
+                else if(tone == "SOFT")
+                {
+
+                }
+                else if(tone == "COLD")
+                {
+
+                }
+                break;
+                default:
+                break;
+        }
+    }
+
+    private void CreateAggressive(bool overrideTime = false, bool shoulDestroy = false)
+    {
+            GameObject obj = Instantiate(_bubbleAggressiveAttack,
+                new Vector3(transform.position.x, transform.position.y + 1, transform.position.z),
+                Quaternion.identity);
+        if(overrideTime)
+            obj.GetComponent<BubbleAggressive>().OverrideTime(4);
+
+        obj.GetComponent<BubbleAggressive>().SetDestroyObject(shoulDestroy);
+        obj.GetComponent<BubbleAggressive>().SetTarget(_entity);
+        obj.GetComponent<BubbleBase>().DoYourThing();
+
+        SetAnimation("AGGR");
     }
 
     public void ForceStopSlowMotion()
