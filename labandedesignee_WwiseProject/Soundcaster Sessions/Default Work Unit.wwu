@@ -25,8 +25,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_GameFlow_MainMenu" ID="{27512FEA-0402-466A-8A90-90B679E8F1A2}"/>
-						<CurrentStateRef Name="ST_TimeFreeze_Off" ID="{2596D5FD-1407-48EB-9794-F2D27480263C}"/>
+						<CurrentStateRef Name="None" ID="{449F57C4-A102-47CE-83F0-EBD6E274B5E2}"/>
+						<CurrentStateRef Name="None" ID="{0B7828A9-0D06-4FD9-B337-7012344E9AAE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

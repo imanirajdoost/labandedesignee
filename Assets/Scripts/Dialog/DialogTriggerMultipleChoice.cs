@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DialogTriggerMultipleChoice : DialogTrigger
@@ -10,13 +11,33 @@ public class DialogTriggerMultipleChoice : DialogTrigger
 
     [SerializeField] private PlayerManager _playerManager;
 
+
+    private void Start()
+    {
+        DialogManager.Instance.OnChoiceSelected += OnChoiceSelected;
+    }
+
+    private void OnDestroy()
+    {
+        DialogManager.Instance.OnChoiceSelected -= OnChoiceSelected;
+    }
+
+    private void OnChoiceSelected(string tone)
+    {
+        DoYourThing(tone);
+    }
+
     private void Awake()
     {
         _playerManager = FindFirstObjectByType<PlayerManager>();
     }
 
-    public void DoYourThing(string type)
+    private void DoYourThing(string type)
     {
+        // Check if player is near
+        if (Vector3.Distance(transform.position, _playerManager.transform.position) > 2)
+            return;
+
         switch (type)
         {
             case "SOFT":
@@ -40,7 +61,8 @@ public class DialogTriggerMultipleChoice : DialogTrigger
         var obj = Instantiate(_bubbleSoftFly, transform.position, Quaternion.identity);
         obj.GetComponent<BubbleSoft>().SetTarget(_softTarget);
         obj.GetComponent<BubbleBase>().DoYourThing();
-        // TODO: Set player animation
+
+        _playerManager.SetAnimation("SOFT");
     }
 
     private void CreateAggressive()

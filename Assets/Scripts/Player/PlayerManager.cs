@@ -9,14 +9,20 @@ public class PlayerManager : MonoBehaviour
     [Header("Slow Motion")]
     [SerializeField] private float _slowMotionTime = 5;
 
-    [Header("Bubbles")]
-    [SerializeField] private GameObject _bubblePrefabSoft;
+    [SerializeField] private Animator _animator;
+
+    private Collider col;
+
+    private Rigidbody rb;
 
     private Coroutine _slowMotionCoroutine;
 
     private void Awake()
     {
         _movementController = GetComponent<MovementController>();
+
+        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Start()
@@ -42,17 +48,23 @@ public class PlayerManager : MonoBehaviour
         switch(tone)
         {
             case "SOFT":
-                Fly();
+                //Fly();
                 break;
             default:
                 break;
         }
     }
 
-    private void Fly()
+    public void SetAnimation(string animation)
     {
-        var softObj = Instantiate(_bubblePrefabSoft, transform.position, Quaternion.identity);
-        softObj.GetComponent<BubbleBase>().DoYourThing();
+        switch(animation)
+        {
+            case "SOFT":
+                _animator.SetBool("Fly", true);
+                break;
+            default:
+                break;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -98,5 +110,30 @@ public class PlayerManager : MonoBehaviour
     private void FreezePlayer(bool freeze)
     {
         _movementController.SetEnabled(!freeze);
+    }
+
+    public void SetFreeze(bool freeze)
+    {
+        FreezePlayer(freeze);
+    }
+
+    public void ForceAttach()
+    {
+        _movementController.SetEnabled(false);
+        _movementController.SetSlowMotion(false);
+        if (_slowMotionCoroutine != null)
+            StopCoroutine(_slowMotionCoroutine);
+
+        // Disable collider and rb for the fly time
+        col.enabled = false;
+        rb.isKinematic = true;
+    }
+
+    public void ForceDetach()
+    {
+        col.enabled = true;
+        rb.isKinematic = false;
+        _animator.SetBool("Fly", false);
+        _movementController.SetEnabled(true);
     }
 }
