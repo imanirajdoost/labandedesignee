@@ -150,7 +150,8 @@ public class DialogTriggerMultipleChoice : DialogTrigger
 
         obj.GetComponent<BubbleBase>().DoYourThing();
 
-        Destroy(_objectToDestroy);
+        if(_objectToDestroy != null)
+            Destroy(_objectToDestroy);
 
         _playerManager.SetAnimation("AGGR");
     }

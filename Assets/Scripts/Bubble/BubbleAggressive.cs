@@ -8,5 +8,7 @@ public class BubbleAggressive : BubbleBase
 
         PlayerManager playerManager = FindFirstObjectByType<PlayerManager>();
         playerManager.OnPlatformDestroyed();
+
+        Destroy(gameObject, 5);
     }
 }
