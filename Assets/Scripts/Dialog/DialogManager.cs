@@ -49,7 +49,7 @@ public class DialogManager : MonoBehaviour
 
     public void CloseDialogPanel()
     {
-        _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -150), 0.5f).SetEase(Ease.InBack);
+        _dialogPanelRectTransform.DOAnchorPos(new Vector2(0, -250), 0.5f).SetEase(Ease.InBack);
     }
 
     private void ShowDialog(DialogData data)
