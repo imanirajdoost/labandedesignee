@@ -67,7 +67,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.76190484
+      - time: 0.00028252017
         functionName: callEvent
         data: Play_SFX_Player_Jump
         objectReferenceParameter: {fileID: 6421402096546682410, guid: 4fda36c9d231cbb4c8890722d60a4949, type: 3}
